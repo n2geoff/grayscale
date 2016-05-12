@@ -2,7 +2,7 @@
   "name": "layout",
   "version": "0.0.1",
   "description": "A Minimalist Dream of CSS",
-  "main": "dist/layout.css",
+  "main": "dist/graymatter.min.css",
   "scripts": {
     "build": "node_modules/.bin/gulp"
   },
