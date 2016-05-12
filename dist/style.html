@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Graymatter CSS</title>
+        <link rel="stylesheet" href="graymatter.css" media="screen" title="no title" charset="utf-8">
+        <style media="screen">
+            .box {
+                height: 1.5em;
+                min-width: 1.5em;
+                line-height: 1.5em;
+                margin: 1px;
+                display: inline-block;
+                font-weight: bold;
+                letter-spacing: .2em;
+                color: #FAFAFA;
+            }
+
+          .block {
+              min-height: 38px;
+              line-height: 38px;
+              vertical-align: middle;
+              box-sizing: padding-box;
+          }
+        </style>
+    </head>
+    <body>
+        <div class='layout'>
+
+            <div class="">
+                <div class="box" style="background-color: #FAFAFA">&nbsp;</div>
+                <div class="box" style="background-color: #ECECEC">&nbsp;</div>
+                <div class="box" style="background-color: #B3B3B3">&nbsp;</div>
+                <div class="box" style="background-color: #737373; padding: 0 .5em 0 .5em;">
+                  GRAYMATTER
+                </div>
+                <div class="box" style="background-color: #404040; padding: 0 .5em 0 .5em;">CSS</div>
+                <div class="box" style="background-color: #1A1A1A">&nbsp;</div>
+            </div>
+
+            <p style="padding: 1em;">
+                A Minimalist Dream of CSS
+            </p>
+
+            <h3>Buttons</h3>
+
+            <button class="default">DEFAULT</button>
+            <button class="button-secondary">Secondary</button>
+            <button class="button-primary">Primary</button>
+            <button class="button-outline">OUTLINE</button>
+
+            <h3>Code</h3>
+
+            <span class="code block">
+                this is code
+                and more
+            </span>
+
+            <pre class="code">
+                //do stuff
+                function(a) {
+                    console.log("did stuff", a);
+                }
+            </pre>
+
+            <h3>Divider</h3>
+
+            something
+            <hr>
+            something else
+
+            <h3>Blockquote</h3>
+
+            <blockquote>
+              Hello World!
+            </blockquote>
+
+            <h3>Forms</h3>
+
+            <form>
+                <div class="row">
+                    <div class="column-6">
+                        <label for="exampleEmailInput">Your email</label>
+                        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                    </div>
+                    <div class="column-6">
+                        <label for="exampleRecipientInput">Reason for contacting</label>
+                        <select class="" id="exampleRecipientInput">
+                            <option value="Option 1">Questions</option>
+                            <option value="Option 2">Admiration</option>
+                            <option value="Option 3">Can I get your number?</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+                </div>
+                <div class="row">
+                    <label class="example-send-yourself-copy">
+                        <input type="checkbox">
+                        <span class="label-body">Send a copy to yourself</span>
+                    </label>
+                </div>
+                <div class="row">
+                    <input class="button-primary" type="submit" value="Submit">
+                </div>
+            </form>
+
+            <h3>Tables</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>One</th>
+                        <th>Two</th>
+                        <th>Three</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>One</td>
+                        <td>Two</td>
+                        <td>Three</td>
+                    </tr>
+                    <tr>
+                        <td>One</td>
+                        <td>Two</td>
+                        <td>Three</td>
+                    </tr>
+                    <tr>
+                        <td>One</td>
+                        <td>Two</td>
+                        <td>Three</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Grid</h3>
+
+            <div class="layout">
+                <div class="row">
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                    <div class="column-1">1</div>
+                </div>
+                <div class="row">
+                    <div class="column-2">2</div>
+                    <div class="column-2">2</div>
+                    <div class="column-2">2</div>
+                    <div class="column-2">2</div>
+                    <div class="column-2">2</div>
+                    <div class="column-2">2</div>
+                </div>
+                <div class="row">
+                    <div class="column-3">3</div>
+                    <div class="column-3">3</div>
+                    <div class="column-3">3</div>
+                    <div class="column-3">3</div>
+                </div>
+            </div>
+
+      </div>
+    </body>
+</html>
