@@ -1,0 +1,173 @@
+/* Percent-Based Layout System (Author - Geoff Doty <n2geoff@gmail.com> */
+
+/* CSS Reset */
+
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+/* Layout Container */
+
+.layout {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow: hidden;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+/* Layout Rows */
+
+.row {
+  width: 100%;
+  clear: both;
+}
+
+/* Common Column Style */
+
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6,
+.column-7,
+.column-8,
+.column-9,
+.column-10,
+.column-11,
+.column-12 {
+  float: left;
+  display: inline;
+  *margin-left: -0.04em;
+  background-color: #EEE;
+}
+
+/* IE margin hack */
+
+/* Column Grid(%) */
+
+.column-1 {
+  width: 8.33%;
+}
+
+.column-2 {
+  width: 16.667%;
+}
+
+.column-3 {
+  width: 25%;
+}
+
+.column-4 {
+  width: 33.33%;
+}
+
+.column-5 {
+  width: 41.66%;
+}
+
+.column-6 {
+  width: 50%;
+}
+
+.column-7 {
+  width: 58.33%;
+}
+
+.column-8 {
+  width: 66.66%;
+}
+
+.column-9 {
+  width: 75%;
+}
+
+.column-10 {
+  width: 83.333%;
+}
+
+.column-11 {
+  width: 91.66%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+/* Push Columns */
+
+.push-1 {
+  margin-left: 8.33%;
+}
+
+.push-2 {
+  margin-left: 16.667%;
+}
+
+.push-3 {
+  margin-left: 25%;
+}
+
+.push-4 {
+  margin-left: 33.33%;
+}
+
+.push-5 {
+  margin-left: 20%;
+}
+
+.push-6 {
+  margin-left: 50%;
+}
+
+.push-7 {
+  margin-left: 58.33%;
+}
+
+.push-8 {
+  margin-left: 66.66%;
+}
+
+.push-9 {
+  margin-left: 75%;
+}
+
+.push-10 {
+  margin-left: 10%;
+}
+
+.push-11 {
+  width: 91.66%;
+}
+
+.push-12 {
+  width: 100%;
+}
+
+/* Utility */
+
+.box-sizing {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "layout",
+  "version": "0.0.1",
+  "description": "A Minimalist Dream of CSS",
+  "main": "dist/layout.css",
+  "scripts": {
+    "build": "node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n2geoff/layout.git"
+  },
+  "keywords": [
+    "css",
+    "foundation",
+    "myth"
+  ],
+  "author": "Geoff Doty <n2geoff@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n2geoff/layout/issues"
+  },
+  "homepage": "https://github.com/n2geoff/layout#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-myth": "^1.1.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
