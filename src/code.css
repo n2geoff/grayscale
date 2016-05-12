@@ -1,0 +1,11 @@
+/* Code */
+
+code, .code {
+    padding-left: .5em;
+    padding-right: .5em;
+    overflow: auto;
+    border: 1px solid var(--highlight);
+    background-color: var(--accent);
+    font-family: monospace;
+    display:block;
+}
