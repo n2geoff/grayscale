@@ -1,0 +1,24 @@
+:root {
+    --background: #FAFAFA;
+    --accent: #ECECEC;
+    --highlight: #B3B3B3;
+    --secondary: #737373;
+    --primary: #404040;
+    --foreground: #1A1A1A;
+}
+
+/* CSS Reset */
+
+div{margin:0;padding:0;border:0;font-size:1em;}
+img,object,embed{max-width:100%;}
+img{height:auto;}
+
+html {
+    font-family: sans-serif;
+}
+
+/* Divider */
+
+hr, .divider {
+    margin: .3em 0 .3em 0
+}
