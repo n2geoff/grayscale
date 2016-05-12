@@ -1,12 +1,7 @@
-/* Percent-Based Layout System (Author - Geoff Doty <n2geoff@gmail.com> */
-
-/* CSS Reset */
-div{margin:0;padding:0;border:0;font-size:1em;}
-img,object,embed{max-width:100%;}
-img{height:auto;}
+/* Percent-Based Grid */
 
 /* Layout Container */
-.layout{width:100%;max-width:1140px;margin:0 auto;overflow:hidden;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}
+.layout{width:80%;max-width:1140px;margin:0 auto;overflow:hidden;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto;background-color: var(--background)}
 
 /* Layout Rows */
 .row{width:100%;clear:both;}
@@ -15,8 +10,8 @@ img{height:auto;}
 .column-1,.column-2,.column-3,.column-4,
 .column-5,.column-6,.column-7,.column-8,
 .column-9,.column-10,.column-11,.column-12
-{float:left; display:inline;*margin-left:-0.04em;background-color:#EEE;} /* IE margin hack */
- 
+{float:left; display:inline;*margin-left:-0.04em;background-color:var(--background);} /* IE margin hack */
+
 /* Column Grid(%) */
 .column-1{width:8.33%;}.column-2{width:16.667%;}
 .column-3{width:25%;}.column-4{width:33.33%;}
