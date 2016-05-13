@@ -7,6 +7,17 @@
         <title>Graymatter CSS</title>
         <link rel="stylesheet" href="graymatter.css" media="screen" title="no title" charset="utf-8">
         <style media="screen">
+            .doc-row  {
+                background-color: #ECECEC;
+            }
+
+            .doc-column {
+                background-color: #ECECEC;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+            }
+
             .box {
                 height: 1.5em;
                 min-width: 1.5em;
@@ -34,7 +45,7 @@
                 <div class="box" style="background-color: #ECECEC">&nbsp;</div>
                 <div class="box" style="background-color: #B3B3B3">&nbsp;</div>
                 <div class="box" style="background-color: #737373; padding: 0 .5em 0 .5em;">
-                  GRAYMATTER
+                  GRAYSCALE
                 </div>
                 <div class="box" style="background-color: #404040; padding: 0 .5em 0 .5em;">CSS</div>
                 <div class="box" style="background-color: #1A1A1A">&nbsp;</div>
@@ -105,7 +116,7 @@
                     </label>
                 </div>
                 <div class="row">
-                    <input class="button-primary" type="submit" value="Submit">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
 
@@ -140,34 +151,38 @@
 
             <h3>Grid</h3>
 
-            <div class="layout">
+            Grayscale CSS uses a precent-based fluid grid system with 12 columns, and a max width of 1140px.
+            Add a column-# class to every column, where # is a number from 1 to 12. For example:
+
+            <div class="">
                 <div class="row">
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
-                    <div class="column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-1">1</div>
+                </div>
+
+                <div class="row">
+                    <div class="doc-column column-2">2</div>
+                    <div class="doc-column column-2">2</div>
+                    <div class="doc-column column-2">2</div>
+                    <div class="doc-column column-2">2</div>
+                    <div class="doc-column column-2">2</div>
+                    <div class="doc-column column-2">2</div>
                 </div>
                 <div class="row">
-                    <div class="column-2">2</div>
-                    <div class="column-2">2</div>
-                    <div class="column-2">2</div>
-                    <div class="column-2">2</div>
-                    <div class="column-2">2</div>
-                    <div class="column-2">2</div>
-                </div>
-                <div class="row">
-                    <div class="column-3">3</div>
-                    <div class="column-3">3</div>
-                    <div class="column-3">3</div>
-                    <div class="column-3">3</div>
+                    <div class="doc-column column-3">3</div>
+                    <div class="doc-column column-3">3</div>
+                    <div class="doc-column column-3">3</div>
+                    <div class="doc-column column-3">3</div>
                 </div>
             </div>
 
