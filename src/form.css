@@ -67,6 +67,8 @@ input[type="radio"] {
 
 label > .label-body {
     display: inline-block;
-    margin-left: .5rem;
+    margin-left: .5em;
     font-weight: normal;
+    height: 38px;
+    line-height: 38px;
 }
