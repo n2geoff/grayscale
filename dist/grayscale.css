@@ -243,7 +243,6 @@ label > .label-body {
   float: left;
   display: inline;
   *margin-left: -0.04em;
-  background-color: #FAFAFA;
 }
 
 /* IE margin hack */
