@@ -32,6 +32,16 @@ hr,
   margin: .3em 0 .3em 0;
 }
 
+/* Utility */
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
 /* Blockquote */
 
 blockquote {
@@ -185,8 +195,10 @@ input[type="radio"] {
 
 label > .label-body {
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: .5em;
   font-weight: normal;
+  height: 38px;
+  line-height: 38px;
 }
 
 /* Percent-Based Grid */
