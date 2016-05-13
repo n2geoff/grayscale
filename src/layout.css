@@ -4,7 +4,7 @@
 .layout{width:80%;max-width:1140px;margin:0 auto;overflow:hidden;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto;background-color: var(--background)}
 
 /* Layout Rows */
-.row{width:100%;clear:both;}
+.row{width:100%;clear:both;display:inline-block;}
 
 /* Common Column Style */
 .column-1,.column-2,.column-3,.column-4,
