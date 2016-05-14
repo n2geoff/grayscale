@@ -26,7 +26,10 @@ input[type="button"] {
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
-input[type="button"]:hover,
+input[type="button"]:hover {
+    border-bottom: 2px solid var(--foreground);
+}
+
 .button:focus,
 button:focus,
 input[type="submit"]:focus,
@@ -42,9 +45,20 @@ input[type="button"]:focus {
   border: 1px solid var(--primary);
 }
 
+.button-outline:hover {
+  background-color: var(--background);
+  color: var(--foreground);
+  border-bottom: 2px solid var(--foreground);
+}
+
 .button-secondary {
     background-color: var(--secondary);
     color: var(--background);
+}
+
+.button-secondary:hover {
+    border-bottom: 2px solid var(--foreground);
+
 }
 
 .button-primary {
