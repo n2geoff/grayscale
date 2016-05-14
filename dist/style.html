@@ -9,8 +9,10 @@
         <style media="screen">
             .doc-column {
                 background-color: #ECECEC;
-                height: 38px;
+                min-height: 38px;
                 line-height: 38px;
+                border-left: .5em solid #FFF;
+                border-bottom: .5em solid #FFF;
                 text-align: center;
             }
 
@@ -65,12 +67,15 @@
                 and more
             </span>
 
-            <pre class="code">
-                //do stuff
-                function(a) {
-                    console.log("did stuff", a);
-                }
-            </pre>
+            <br>
+            <code class="block">
+                <pre>
+                    //do stuff
+                    function(a) {
+                        console.log("did stuff", a);
+                    }
+                </pre>
+            </code>
 
             <h3>Divider</h3>
 
@@ -88,11 +93,11 @@
 
             <form>
                 <div class="row">
-                    <div class="column-6">
+                    <div class="column-50">
                         <label for="exampleEmailInput">Your email</label>
                         <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
                     </div>
-                    <div class="column-6">
+                    <div class="column-50">
                         <label for="exampleRecipientInput">Reason for contacting</label>
                         <select class="" id="exampleRecipientInput">
                             <option value="Option 1">Questions</option>
@@ -117,82 +122,76 @@
             </form>
 
             <h3>Tables</h3>
+            <p>
+                Simple, beautiful and supports <code>.condensed</code>, <code>.striped</code>
+            </p>
+            <style>
+                .well {padding: 1em}
+                .bordered {border: 1px solid #ECECEC;}
+            </style>
+            <div class="pad">
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>One</th>
-                        <th>Two</th>
-                        <th>Three</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>One</td>
-                        <td>Two</td>
-                        <td>Three</td>
-                    </tr>
-                    <tr>
-                        <td>One</td>
-                        <td>Two</td>
-                        <td>Three</td>
-                    </tr>
-                    <tr>
-                        <td>One</td>
-                        <td>Two</td>
-                        <td>Three</td>
-                    </tr>
-                </tbody>
-            </table>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Two</th>
+                            <th>Three</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Two</td>
+                            <td>Three</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Two</td>
+                            <td>Three</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Two</td>
+                            <td>Three</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h3>Grid</h3>
 
             <p>
-                Grayscale CSS uses a precent-based fluid grid system with 12 columns, and a max width of 1140px.
-                Add a column-# class to every column, where # is a number from 1 to 12. For example:
+                Grayscale CSS uses a precent-based fluid grid system with 6 column sizes, and a max width of 1140px.
+                Add a column-% class to every column, where % can be 20, 25, 33, 50, 100. For example:
             </p>
 
             <div class="">
                 <div class="row">
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
-                    <div class="doc-column column-1">1</div>
+                    <div class="doc-column column-100">100%</div>
                 </div>
 
                 <div class="row">
-                    <div class="doc-column column-2">2</div>
-                    <div class="doc-column column-2">2</div>
-                    <div class="doc-column column-2">2</div>
-                    <div class="doc-column column-2">2</div>
-                    <div class="doc-column column-2">2</div>
-                    <div class="doc-column column-2">2</div>
+                    <div class="doc-column column-20">20%</div>
+                    <div class="doc-column column-20">20%</div>
+                    <div class="doc-column column-20">20%</div>
+                    <div class="doc-column column-20">20%</div>
+                    <div class="doc-column column-20">20%</div>
                 </div>
                 <div class="row">
-                    <div class="doc-column column-3">3</div>
-                    <div class="doc-column column-3">3</div>
-                    <div class="doc-column column-3">3</div>
-                    <div class="doc-column column-3">3</div>
+                    <div class="doc-column column-33">30%</div>
+                    <div class="doc-column column-33">30%</div>
+                    <div class="doc-column column-33">30%</div>
                 </div>
                 <div class="row">
-                    <div class="doc-column column-4">4</div>
-                    <div class="doc-column column-4">4</div>
-                    <div class="doc-column column-4">4</div>
+                    <div class="doc-column column-25">25%</div>
+                    <div class="doc-column column-25">25%</div>
+                    <div class="doc-column column-25">25%</div>
+                    <div class="doc-column column-25">25%</div>
                 </div>
                 <div class="row">
-                    <div class="doc-column column-6">6</div>
-                    <div class="doc-column column-6">6</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column-12">12</div>
+                    <div class="doc-column column-50">50%</div>
+                    <div class="doc-column column-50">50%</div>
                 </div>
             </div>
 
