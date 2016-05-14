@@ -13,7 +13,7 @@ select {
     width: 100%;
     padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
     background-color: var(--background);
-    border: 1px solid var(--highlight);
+    border: 1px solid var(--accent);
     box-shadow: none;
     box-sizing: border-box;
 }
@@ -35,6 +35,19 @@ textarea {
     padding-bottom: 6px;
 }
 
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="search"]:hover,
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover,
+input[type="password"]:hover,
+textarea:hover,
+select:hover {
+  border: 1px solid var(--highlight);
+  outline: 0;
+}
+
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -44,7 +57,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-    border: 1px solid var(--accent);
+    border: 1px solid var(--foreground);
+    background-color: #FFF;
     outline: 0;
 }
 
