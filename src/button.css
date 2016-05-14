@@ -30,11 +30,11 @@ input[type="button"]:hover {
     border-bottom: 2px solid var(--foreground);
 }
 
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
     background-color: var(--foreground);
     color: var(--background);
 }
