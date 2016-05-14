@@ -1,7 +1,7 @@
 /* Blockquote */
 
 blockquote {
-  border-left: 0.3em solid var(--secondary);
+  border-left: 0.3em solid var(--highlight);
   background-color: var(--accent);
   margin-left: 0;
   margin-right: 0;
