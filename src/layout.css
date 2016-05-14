@@ -26,12 +26,3 @@
 .column-50 {width: 50%}
 .column-67 {width: 67.67%}
 .column-100 {width: 100%}
-
-/* Utility */
-.right {float:right}
-.left {float:left}
-.center {margin:auto}
-.inline {display:inline}
-.block {display:block}
-.wall {padding: 0 .5em 0 .5em}
-.clear{ clear:both;}

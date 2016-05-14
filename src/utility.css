@@ -1,0 +1,9 @@
+/* Utilities */
+.right {float:right}
+.left {float:left}
+.center {margin:auto}
+.inline {display:inline}
+.block {display:block}
+.border {border: 1px solid var(--highlight)}
+.wall {padding: 0 .5em 0 .5em}
+.clear{ clear:both;}
