@@ -1,67 +1,45 @@
 /* Buttons */
+.button {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
 
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border: none rgba(0, 0, 0, 0);
+}
+
+.button:hover,
+.button:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+
+.button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    border-color: #000\9;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+/* Apply to default */
 .button,
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
-    display: inline-block;
-    height: 38px;
-    padding: 0 30px;
-    color: var(--foreground);
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: .1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-    border: 1px solid transparent;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-    border-bottom: 2px solid var(--foreground);
-}
-
-.button:active,
-button:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active {
-    background-color: var(--foreground);
-    color: var(--background);
-}
-
-.button-outline {
-  background-color: var(--background);
-  color: var(--primary);
-  border: 1px solid var(--primary);
-}
-
-.button-outline:hover {
-  background-color: var(--background);
-  color: var(--foreground);
-  border-bottom: 2px solid var(--foreground);
-}
-
-.button-secondary {
-    background-color: var(--secondary);
-    color: var(--background);
-}
-
-.button-secondary:hover {
-    border-bottom: 2px solid var(--foreground);
-
-}
-
-.button-primary {
-  color: var(--background);
-  background-color: var(--primary);
-}
+input[type="button"] {}
