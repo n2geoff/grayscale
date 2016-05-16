@@ -7,6 +7,13 @@
         <title>Graymatter CSS</title>
         <link rel="stylesheet" href="grayscale.min.css" media="screen" title="no title" charset="utf-8">
         <style media="screen">
+            .container {
+                width: 85%;
+                margin: 0 auto;
+                background-color: #FAFAFA;
+                font-family: sans-serif;
+            }
+
             .doc-column {
                 background-color: #ECECEC;
                 min-height: 38px;
@@ -27,40 +34,48 @@
                 color: #FAFAFA;
             }
 
-            .button-primary {
-                background: rgb(223, 117, 20); /* this is an orange */
+            .primary {
+                color: white;
+                background-color: blue;
             }
 
-          .block {
-              min-height: 38px;
-              line-height: 38px;
-              vertical-align: middle;
-              box-sizing: padding-box;
-          }
+            .secondary {
+                color: white;
+                background-color: green;
+            }
+
+            .rounded {
+                border-radius: .3em;
+            }
+
         </style>
     </head>
     <body>
-        <div class='layout'>
+        <div class="layout">
 
             <div class="">
-                <div class="box" style="background-color: #FAFAFA">&nbsp;</div>
-                <div class="box" style="background-color: #ECECEC">&nbsp;</div>
-                <div class="box" style="background-color: #B3B3B3">&nbsp;</div>
-                <div class="box" style="background-color: #737373; padding: 0 .5em 0 .5em;">
+                <div class="box lightest">&nbsp;</div>
+                <div class="box lighter">&nbsp;</div>
+                <div class="box light">&nbsp;</div>
+                <div class="box dark wall">
                   GRAYSCALE
                 </div>
-                <div class="box" style="background-color: #404040; padding: 0 .5em 0 .5em;">CSS</div>
-                <div class="box" style="background-color: #1A1A1A">&nbsp;</div>
+                <div class="box darker" style="background-color: #404040; padding: 0 .5em 0 .5em;">CSS</div>
+                <div class="box darkest" style="background-color: #1A1A1A">&nbsp;</div>
             </div>
 
             <p style="padding: 1em;">
                 A Minimalist Dream of CSS
             </p>
 
-            <h2>Getting Started</h2>
+            <h1>Getting Started</h1>
 
             <div class="row">
-                What to say...
+                <div class="well" style="letter-spacing: .2em; line-height: 1.5em;">
+                    Grayscale CSS provides a minimalistic approach to styling by putting layout in the forefront,
+                    removing color, allowing for developers to rapidly prototype layouts. Everything is extendable,
+                    so just apply your theme later! All in, the package is <b>only 2kb gzipped!</b>
+                </div>
             </div>
 
             <div class="row">
@@ -97,67 +112,87 @@
 
             <br class="clear">
 
-            <h3>Buttons</h3>
-
-            <button class="button">DEFAULT</button>
-            <button class="button">Secondary</button>
-            <button class="button">Primary</button>
-            <button class="button outline">OUTLINE</button>
-
-            <h3>Code</h3>
-
-            <span class="code block">
-                this is code
-                and more
-            </span>
-
-            <br>
-            <code class="block">
-                <pre>
-                    //do stuff
-                    function(a) {
-                        console.log("did stuff", a);
-                    }
-                </pre>
-            </code>
-
-            <h3>Divider</h3>
-
-            something
-            <hr>
-            something else
-
-            <h3>Blockquote</h3>
+            <h2>Shades of Gray</h2>
 
             <blockquote>
-              Hello World!
+
+                Grayscale CSS revolves arounds shades of gray to help quickly block out your designs,
+                as such it provides helper classes to get you a full range of shades from white to black.
             </blockquote>
 
-            <h3>Forms</h3>
+            <div class="row">
+                <div class="center well border">
+                    <div class="white wall">.white</div>
+                    <div class="lightest wall">.lightest</div>
+                    <div class="lighter wall">.lighter</div>
+                    <div class="light wall">.light</div>
+                    <div class="gray wall">.gray</div>
+                    <div class="dark wall">.dark</div>
+                    <div class="darker wall">.darker</div>
+                    <div class="darkest wall">.darkest</div>
+                    <div class="black wall">.black</div>
+                </div>
+            </div>
+
+            <h2>Buttons</h2>
+
+            <blockquote>
+                Button styles are automaticly applyed for inherited button types and
+                you can add the <code>.button</code> class to links.  Inaddition, you
+                can mix the shades above for variety.
+            </blockquote>
+
+            <button class="disabled">Disabled</button>
+            <button class="">Default</button>
+            <button class="dark">Dark</button>
+            <button class="black">Black</button>
+
+            <h3>Extend</h3>
+
+            <p>
+                Add color
+            </p>
+            <code class="block">
+                .primary {color: #FFF; background-color: blue;}
+            </code>
+            <div>
+                <button class="primary">Primary</button>
+            </div>
+
+            <p>Add Flair</p>
+            <code class="block">
+                .rounded {border-radius: .5em;}
+            </code>
+
+            <div>
+                <button class="secondary rounded clear">Secondary</button>
+            </div>
+
+            <h2>Forms</h2>
 
             <form>
                 <div class="row">
                     <div class="column-50">
-                        <label for="exampleEmailInput">Your email</label>
-                        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                        <label for="email">Your email</label>
+                        <input class="u-full-width" type="email" placeholder="youremail@example.com" name="email">
                     </div>
                     <div class="column-50">
-                        <label for="exampleRecipientInput">Reason for contacting</label>
-                        <select class="" id="exampleRecipientInput">
+                        <label for="reason">Reason for contacting</label>
+                        <select class="" name="reason">
                             <option value="Option 1">Questions</option>
                             <option value="Option 2">Admiration</option>
                             <option value="Option 3">Can I get your number?</option>
                         </select>
                     </div>
                 </div>
-                <div class="row">
-                    <label for="exampleMessage">Message</label>
-                    <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+                <div class="row" style="margin: 1em 0;">
+                    <label for="message">Message</label>
+                    <textarea placeholder="What would you like to say..." name="message"></textarea>
                 </div>
                 <div class="row">
                     <label class="example-send-yourself-copy">
                         <input type="checkbox">
-                        <span class="label-body">Send a copy to yourself</span>
+                        <span class="label-body">Recieve Copy?</span>
                     </label>
                 </div>
                 <div class="row">
@@ -165,10 +200,10 @@
                 </div>
             </form>
 
-            <h3>Tables</h3>
-            <p>
-                Simple, beautiful and supports <code>.condensed</code>, <code>.striped</code>
-            </p>
+            <h2>Tables</h2>
+            <blockquote>
+                Simple, designed with tabular data in mind. supports <code>.condensed</code>, <code>.striped</code>
+            </blockquote>
             <style>
                 .well {padding: 1em}
                 .bordered {border: 1px solid #ECECEC;}
@@ -203,7 +238,7 @@
                 </table>
             </div>
 
-            <h3>Grid</h3>
+            <h2>Grid</h2>
 
             <p>
                 Grayscale CSS uses a precent-based fluid grid system with 6 column sizes, and a max width of 1140px.
@@ -238,6 +273,91 @@
                     <div class="doc-column column-50">50%</div>
                 </div>
             </div>
+
+            <h2>Utility</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Style</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>.well</td>
+                        <td>Adds .5em padding to tag</td>
+                    </tr>
+                    <tr>
+                        <td>.wall</td>
+                        <td>Adds .5em padding-left and padding-right to tag</td>
+                    </tr>
+                    <tr>
+                        <td>.wide</td>
+                        <td>sets tag width 100%</td>
+                    </tr>
+                    <tr>
+                        <td>.tall</td>
+                        <td>sets tag height 100%</td>
+                    </tr>
+                    <tr>
+                        <td>.right</td>
+                        <td>float tag right</td>
+                    </tr>
+                    <tr>
+                        <td>.left</td>
+                        <td>float tag left</td>
+                    </tr>
+                    <tr>
+                        <td><code>.center</code></td>
+                        <td>centers tag</td>
+                    </tr>
+                    <tr>
+                        <td>.block</td>
+                        <td>applys display:block</td>
+                    </tr>
+                    <tr>
+                        <td>.inline</td>
+                        <td>applys display:inline</td>
+                    </tr>
+                    <tr>
+                        <td>.clear</td>
+                        <td>applys clear:both</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Blockquote</h3>
+
+            <blockquote>
+              Hello World!
+            </blockquote>
+
+            <h3>Code</h3>
+
+            <span class="code">
+                provides inline code
+            </span>
+
+            <span class="code block">
+                but if you perfer something more blocky
+            </span>
+
+            For multi-line, wrap your code in a <code>&lt;pre&gt;&lt;/pre&gt;</code> tag
+            <code class="block">
+                <pre>
+                    //do stuff
+                    function(a) {
+                        console.log("did stuff", a);
+                    }
+                </pre>
+            </code>
+
+            <h3>Divider</h3>
+
+            Content
+            <hr>
+            Can be divided
 
       </div>
     </body>

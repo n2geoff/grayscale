@@ -35,8 +35,8 @@ hr,
 /* Blockquote */
 
 blockquote {
-  border-left: 0.3em solid #B3B3B3;
-  background-color: #ECECEC;
+  border-left: 0.4em solid #E6E6E6;
+  background-color: #F9F9F9;
   margin-left: 0;
   margin-right: 0;
   padding: 1em 1.5em;
@@ -48,7 +48,11 @@ blockquote *:last-child {
 
 /* Buttons */
 
-.button {
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
   display: inline-block;
   zoom: 1;
   line-height: normal;
@@ -64,41 +68,63 @@ blockquote *:last-child {
   font-family: inherit;
   font-size: 100%;
   padding: 0.5em 1em;
-  background-color: #E6E6E6;
+  background-color: #c6c6c6;
   text-decoration: none;
-  border: none rgba(0, 0, 0, 0);
+  border: 1px solid transparent;
 }
 
 .button:hover,
-.button:focus {
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0,0,0)', endColorstr='#1a000000',GradientType=0);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
   background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
   background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
 
-.button:active {
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
   box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
   border-color: #000\9;
 }
 
-.button:focus {
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
   outline: 0;
 }
 
-/* Apply to default */
+.disabled,
+.disabled:hover,
+.disabled:active,
+.disabled:focus {
+  border: none;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: alpha(opacity=40);
+  opacity: 0.40;
+  cursor: not-allowed;
+  box-shadow: none;
+}
 
 /* Code */
 
 code,
 .code {
-  padding-left: .5em;
-  padding-right: .5em;
+  padding: 0.5em .5em;
   overflow: auto;
-  border: 1px solid #B3B3B3;
-  background-color: #ECECEC;
+  border: 1px solid #c6c6c6;
+  background-color: #F9F9F9;
   font-family: monospace;
-  display: inline-block;
+  display: inline;
+  margin: 1em 0 1em 0;
 }
 
 /* Forms */
@@ -112,12 +138,12 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
+  height: 36px;
   width: 100%;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #FAFAFA;
-  border: 1px solid #ECECEC;
+  background-color: #F9F9F9;
+  border: 1px solid #E6E6E6;
   box-shadow: none;
   box-sizing: border-box;
 }
@@ -150,7 +176,7 @@ input[type="url"]:hover,
 input[type="password"]:hover,
 textarea:hover,
 select:hover {
-  border: 1px solid #B3B3B3;
+  border: 1px solid #c6c6c6;
   outline: 0;
 }
 
@@ -163,7 +189,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #1A1A1A;
+  border: 1px solid #787878;
   background-color: #FFF;
   outline: 0;
 }
@@ -171,7 +197,7 @@ select:focus {
 label,
 legend {
   display: block;
-  margin-bottom: .5rem;
+  padding: 0.5em 0;
   font-weight: 600;
 }
 
@@ -183,14 +209,6 @@ fieldset {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
-}
-
-label > .label-body {
-  display: inline-block;
-  margin-left: .5em;
-  font-weight: normal;
-  height: 38px;
-  line-height: 38px;
 }
 
 /* Layout Container */
@@ -269,7 +287,7 @@ tr th:first-child {
 }
 
 table.striped tbody tr:nth-child(odd) {
-  background-color: #ECECEC;
+  background-color: #E6E6E6;
 }
 
 table.condensed th,
@@ -278,23 +296,23 @@ table.condensed td {
 }
 
 table.bordered td {
-  border: 1px solid #ECECEC;
+  border: 1px solid #E6E6E6;
 }
 
 table.bordered th {
-  border: 1px solid #ECECEC;
-  border-bottom: 2px solid #ECECEC;
+  border: 1px solid #E6E6E6;
+  border-bottom: 2px solid #E6E6E6;
 }
 
 thead tr th {
-  border-bottom: 2px solid #B3B3B3;
+  border-bottom: 2px solid #c6c6c6;
 }
 
 th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #B3B3B3;
+  border-bottom: 1px solid #c6c6c6;
 }
 
 th:first-child,
@@ -330,13 +348,72 @@ td:last-child {
 }
 
 .border {
-  border: 1px solid #B3B3B3;
+  border: 1px solid #E6E6E6;
+}
+
+.well {
+  padding: .5em;
 }
 
 .wall {
   padding: 0 .5em 0 .5em;
 }
 
+.wide {
+  width: 100%;
+}
+
+.tall {
+  height: 100%;
+}
+
 .clear {
   clear: both;
+}
+
+/* Colors */
+
+.white {
+  background-color: #FFF;
+  color: #000;
+}
+
+.lightest {
+  background-color: #F9F9F9;
+  color: #2A2A2A;
+}
+
+.lighter {
+  background-color: #E6E6E6;
+  color: #2A2A2A;
+}
+
+.light {
+  background-color: #c6c6c6;
+  color: #F9F9F9;
+}
+
+.gray {
+  background-color: #acacac;
+  color: #F9F9F9;
+}
+
+.dark {
+  background-color: #787878;
+  color: #F9F9F9;
+}
+
+.darker {
+  background-color: #545454;
+  color: #F9F9F9;
+}
+
+.darkest {
+  background-color: #2A2A2A;
+  color: #F9F9F9;
+}
+
+.black {
+  background-color: #000;
+  color: #FFF;
 }
