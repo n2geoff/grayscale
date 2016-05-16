@@ -5,5 +5,8 @@
 .inline {display:inline}
 .block {display:block}
 .border {border: 1px solid var(--highlight)}
+.well {padding: .5em}
 .wall {padding: 0 .5em 0 .5em}
+.wide {width: 100%}
+.tall {height:100%}
 .clear{ clear:both;}
