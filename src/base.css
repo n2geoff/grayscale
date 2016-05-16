@@ -1,0 +1,32 @@
+:root {
+    --white:#FFF;
+    --lightest: #F9F9F9;
+    --lighter: #E6E6E6;
+    --light: #c6c6c6;
+    --gray: #acacac;
+    --dark: #787878;
+    --darker: #545454;
+    --darkest: #2A2A2A;
+    --black: #000;
+}
+
+/* CSS Reset */
+
+div{margin:0;padding:0;border:0;font-size:1em;}
+img,object,embed{max-width:100%;}
+
+img{
+    height:auto;
+    filter: gray;
+    filter: grayscale(1);
+}
+
+html {
+    font-family: sans-serif;
+}
+
+/* Divider */
+
+hr, .divider {
+    margin: .3em 0 .3em 0
+}

@@ -1,8 +1,8 @@
 {
   "name": "layout",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "description": "A Minimalist Dream of CSS",
-  "main": "dist/layout.css",
+  "main": "dist/graymatter.min.css",
   "scripts": {
     "build": "node_modules/.bin/gulp"
   },
@@ -25,7 +25,9 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.7",
+    "gulp-concat": "^2.6.0",
     "gulp-myth": "^1.1.0",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "myth": "^1.5.0"
   }
 }
