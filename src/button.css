@@ -48,3 +48,16 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
     outline: 0;
 }
+
+.disabled,
+.disabled:hover,
+.disabled:active,
+.disabled:focus {
+    border: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
