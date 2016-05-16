@@ -1,8 +1,8 @@
 /* Blockquote */
 
 blockquote {
-  border-left: 0.3em solid var(--highlight);
-  background-color: var(--accent);
+  border-left: 0.4em solid var(--lighter);
+  background-color: var(--lightest);
   margin-left: 0;
   margin-right: 0;
   padding: 1em 1.5em;

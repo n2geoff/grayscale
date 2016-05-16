@@ -1,19 +1,13 @@
 :root {
     --white:#FFF;
-    --black:#000;
-    --neutral: #888;
-    --light: #EEE;
-    --lighter: #EEE;
-    --lightest: #EEE;
-    --dark: #333;
-    --darker: #333;
-    --darkest: #333;
-    --background: #FAFAFA;
-    --accent: #ECECEC;
-    --highlight: #B3B3B3;
-    --secondary: #737373;
-    --primary: #404040;
-    --foreground: #1A1A1A;
+    --lightest: #F9F9F9;
+    --lighter: #E6E6E6;
+    --light: #c6c6c6;
+    --gray: #acacac;
+    --dark: #787878;
+    --darker: #545454;
+    --darkest: #2A2A2A;
+    --black: #000;
 }
 
 /* CSS Reset */
