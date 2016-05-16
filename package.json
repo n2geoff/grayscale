@@ -1,6 +1,6 @@
 {
   "name": "layout",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "description": "A Minimalist Dream of CSS",
   "main": "dist/graymatter.min.css",
   "scripts": {
