@@ -4,8 +4,9 @@ code, .code {
     padding-left: .5em;
     padding-right: .5em;
     overflow: auto;
-    border: 1px solid var(--highlight);
-    background-color: var(--accent);
+    border: 1px solid var(--light);
+    background-color: var(--lightest);
     font-family: monospace;
-    display:inline-block;
+    display:inline;
+    margin: 1em 0 1em 0;
 }
