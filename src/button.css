@@ -61,3 +61,10 @@ input[type="button"]:focus {
     cursor: not-allowed;
     box-shadow: none;
 }
+
+a.button:active {
+    color:inherit;
+}
+a.button:visited {
+    color:inherit;
+}
