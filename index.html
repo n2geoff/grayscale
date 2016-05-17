@@ -6,13 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Graymatter CSS</title>
         <link rel="stylesheet" href="/grayscale/dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="/dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
         <style media="screen">
-            .container {
-                width: 85%;
-                margin: 0 auto;
-                background-color: #FAFAFA;
-                font-family: sans-serif;
-            }
 
             .doc-column {
                 background-color: #ECECEC;
@@ -51,8 +46,7 @@
         </style>
     </head>
     <body>
-        <div class="layout">
-
+        <div class="layout" style="margin-bottom: 4em;">
             <div class="">
                 <div class="box lightest">&nbsp;</div>
                 <div class="box lighter">&nbsp;</div>
@@ -81,29 +75,32 @@
             <div class="row">
                 <div class="column-33">
                     <div class="well">
-                        Ready to go, compiled and minified CSS.
-                        <p>All you Need<p>
-                        <button class="button">Download</button>
+                        <h2>All In</h2>
+                        Automaticly takes control of your styles. Include and go.
+                        <p>
+                            Only one file
+                        <p>
+                        <a href="https://raw.githubusercontent.com/n2geoff/grayscale/master/dist/grayscale.min.css" class="button">Download</a>
                     </div>
                 </div>
                 <div class="column-33">
                     <blockquote style="padding:0; padding-left: 1em; margin:0">
                         <div class="well">
-
-                            The whole tomallie, source, documents,
-                            examples.
+                            <h2>Built With Myth CSS</h2>
+                            Customize your build, extend, fork, contribute it all starts here.
                             <p>
                                 Uses NODE and Myth CSS
                             </p>
-                            <button class="button">Download</button>
+                            <a href="https://github.com/n2geoff/grayscale/archive/master.zip" class="button light">Download</a>
                         </div>
                     </blockquote>
                 </div>
                 <div class="column-33">
                     <div class="well">
+                        <h2>Utilize CDN</h2>
                         Like to play before commiting, thats ok try it out from...
                         <p>
-                            Use a CDN to pull this in
+                            <i>Not Currently on CDN</i>
                         </p>
                         <button class="button">Find on CDN</button>
                     </div>
@@ -115,7 +112,6 @@
             <h2>Shades of Gray</h2>
 
             <blockquote>
-
                 Grayscale CSS revolves arounds shades of gray to help quickly block out your designs,
                 as such it provides helper classes to get you a full range of shades from white to black.
             </blockquote>
@@ -138,7 +134,7 @@
 
             <blockquote>
                 Button styles are automaticly applyed for inherited button types and
-                you can add the <code>.button</code> class to links.  Inaddition, you
+                you can add the <code>.button</code> class to links.  In addition, you
                 can mix the shades above for variety.
             </blockquote>
 
@@ -152,24 +148,26 @@
             <p>
                 Add color
             </p>
-            <code class="block">
+            <code class="block well">
                 .primary {color: #FFF; background-color: blue;}
             </code>
-            <div>
+            <p>
                 <button class="primary">Primary</button>
-            </div>
+            </p>
 
             <p>Add Flair</p>
-            <code class="block">
+            <code class="block well">
                 .rounded {border-radius: .5em;}
             </code>
 
-            <div>
+            <p>
                 <button class="secondary rounded clear">Secondary</button>
-            </div>
+            </p>
 
             <h2>Forms</h2>
-
+            <blockquote>
+                Hmm...
+            </blockquote>
             <form>
                 <div class="row">
                     <div class="column-50">
@@ -177,7 +175,7 @@
                         <input class="u-full-width" type="email" placeholder="youremail@example.com" name="email">
                     </div>
                     <div class="column-50">
-                        <label for="reason">Reason for contacting</label>
+                        <label for="reason">Contact Reason</label>
                         <select class="" name="reason">
                             <option value="Option 1">Questions</option>
                             <option value="Option 2">Admiration</option>
@@ -204,12 +202,7 @@
             <blockquote>
                 Simple, designed with tabular data in mind. supports <code>.condensed</code>, <code>.striped</code>
             </blockquote>
-            <style>
-                .well {padding: 1em}
-                .bordered {border: 1px solid #ECECEC;}
-            </style>
-            <div class="pad">
-
+            <div class="well">
                 <table class="striped">
                     <thead>
                         <tr>
@@ -240,37 +233,37 @@
 
             <h2>Grid</h2>
 
-            <p>
+            <blockquote>
                 Grayscale CSS uses a precent-based fluid grid system with 6 column sizes, and a max width of 1140px.
                 Add a column-% class to every column, where % can be 20, 25, 33, 50, 100. For example:
-            </p>
+            </blockquote>
 
             <div class="">
                 <div class="row">
-                    <div class="doc-column column-100">100%</div>
+                    <div class="doc-column column-100">.column-100</div>
                 </div>
 
                 <div class="row">
-                    <div class="doc-column column-20">20%</div>
-                    <div class="doc-column column-20">20%</div>
-                    <div class="doc-column column-20">20%</div>
-                    <div class="doc-column column-20">20%</div>
-                    <div class="doc-column column-20">20%</div>
+                    <div class="doc-column column-20">.column-20</div>
+                    <div class="doc-column column-20">.column-20</div>
+                    <div class="doc-column column-20">.column-20</div>
+                    <div class="doc-column column-20">.column-20</div>
+                    <div class="doc-column column-20">.column-20</div>
                 </div>
                 <div class="row">
-                    <div class="doc-column column-33">30%</div>
-                    <div class="doc-column column-33">30%</div>
-                    <div class="doc-column column-33">30%</div>
+                    <div class="doc-column column-33">.column-33</div>
+                    <div class="doc-column column-33">.column-33</div>
+                    <div class="doc-column column-33">.column-33</div>
                 </div>
                 <div class="row">
-                    <div class="doc-column column-25">25%</div>
-                    <div class="doc-column column-25">25%</div>
-                    <div class="doc-column column-25">25%</div>
-                    <div class="doc-column column-25">25%</div>
+                    <div class="doc-column column-25">.column-25</div>
+                    <div class="doc-column column-25">.column-25</div>
+                    <div class="doc-column column-25">.column-25</div>
+                    <div class="doc-column column-25">.column-25</div>
                 </div>
                 <div class="row">
-                    <div class="doc-column column-50">50%</div>
-                    <div class="doc-column column-50">50%</div>
+                    <div class="doc-column column-50">.column-50</div>
+                    <div class="doc-column column-50">.column-50</div>
                 </div>
             </div>
 
@@ -285,27 +278,27 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>.well</td>
+                        <td><code>.well</code></td>
                         <td>Adds .5em padding to tag</td>
                     </tr>
                     <tr>
-                        <td>.wall</td>
+                        <td><code>.wall</code></td>
                         <td>Adds .5em padding-left and padding-right to tag</td>
                     </tr>
                     <tr>
-                        <td>.wide</td>
+                        <td><code>.wide</code></td>
                         <td>sets tag width 100%</td>
                     </tr>
                     <tr>
-                        <td>.tall</td>
+                        <td><code>.tall</code></td>
                         <td>sets tag height 100%</td>
                     </tr>
                     <tr>
-                        <td>.right</td>
+                        <td><code>.right</code></td>
                         <td>float tag right</td>
                     </tr>
                     <tr>
-                        <td>.left</td>
+                        <td><code>.left</code></td>
                         <td>float tag left</td>
                     </tr>
                     <tr>
@@ -313,15 +306,15 @@
                         <td>centers tag</td>
                     </tr>
                     <tr>
-                        <td>.block</td>
+                        <td><code>.block</code></td>
                         <td>applys display:block</td>
                     </tr>
                     <tr>
-                        <td>.inline</td>
+                        <td><code>.inline</code></td>
                         <td>applys display:inline</td>
                     </tr>
                     <tr>
-                        <td>.clear</td>
+                        <td><code>.clear</code></td>
                         <td>applys clear:both</td>
                     </tr>
                 </tbody>
@@ -335,30 +328,33 @@
 
             <h3>Code</h3>
 
-            <span class="code">
-                provides inline code
-            </span>
+            <p>
+                <code>
+                    provides inline code
+                </code>
+            </p>
 
-            <span class="code block">
-                but if you perfer something more blocky
-            </span>
+            <code class="block well">
+                Something a little nicer for full width use .block .well
+            </code>
 
-            For multi-line, wrap your code in a <code>&lt;pre&gt;&lt;/pre&gt;</code> tag
-            <code class="block">
-                <pre>
+            <p>
+                For multi-line, wrap your code in a <code>&lt;pre&gt;&lt;/pre&gt;</code> tag
+            </p>
+            <pre>
+                <code class="block">
                     //do stuff
                     function(a) {
                         console.log("did stuff", a);
                     }
-                </pre>
-            </code>
+                </code>
+            </pre>
 
             <h3>Divider</h3>
 
             Content
             <hr>
             Can be divided
-
       </div>
     </body>
 </html>
