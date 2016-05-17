@@ -15,7 +15,7 @@
 .row{width:100%;clear:both;min-height:38px;vertical-align:middle;display:block;}
 
 /* Common Column Style */
-.column-100,.column-20,.column-25,.column-33,.column-50,.column-67
+.column,.column-100,.column-20,.column-25,.column-33,.column-50,.column-67
 {float:left;display:inline;box-sizing:border-box;*margin-left:-0.04em;}
 
 /* Column Size(%) */
