@@ -15,15 +15,21 @@
 div{margin:0;padding:0;border:0;font-size:1em;}
 img,object,embed{max-width:100%;}
 
+html, body {
+    font-family: serif;
+    font-size: 16px;
+    line-height: 1.3em;
+    color: var(--darkest);
+    -webkit-font-smoothing: antialiased;
+}
+
 img{
     height:auto;
     filter: gray;
+    border: none;
     filter: grayscale(1);
 }
 
-html {
-    font-family: sans-serif;
-}
 
 /* Divider */
 
