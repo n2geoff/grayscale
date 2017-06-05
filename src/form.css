@@ -4,12 +4,14 @@ input[type="email"],
 input[type="number"],
 input[type="search"],
 input[type="text"],
+input[type="date"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
 textarea,
 select {
-    height: 36px;
+    font-size: 1em;
+    height: 2em;
     width: 100%;
     padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
     background-color: var(--lightest);
@@ -19,6 +21,7 @@ select {
 }
 
 input[type="email"],
+input[type="date"],
 input[type="number"],
 input[type="search"],
 input[type="text"],
@@ -30,12 +33,13 @@ textarea {
 }
 
 textarea {
-    min-height: 65px;
+    min-height: 6em;
     padding-top: 6px;
     padding-bottom: 6px;
 }
 
 input[type="email"]:hover,
+input[type="date"]:hover,
 input[type="number"]:hover,
 input[type="search"]:hover,
 input[type="text"]:hover,
@@ -49,6 +53,7 @@ select:hover {
 }
 
 input[type="email"]:focus,
+input[type="date"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
 input[type="text"]:focus,
@@ -70,6 +75,7 @@ legend {
 }
 
 fieldset {
+    margin: .5em;
     padding: 0;
     border-width: 0;
 }

@@ -15,8 +15,8 @@ input[type="button"] {
     box-sizing: border-box;
 
     font-family: inherit;
-    font-size: 100%;
-    padding: 0.5em 1em;
+    font-size: 1em;
+    padding: .5em 1em;
     background-color: var(--light);
     text-decoration: none;
     border: 1px solid transparent;
@@ -62,9 +62,7 @@ input[type="button"]:focus {
     box-shadow: none;
 }
 
-a.button:active {
+a.button, a.button:active, a.button:visited {
     color:inherit;
-}
-a.button:visited {
-    color:inherit;
+    margin: 0;
 }

@@ -9,7 +9,9 @@
 .wall {padding: 0 .5em 0 .5em}
 .wide {width: 100%}
 .tall {height:100%}
+.fit {height: 100%; width: 100%}
 .clear{ clear:both;}
+.no-border: {border:none}
 
 /* Colors */
 .white {background-color: var(--white); color: var(--black)}

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Graymatter CSS</title>
         <link rel="stylesheet" href="/grayscale/dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="/dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
         <style media="screen">
 
             .doc-column {
@@ -79,7 +79,7 @@
                         Automaticly takes control of your styles. Include and go.
                         <p>
                             Only one file
-                        <p>
+                        </p>
                         <a href="https://raw.githubusercontent.com/n2geoff/grayscale/master/dist/grayscale.min.css" class="button">Download</a>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                             <p>
                                 Uses NODE and Myth CSS
                             </p>
-                            <a href="https://github.com/n2geoff/grayscale/archive/master.zip" class="button light">Download</a>
+                            <a href="https://github.com/n2geoff/grayscale/archive/master.zip" target="_NEW" class="button">Download</a>
                         </div>
                     </blockquote>
                 </div>
@@ -102,7 +102,7 @@
                         <p>
                             <i>Not Currently on CDN</i>
                         </p>
-                        <button class="button">Find on CDN</button>
+                        <button class="button disabled">Find on CDN</button>
                     </div>
                 </div>
             </div>
@@ -148,17 +148,13 @@
             <p>
                 Add color
             </p>
-            <code class="block well">
-                .primary {color: #FFF; background-color: blue;}
-            </code>
+                <code class="block">.primary {color: #FFF; background-color: blue;}</code>
             <p>
                 <button class="primary">Primary</button>
             </p>
 
             <p>Add Flair</p>
-            <code class="block well">
-                .rounded {border-radius: .5em;}
-            </code>
+            <code class="block">.rounded {border-radius: .5em;}</code>
 
             <p>
                 <button class="secondary rounded clear">Secondary</button>
@@ -171,7 +167,7 @@
             <form>
                 <div class="row">
                     <div class="column-50">
-                        <label for="email">Your email</label>
+                        <label for="email">Your Email</label>
                         <input class="u-full-width" type="email" placeholder="youremail@example.com" name="email">
                     </div>
                     <div class="column-50">
@@ -197,6 +193,24 @@
                     <input type="submit" value="Submit">
                 </div>
             </form>
+
+            <h2>Lists</h2>
+            <blockquote>
+                Clean and versitle <code>ul</code> and <code>ol</code> lists are a common way to add some spice
+            </blockquote>
+
+            <div>
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+
+                <ol>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ol>
+
+            </div>
 
             <h2>Tables</h2>
             <blockquote>
@@ -294,6 +308,10 @@
                         <td>sets tag height 100%</td>
                     </tr>
                     <tr>
+                        <td><code>.fit</code></td>
+                        <td>sets tag width / height 100%</td>
+                    </tr>
+                    <tr>
                         <td><code>.right</code></td>
                         <td>float tag right</td>
                     </tr>
@@ -329,26 +347,10 @@
             <h3>Code</h3>
 
             <p>
-                <code>
-                    provides inline code
-                </code>
+                <code>provides inline code</code>
             </p>
 
-            <code class="block well">
-                Something a little nicer for full width use .block .well
-            </code>
-
-            <p>
-                For multi-line, wrap your code in a <code>&lt;pre&gt;&lt;/pre&gt;</code> tag
-            </p>
-            <pre>
-                <code class="block">
-                    //do stuff
-                    function(a) {
-                        console.log("did stuff", a);
-                    }
-                </code>
-            </pre>
+            <code class="block">For full width use .block</code>
 
             <h3>Divider</h3>
 

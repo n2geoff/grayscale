@@ -1,10 +1,18 @@
 /* Code */
 
 code, .code {
-    padding: 0.2em .3em;
-    overflow: auto;
+    display:  inline;
+    font-size: 1em;
+    line-height: 1.3em;
+    vertical-align: bottom;
+    word-wrap: break-word;
+    font-family: monospace;
+    font-weight: normal;
+    padding: 0.2em .2em;
     border: 1px solid var(--light);
     background-color: var(--lightest);
-    font-family: monospace;
-    display:inline;
-}
+    white-space: pre-wrap; }
+
+pre {
+    padding: .8em;
+    overflow: auto}
