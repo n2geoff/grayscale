@@ -7,7 +7,7 @@ var concat = require('gulp-concat');
 var myth = require('gulp-myth');
 
 // create task
-gulp.task('default', function(){
+gulp.task('default', function () {
     gulp.src('src/*.css')
         .pipe(concat('grayscale.css'))
         .pipe(myth())

@@ -18,6 +18,12 @@
                 text-align: center;
             }
 
+            code {
+                border: 1px solid #999;
+                padding: 4px;
+                background-color: #EEE;
+            }
+
             .box {
                 height: 1.5em;
                 min-width: 1.5em;
@@ -86,7 +92,7 @@
                 <div class="column-33">
                     <blockquote style="padding:0; padding-left: 1em; margin:0">
                         <div class="well">
-                            <h2>Built With Myth CSS</h2>
+                            <h2>Built with Myth CSS</h2>
                             Customize your build, extend, fork, contribute it all starts here.
                             <p>
                                 Uses NODE and Myth CSS
@@ -138,10 +144,12 @@
                 can mix the shades above for variety.
             </blockquote>
 
-            <button class="disabled">Disabled</button>
-            <button class="">Default</button>
-            <button class="dark">Dark</button>
-            <button class="black">Black</button>
+            <button class="button disabled">Disabled</button>
+            <button class="button">Default</button>
+            <button class="button dark">Dark</button>
+            <button class="button black">Black</button>
+            <button class="button outline">Outline</button>
+            <button class="button link">Link</button>
 
             <h3>Extend</h3>
 
@@ -150,15 +158,28 @@
             </p>
                 <code class="block">.primary {color: #FFF; background-color: blue;}</code>
             <p>
-                <button class="primary">Primary</button>
+                <button class="button primary">Primary</button>
             </p>
 
             <p>Add Flair</p>
             <code class="block">.rounded {border-radius: .5em;}</code>
 
             <p>
-                <button class="secondary rounded clear">Secondary</button>
+                <button class="button secondary rounded clear">Secondary</button>
             </p>
+
+            <h2>Navigation</h2>
+
+            <blockquote>
+                use <code>.nav</code> and <code>.nav-item</code> to build navigation menus
+            </blockquote>
+
+            <div class="nav">
+                <div class="nav-item"><strong>Nav</strong></div>
+                <div class="nav-item"><a href="#">Test</a></div>
+                <div class="nav-item"><a href="#">Test</a></div>
+            </div>
+            <br>
 
             <h2>Forms</h2>
             <blockquote>

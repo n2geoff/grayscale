@@ -84,14 +84,26 @@ input[type="button"] {
   border: 1px solid transparent;
 }
 
+button.outline,
+.button.outline {
+  color: #000;
+  background: transparent;
+  border: 1px solid #000;
+}
+
+button.link,
+.button.link {
+  color: #000;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0,0,0)', endColorstr='#1a000000',GradientType=0);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
-  background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
   background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
 
@@ -132,28 +144,6 @@ a.button:visited {
   margin: 0;
 }
 
-/* Code */
-
-code,
-.code {
-  display: inline;
-  font-size: 1em;
-  line-height: 1.3em;
-  vertical-align: bottom;
-  word-wrap: break-word;
-  font-family: monospace;
-  font-weight: normal;
-  padding: 0.2em .2em;
-  border: 1px solid #c6c6c6;
-  background-color: #F9F9F9;
-  white-space: pre-wrap;
-}
-
-pre {
-  padding: .8em;
-  overflow: auto;
-}
-
 /* Forms */
 
 input[type="email"],
@@ -167,7 +157,7 @@ input[type="password"],
 textarea,
 select {
   font-size: 1em;
-  height: 2em;
+  height: 36px;
   width: 100%;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -307,6 +297,26 @@ input[type="radio"] {
 
 .column-100 {
   width: 100%;
+}
+
+.nav,
+ul.nav {
+  margin-right: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  clear: right;
+}
+
+.nav li,
+.nav-item {
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 1em 2em;
+}
+
+.nav-item a {
+  text-decoration: none;
 }
 
 /* Tables */
