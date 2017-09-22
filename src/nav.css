@@ -1,0 +1,17 @@
+.nav, ul.nav {
+    margin-right: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    clear: right;
+}
+
+.nav li, .nav-item {
+    display: block;
+    float:left;
+    text-align: center;
+    padding: 1em 2em;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
