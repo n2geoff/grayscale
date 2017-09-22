@@ -22,6 +22,20 @@ input[type="button"] {
     border: 1px solid transparent;
 }
 
+button.outline,
+.button.outline {
+    color: var(--black);
+    background: transparent;
+    border: 1px solid var(--black);
+}
+
+button.link,
+.button.link {
+    color: var(--black);
+    background: transparent;
+    border: 1px solid transparent;
+}
+
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
