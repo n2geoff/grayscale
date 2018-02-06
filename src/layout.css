@@ -11,14 +11,14 @@
   text-rendering: auto;
 }
 
-/* Row Style */
-.row{width:100%;clear:both;min-height:38px;vertical-align:middle;display:block;}
+/* Flex-Based Grid Solution */
+.row{display:flex;flex-flow: row wrap;justify-content: space-between;}
+.column{flex:1}
 
-/* Common Column Style */
-.column,.column-100,.column-20,.column-25,.column-33,.column-50,.column-67
-{float:left;display:inline;box-sizing:border-box;*margin-left:-0.04em;}
+/* Precent-Based Grid Solution */
+.column-100,.column-20,.column-25,.column-33,.column-50,.column-67
+{display:inline;box-sizing:border-box;*margin-left:-0.04em;}
 
-/* Column Size(%) */
 .column-20 {width: 20%}
 .column-25 {width:25%}
 .column-33 {width: 33.33%}

@@ -1,39 +1,39 @@
 /* Tables */
 
-table {
+.table {
     width: 100%;
     border-spacing: 0;
 }
 
-thead tr th {
+.table thead tr th {
     border-bottom: 2px solid var(--light);
 }
 
-th,
-td {
+.table th,
+.table td {
     padding: .5em 0;
     text-align: left;
     border-bottom: 1px solid var(--light);
 }
 
-tr th:first-child,
-tr td:first-child {
+.table tr th:first-child,
+.table tr td:first-child {
     padding-left: .5em;
 }
 
-table.striped tbody tr:nth-child(odd) {
+.table.is-striped tbody tr:nth-child(odd) {
     background-color: var(--lighter);
 }
 
-table.condensed th, table.condensed td {
+.table.is-condensed th, table.is-condensed td {
     padding: 0;
 }
 
-table.bordered td {
+.table.is-bordered td {
     border: 1px solid var(--lighter);
 }
 
-table.bordered th {
+.table.is-bordered th {
     border: 1px solid var(--lighter);
     border-bottom: 2px solid var(--lighter);
 }

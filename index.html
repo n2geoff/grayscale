@@ -4,20 +4,29 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Graymatter CSS</title>
+        <title>Grayscale CSS</title>
         <link rel="stylesheet" href="/grayscale/dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
         <style media="screen">
 
-            .doc-column {
-                background-color: #ECECEC;
-                min-height: 38px;
-                line-height: 38px;
-                border-left: .5em solid #FFF;
-                border-bottom: .5em solid #FFF;
-                text-align: center;
+            .is-divided {
+                margin: 1em 0;
+                padding: .5em 1em;
+                background-color: #EEE;
+                border-top: 1px solid gray;
+                border-bottom: 1px solid gray;
+                clear:both;
             }
 
+            .doc-column { 
+                background-color: #ECECEC; 
+                min-height: 38px; 
+                line-height: 38px; 
+                border-left: .5em solid #FFF; 
+                border-bottom: .5em solid #FFF; 
+                text-align: center;
+            }
+            
             code {
                 border: 1px solid #999;
                 padding: 4px;
@@ -35,18 +44,14 @@
                 color: #FAFAFA;
             }
 
-            .primary {
+            .is-primary {
                 color: white;
                 background-color: blue;
             }
 
-            .secondary {
+            .is-secondary {
                 color: white;
                 background-color: green;
-            }
-
-            .rounded {
-                border-radius: .3em;
             }
 
         </style>
@@ -57,143 +62,157 @@
                 <div class="box lightest">&nbsp;</div>
                 <div class="box lighter">&nbsp;</div>
                 <div class="box light">&nbsp;</div>
-                <div class="box dark wall">
+                <div class="box dark is-wall">
                   GRAYSCALE
                 </div>
                 <div class="box darker" style="background-color: #404040; padding: 0 .5em 0 .5em;">CSS</div>
                 <div class="box darkest" style="background-color: #1A1A1A">&nbsp;</div>
+                <em>A Minimalist Dream of CSS</em>
             </div>
 
-            <p style="padding: 1em;">
-                A Minimalist Dream of CSS
-            </p>
-
-            <h1>Getting Started</h1>
+            <h1 class="is-divided">Getting Started</h1>
 
             <div class="row">
-                <div class="well" style="letter-spacing: .2em; line-height: 1.5em;">
+                <div class="is-well" style="letter-spacing: .2em; line-height: 1.5em;">
                     Grayscale CSS provides a minimalistic approach to styling by putting layout in the forefront,
                     removing color, allowing for developers to rapidly prototype layouts. Everything is extendable,
-                    so just apply your theme later! All in, the package is <b>only 2kb gzipped!</b>
+                    so just apply your theme later! All-in, the package is <b>only 2kb gzipped!</b>
                 </div>
             </div>
 
             <div class="row">
-                <div class="column-33">
-                    <div class="well">
-                        <h2>All In</h2>
-                        Automaticly takes control of your styles. Include and go.
-                        <p>
-                            Only one file
-                        </p>
-                        <a href="https://raw.githubusercontent.com/n2geoff/grayscale/master/dist/grayscale.min.css" class="button">Download</a>
+                <div class="column">
+                    <div class="card is-well">
+                        <div class="card-header is-divided">
+                            Simple Conventions
+                        </div>
+                        <div class="card-content">
+                            READ-able classes anyone can remember, like <em>.button</em> or <em>.input</em>
+                            <p>
+                                Modify bases classes with <em>.is-*</em>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://raw.githubusercontent.com/n2geoff/grayscale/master/dist/grayscale.min.css" class="button is-wide">Download</a>
+                        </div>
                     </div>
                 </div>
-                <div class="column-33">
-                    <blockquote style="padding:0; padding-left: 1em; margin:0">
-                        <div class="well">
-                            <h2>Built with Myth CSS</h2>
+                <div class="column">
+                    <div class="card is-well">
+                        <div class="card-header is-divided">
+                            Simple Build
+                        </div>
+                        <div class="card-content">
                             Customize your build, extend, fork, contribute it all starts here.
                             <p>
                                 Uses NODE and Myth CSS
                             </p>
-                            <a href="https://github.com/n2geoff/grayscale/archive/master.zip" target="_NEW" class="button">Download</a>
                         </div>
-                    </blockquote>
+                        <div class="card-footer">
+                            <a href="https://github.com/n2geoff/grayscale/archive/master.zip" target="_NEW" class="button is-wide">Download</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="column-33">
-                    <div class="well">
-                        <h2>Utilize CDN</h2>
-                        Like to play before commiting, thats ok try it out from...
-                        <p>
-                            <i>Not Currently on CDN</i>
-                        </p>
-                        <button class="button disabled">Find on CDN</button>
+                <div class="column">
+                    <div class="card is-well">
+                        <div class="card-header is-divided">
+                            Utilize CDN
+                        </div>
+                        <div class="card-content">
+                            Like to play before commiting, thats ok try it out from...
+                            <p>
+                                <i>Not Currently on CDN</i>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="button is-disabled is-wide">Find on CDN</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <br class="clear">
+            <h2 class="is-divided">Shades of Gray</h2>
 
-            <h2>Shades of Gray</h2>
-
-            <blockquote>
+            <blockquote class="quote">
                 Grayscale CSS revolves arounds shades of gray to help quickly block out your designs,
                 as such it provides helper classes to get you a full range of shades from white to black.
             </blockquote>
 
-            <div class="row">
-                <div class="center well border">
-                    <div class="white wall">.white</div>
-                    <div class="lightest wall">.lightest</div>
-                    <div class="lighter wall">.lighter</div>
-                    <div class="light wall">.light</div>
-                    <div class="gray wall">.gray</div>
-                    <div class="dark wall">.dark</div>
-                    <div class="darker wall">.darker</div>
-                    <div class="darkest wall">.darkest</div>
-                    <div class="black wall">.black</div>
+            <div class="row is-wide is-block">
+                <div class="is-well border">
+                    <div class="white">.white</div>
+                    <div class="lightest">.lightest</div>
+                    <div class="lighter">.lighter</div>
+                    <div class="light">.light</div>
+                    <div class="gray">.gray</div>
+                    <div class="dark">.dark</div>
+                    <div class="darker">.darker</div>
+                    <div class="darkest">.darkest</div>
+                    <div class="black">.black</div>
                 </div>
             </div>
 
-            <h2>Buttons</h2>
+            <h2 class="is-divided">Buttons</h2>
 
-            <blockquote>
+            <blockquote class="quote">
                 Button styles are automaticly applyed for inherited button types and
                 you can add the <code>.button</code> class to links.  In addition, you
                 can mix the shades above for variety.
             </blockquote>
 
-            <button class="button disabled">Disabled</button>
+            <button class="button is-disabled">Disabled</button>
             <button class="button">Default</button>
-            <button class="button dark">Dark</button>
+            <button class="button darker">Darker</button>
             <button class="button black">Black</button>
-            <button class="button outline">Outline</button>
-            <button class="button link">Link</button>
+            <button class="button is-link">Link</button>
 
-            <h3>Extend</h3>
+            <div class="indent">
+                <h3>Extend</h3>
+                It is easy to extend buttons with your own css, for example
+                <p>
+                    <em>Add Color</em>
+                </p>
+                    <code class="is-block">.is-primary {color: #FFF; background-color: blue;}</code>
+                <p>
+                    <button class="button is-primary">Primary</button>
+                </p>
+    
+                <p>
+                    <em>Add Flair</em>
+                </p>
+                <code class="is-block">.is-rounded {border-radius: .5px;}</code>
+    
+                <p>
+                    <button class="button is-secondary is-rounded clear">Rounded</button>
+                </p>
+            </div>
 
-            <p>
-                Add color
-            </p>
-                <code class="block">.primary {color: #FFF; background-color: blue;}</code>
-            <p>
-                <button class="button primary">Primary</button>
-            </p>
+            <h2 class="is-divided">Navigation</h2>
 
-            <p>Add Flair</p>
-            <code class="block">.rounded {border-radius: .5em;}</code>
-
-            <p>
-                <button class="button secondary rounded clear">Secondary</button>
-            </p>
-
-            <h2>Navigation</h2>
-
-            <blockquote>
-                use <code>.nav</code> and <code>.nav-item</code> to build navigation menus
+            <blockquote class="quote">
+                use <code>.menu</code> and <code>.menu-item</code> to build navigation menus
             </blockquote>
 
-            <div class="nav">
-                <div class="nav-item"><strong>Nav</strong></div>
-                <div class="nav-item"><a href="#">Test</a></div>
-                <div class="nav-item"><a href="#">Test</a></div>
+            <div class="menu">
+                <div class="menu-title">Menu</div>
+                <div class="menu-item"><a href="#">One</a></div>
+                <div class="menu-item"><a href="#">Two</a></div>
             </div>
             <br>
 
-            <h2>Forms</h2>
-            <blockquote>
+            <h2 class="is-divided">Forms</h2>
+            <blockquote class="quote">
                 Hmm...
             </blockquote>
             <form>
                 <div class="row">
                     <div class="column-50">
-                        <label for="email">Your Email</label>
-                        <input class="u-full-width" type="email" placeholder="youremail@example.com" name="email">
+                        <label class="label" for="email">Your Email</label>
+                        <input class="input is-wide" type="email" placeholder="youremail@example.com" name="email">
                     </div>
                     <div class="column-50">
-                        <label for="reason">Contact Reason</label>
-                        <select class="" name="reason">
+                        <label class="label" for="reason">Contact Reason</label>
+                        <select class="select" name="reason">
                             <option value="Option 1">Questions</option>
                             <option value="Option 2">Admiration</option>
                             <option value="Option 3">Can I get your number?</option>
@@ -201,44 +220,31 @@
                     </div>
                 </div>
                 <div class="row" style="margin: 1em 0;">
-                    <label for="message">Message</label>
-                    <textarea placeholder="What would you like to say..." name="message"></textarea>
+                    <label class="label" for="message">Message</label>
+                    <textarea class="textarea" placeholder="What would you like to say..." name="message"></textarea>
                 </div>
                 <div class="row">
-                    <label class="example-send-yourself-copy">
+                    <label class="label">
                         <input type="checkbox">
-                        <span class="label-body">Recieve Copy?</span>
+                        <strong>Recieve Copy?</strong>
                     </label>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Submit">
+                    <input class="input" type="submit" value="Submit">
                 </div>
             </form>
 
-            <h2>Lists</h2>
-            <blockquote>
-                Clean and versitle <code>ul</code> and <code>ol</code> lists are a common way to add some spice
+            <h2 class="is-divided">Tables</h2>
+
+            <blockquote class="quote">
+                Simple, designed with tabular data in mind. supports 
+                <code>.is-condensed</code>, 
+                <code>.is-striped</code>, and
+                <code>.is-bordered</code>
             </blockquote>
 
-            <div>
-                <ul>
-                    <li>Item</li>
-                    <li>Item</li>
-                </ul>
-
-                <ol>
-                    <li>Item</li>
-                    <li>Item</li>
-                </ol>
-
-            </div>
-
-            <h2>Tables</h2>
-            <blockquote>
-                Simple, designed with tabular data in mind. supports <code>.condensed</code>, <code>.striped</code>
-            </blockquote>
-            <div class="well">
-                <table class="striped">
+            <div class="is-well">
+                <table class="table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -266,14 +272,14 @@
                 </table>
             </div>
 
-            <h2>Grid</h2>
+            <h2 class="is-divided">Grid</h2>
 
-            <blockquote>
-                Grayscale CSS uses a precent-based fluid grid system with 6 column sizes, and a max width of 1140px.
-                Add a column-% class to every column, where % can be 20, 25, 33, 50, 100. For example:
+            <blockquote class="quote">
+                <strong class="is-uppercase">Grayscale CSS</strong> uses a precent-based fluid grid system with 6 column sizes, and a max width of 1140px.
+                Add a <code>.column-%</code> class to every column, where % can be<strong> 20, 25, 33, 50, 100</strong>. For example:
             </blockquote>
 
-            <div class="">
+            <div>
                 <div class="row">
                     <div class="doc-column column-100">.column-100</div>
                 </div>
@@ -302,9 +308,16 @@
                 </div>
             </div>
 
-            <h2>Utility</h2>
+            <p>NOTE: A flex grid is also available</p>
 
-            <table>
+            <h2 class="is-divided">Utility</h2>
+
+            <blockquote class="quote">
+                Below are some <em>helper</em> and <em>modifer</em> classes.  
+                All <em>modifier</em> classes start with <code>.is-</code>
+            </blockquote>
+
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Style</th>
@@ -313,63 +326,86 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><code>.well</code></td>
+                        <td><code>.is-well</code></td>
                         <td>Adds .5em padding to tag</td>
                     </tr>
                     <tr>
-                        <td><code>.wall</code></td>
+                        <td><code>.is-wall</code></td>
                         <td>Adds .5em padding-left and padding-right to tag</td>
                     </tr>
                     <tr>
-                        <td><code>.wide</code></td>
+                        <td><code>.is-wide</code></td>
                         <td>sets tag width 100%</td>
                     </tr>
                     <tr>
-                        <td><code>.tall</code></td>
+                        <td><code>.is-tall</code></td>
                         <td>sets tag height 100%</td>
                     </tr>
                     <tr>
-                        <td><code>.fit</code></td>
+                        <td><code>.is-fit</code></td>
                         <td>sets tag width / height 100%</td>
                     </tr>
                     <tr>
-                        <td><code>.right</code></td>
+                        <td><code>.is-right</code></td>
                         <td>float tag right</td>
                     </tr>
                     <tr>
-                        <td><code>.left</code></td>
+                        <td><code>.is-left</code></td>
                         <td>float tag left</td>
                     </tr>
                     <tr>
-                        <td><code>.center</code></td>
+                        <td><code>.is-centered</code></td>
                         <td>centers tag</td>
                     </tr>
                     <tr>
-                        <td><code>.block</code></td>
+                        <td><code>.is-block</code></td>
                         <td>applys display:block</td>
                     </tr>
                     <tr>
-                        <td><code>.inline</code></td>
+                        <td><code>.is-inline</code></td>
                         <td>applys display:inline</td>
                     </tr>
                     <tr>
-                        <td><code>.clear</code></td>
+                        <td><code>.is-clear</code></td>
                         <td>applys clear:both</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3>Blockquote</h3>
+            <h2 class="is-divided">Extras</h2>
 
-            <blockquote>
-              Hello World!
+            <h3>Blockquote</h3>
+            <p>
+                Stylize your <em>&lt;blockquote&gt;</em> tags with <code>.quote</code>
+            </p>
+            <blockquote class="quote">
+                Hello Blockquote!
             </blockquote>
 
-            <h3>Divider</h3>
+            <h3>Cards</h3>
 
-            Content
-            <hr>
-            Can be divided
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-header">Header</div>
+                        <p class="card-body">Content</p>
+                        <div class="card-footer">
+                            <span class="is-centered">Footer</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="column">
+                    <div class="card">
+                        <div class="card-header">Test</div>
+                        <p class="card-body">This is awesome</p>
+                        <div class="card-footer">
+                            <span class="is-centered">Footer</span>
+                        </div>
+                    </div>                    
+                </div> 
+            </div>
+
+
       </div>
     </body>
 </html>

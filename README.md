@@ -2,21 +2,25 @@
 
 A Minimalist Dream of CSS
 
-![DependenciesStatus](https://david-dm.org/n2geoff/layout.svg)
+![DependenciesStatus](https://david-dm.org/n2geoff/grayscale.svg)
 
-Grayscale CSS provides a minimalist approach to styling places layout forefront, removing distractions like color, allowing  developers to prototype layouts rapidly -- add color later.
+Grayscale CSS provides a minimalist approach to styling, placing layout in the fore-front, removing distractions like color, allowing  developers to prototype layouts rapidly -- add color later.
 
 Extend with minimal styles to create your final theme/design.
 
 All in, this package is **only 2kb gzipped!**
 
+## Check it Out
+
+[Go HERE!](http://n2geoff.github.io/grayscale/)
+
 ### Features
 
-- Style included; buttons, form controls automatically applied
-- Layout design with simple percent based system
+- Got buttons, forms, tables, navigation, grids, and more
+- Use percent-based grids, or an auto-adjusting flex-based solution
 - Dozens of utility styles
 - Extendable
-- Built with Myth CSS (the future of CSS)
+- Built with Myth CSS (CSS future compatable)
 
 > currently only supports ever-green browsers
 
@@ -28,7 +32,7 @@ Latest build available in the `dist` folder. or you can
 
 To see what it looks like, see
 
-- [Style Sheet](http://n2geoff.github.io/grayscale/)
+- [Examples](http://n2geoff.github.io/grayscale/)
 
 ## Develop
 
@@ -45,7 +49,7 @@ to build the latest version
 ### Features
 
 - Inherited Button, Form Styles
-- Divide pages using Percent based layout system
+- Layout views using Percent based grid system
 - Dozens of Utility Styles
 - Extendable
 - Uses Myth CSS

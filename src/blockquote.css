@@ -1,6 +1,6 @@
 /* Blockquote */
 
-blockquote {
+.blockquote, .quote {
   border-left: 0.4em solid var(--lighter);
   background-color: var(--lightest);
   margin-left: 0;
@@ -8,6 +8,6 @@ blockquote {
   padding: 1em 1.5em;
 }
 
-blockquote *:last-child {
+.blockquote *:last-child, .quote *:last-child {
   margin: 0;
 }
