@@ -1,30 +1,30 @@
 {
-  "name": "layout",
-  "version": "0.5.0",
+  "name": "grayscale",
+  "version": "0.6.0",
   "description": "A Minimalist Dream of CSS",
-  "main": "dist/graymatter.min.css",
+  "main": "dist/grayscale.min.css",
   "scripts": {
     "build": "node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/n2geoff/layout.git"
+    "url": "git+https://github.com/n2geoff/grayscale.git"
   },
   "keywords": [
     "css",
-    "foundation",
+    "minimal",
     "myth"
   ],
   "author": "Geoff Doty <n2geoff@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/n2geoff/layout/issues"
+    "url": "https://github.com/n2geoff/grayscale/issues"
   },
-  "homepage": "https://github.com/n2geoff/layout#readme",
+  "homepage": "https://github.com/n2geoff/grayscale#readme",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.7",
+    "gulp-clean-css": "^3.9.2",
     "gulp-concat": "^2.6.0",
     "gulp-myth": "^1.1.0",
     "gulp-rename": "^1.2.2",

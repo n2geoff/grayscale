@@ -2,8 +2,6 @@
 
 A Minimalist Dream of CSS
 
-![DependenciesStatus](https://david-dm.org/n2geoff/grayscale.svg)
-
 Grayscale CSS provides a minimalist approach to styling, placing layout in the fore-front, removing distractions like color, allowing  developers to prototype layouts rapidly -- add color later.
 
 Extend with minimal styles to create your final theme/design.
@@ -20,9 +18,9 @@ All in, this package is **only 2kb gzipped!**
 - Use percent-based grids, or an auto-adjusting flex-based solution
 - Dozens of utility styles
 - Extendable
-- Built with Myth CSS (CSS future compatable)
+- Built with Myth CSS (Future of CSS build-compatable tool)
 
-> currently only supports ever-green browsers
+> WARNING: currently only supports ever-green browsers
 
 ## Getting Started
 
@@ -44,15 +42,7 @@ to install dependencies
 
 	npm run build
 
-to build the latest version
-
-### Features
-
-- Inherited Button, Form Styles
-- Layout views using Percent based grid system
-- Dozens of Utility Styles
-- Extendable
-- Uses Myth CSS
+to build the latest version 
 
 ## License
 
