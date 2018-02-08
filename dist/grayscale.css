@@ -365,24 +365,20 @@ a.button:visited {
   width: 100%;
 }
 
-.menu {
-  margin-right: 0;
-  padding: 1em inherit;
+/* Navigation */
+
+ul.navigation {
+  margin: 0;
+  padding: 1px 0;
   clear: right;
+  list-style-type: none;
 }
 
-.menu-title,
-.menu .menu-item {
+.navigation > li {
   display: block;
   float: left;
-  text-align: top;
+  text-align: bottom;
   padding: 1em;
-}
-
-.menu-title {
-  font-weight: bold;
-  font-size: 1.5em;
-  line-height: 0;
 }
 
 /* Tables */
@@ -507,8 +503,13 @@ p {
   text-transform: capitalize;
 }
 
-.indent {
+.is-indented {
   margin-left: 1em;
+}
+
+.is-weak {
+  font-size: .7em;
+  color: #acacac;
 }
 
 /* Colors */

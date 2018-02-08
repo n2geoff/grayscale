@@ -1,0 +1,15 @@
+/* Navigation */
+
+ul.navigation {
+    margin: 0;
+    padding: 1px 0;
+    clear: right;
+    list-style-type: none;
+}
+
+.navigation > li {
+    display: block;
+    float: left;
+    text-align: bottom;
+    padding: 1em;
+}
