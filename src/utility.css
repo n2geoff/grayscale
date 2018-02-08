@@ -16,7 +16,8 @@
 .is-uppercase {text-transform: uppercase}
 .is-lowercase {text-transform: lowercase}
 .is-capitalize {text-transform: capitalize}
-.indent {margin-left: 1em;}
+.is-indented {margin-left: 1em;}
+.is-weak {font-size: .7em; color: var(--gray)}
 
 /* Colors */
 .white {background-color: var(--white); color: var(--black)}
