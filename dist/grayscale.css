@@ -1,3 +1,5 @@
+/* Grayscale CSS v:0.7.0 */
+
 /* CSS Reset */
 
 div {
@@ -468,20 +470,17 @@ p {
 .is-wide {
   width: 100%;
   margin: inherit 0;
-  padding: inherit 0;
 }
 
 .is-tall {
   height: 100%;
   margin: 0 inherit;
-  padding: 0 inherit;
 }
 
 .is-fit {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
 }
 
 .is-borderless {

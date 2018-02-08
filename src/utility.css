@@ -7,9 +7,9 @@
 .is-bordered {border: 1px solid var(--lighter)}
 .is-well {padding: 1em}
 .is-wall {padding: 0 .5em 0 .5em}
-.is-wide {width: 100%; margin: inherit 0; padding: inherit 0}
-.is-tall {height:100%; margin: 0 inherit; padding: 0 inherit}
-.is-fit {height: 100%; width: 100%; margin:0;padding:0}
+.is-wide {width: 100%; margin: inherit 0;}
+.is-tall {height:100%; margin: 0 inherit;}
+.is-fit {height: 100%; width: 100%; margin:0;}
 .is-borderless {border:none}
 .is-clear {clear:both;}
 .is-hidden {display:none}
