@@ -22,12 +22,13 @@
 .is-weak {font-size: .7em; color: var(--gray)}
 
 /* Colors */
-.white {background-color: var(--white); color: var(--black)}
-.lightest {background-color: var(--lightest); color: var(--darkest)}
-.lighter {background-color: var(--lighter); color: var(--darkest)}
-.light {background-color: var(--light); color: var(--darkest)}
-.gray {background-color: var(--gray); color: var(--lightest)}
-.dark {background-color: var(--dark); color: var(--lightest)}
-.darker {background-color: var(--darker); color: var(--lightest)}
-.darkest {background-color: var(--darkest); color: var(--lightest)}
-.black {background-color: var(--black); color: var(--white)}
+
+.is-white {background-color: var(--white); color: var(--black)}
+.is-lightest {background-color: var(--lightest); color: var(--darkest)}
+.is-lighter {background-color: var(--lighter); color: var(--darkest)}
+.is-light {background-color: var(--light); color: var(--darkest)}
+.is-gray {background-color: var(--gray); color: var(--lightest)}
+.is-dark {background-color: var(--dark); color: var(--lightest)}
+.is-darker {background-color: var(--darker); color: var(--lightest)}
+.is-darkest {background-color: var(--darkest); color: var(--lightest)}
+.is-black {background-color: var(--black); color: var(--white)}
