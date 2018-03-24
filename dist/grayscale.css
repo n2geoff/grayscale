@@ -2,19 +2,6 @@
 
 /* CSS Reset */
 
-div {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 1em;
-}
-
-img,
-object,
-embed {
-  max-width: 100%;
-}
-
 html,
 body {
   font-family: georgia, serif;
@@ -24,22 +11,47 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+span,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  vertical-align: top;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
   height: auto;
-  -webkit-filter: gray;
-  filter: gray;
+  max-width: 100%;
   border: none;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 hr {
   margin: .3em 0 .3em 0;
-}
-
-small,
-.small {
-  font-size: .8em;
 }
 
 /* Blockquote */
@@ -62,9 +74,9 @@ small,
 
 .button,
 a.button,
-.input[type="submit"],
-.input[type="reset"],
-.input[type="button"] {
+.button[type="submit"],
+.button[type="reset"],
+.button[type="button"] {
   position: relative;
   zoom: 1;
   line-height: normal;
@@ -103,25 +115,25 @@ a.button,
 }
 
 .button:hover,
-.input[type="submit"]:hover,
-.input[type="reset"]:hover,
-.input[type="button"]:hover {
+.button[type="submit"]:hover,
+.button[type="reset"]:hover,
+.button[type="button"]:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0,0,0)', endColorstr='#1a000000',GradientType=0);
   background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
 
 .button:active,
-.input[type="submit"]:active,
-.input[type="reset"]:active,
-.input[type="button"]:active {
+.button[type="submit"]:active,
+.button[type="reset"]:active,
+.button[type="button"]:active {
   box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
   border-color: #000;
 }
 
 .button:focus,
-.input[type="submit"]:focus,
-.input[type="reset"]:focus,
-.input[type="button"]:focus {
+.button[type="submit"]:focus,
+.button[type="reset"]:focus,
+.button[type="button"]:focus {
   outline: 0;
 }
 
@@ -144,6 +156,8 @@ a.button:visited {
   display: inline-block;
   color: inherit;
 }
+
+/* Card Component */
 
 .card {
   -webkit-box-orient: vertical;
@@ -185,13 +199,9 @@ a.button:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -208,16 +218,7 @@ a.button:visited {
 
 /* Forms */
 
-.input[type="email"],
-.input[type="number"],
-.input[type="search"],
-.input[type="text"],
-.input[type="date"],
-.input[type="tel"],
-.input[type="url"],
-.input[type="password"],
-.textarea,
-.select {
+.field {
   font-size: 1em;
   height: 36px;
   width: 100%;
@@ -229,52 +230,36 @@ a.button:visited {
   box-sizing: border-box;
 }
 
-.input[type="email"],
-.input[type="date"],
-.input[type="number"],
-.input[type="search"],
-.input[type="text"],
-.input[type="tel"],
-.input[type="url"],
-.input[type="password"],
-.textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-
 .textarea {
   min-height: 6em;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-.input[type="email"]:hover,
-.input[type="date"]:hover,
-.input[type="number"]:hover,
-.input[type="search"]:hover,
-.input[type="text"]:hover,
-.input[type="tel"]:hover,
-.input[type="url"]:hover,
-.input[type="password"]:hover,
-.textarea:hover,
-.select:hover {
+.field[type="checkbox"],
+.field[type="radio"] {
+  display: inline;
+}
+
+.field:hover,
+.textarea:hover {
   border: 1px solid #c6c6c6;
   outline: 0;
 }
 
-.input[type="email"]:focus,
-.input[type="date"]:focus,
-.input[type="number"]:focus,
-.input[type="search"]:focus,
-.input[type="text"]:focus,
-.input[type="tel"]:focus,
-.input[type="url"]:focus,
-.input[type="password"]:focus,
-.textarea:focus,
-.select:focus {
+.field:focus,
+.textarea:focus {
   border: 1px solid #787878;
   background-color: #FFF;
   outline: 0;
+}
+
+.field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .label,
@@ -288,11 +273,6 @@ a.button:visited {
   margin: .5em;
   padding: 0;
   border-width: 0;
-}
-
-.input[type="checkbox"],
-.input[type="radio"] {
-  display: inline;
 }
 
 /* Layout Container */
@@ -422,7 +402,7 @@ table.is-condensed td {
   border-bottom: 2px solid #E6E6E6;
 }
 
-/* Copy & Lists */
+/* Typeography */
 
 p {
   line-height: 1.4em;
@@ -485,6 +465,10 @@ p {
 
 .is-clear {
   clear: both;
+}
+
+.is-small {
+  font-size: .8em;
 }
 
 .is-hidden {
