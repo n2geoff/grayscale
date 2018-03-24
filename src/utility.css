@@ -1,4 +1,5 @@
 /* Utilities */
+
 .is-right {float:right}
 .is-left {float:left}
 .is-centered {margin:auto}
@@ -12,6 +13,7 @@
 .is-fit {height: 100%; width: 100%; margin:0;}
 .is-borderless {border:none}
 .is-clear {clear:both;}
+.is-small {font-size: .8em}
 .is-hidden {display:none}
 .is-uppercase {text-transform: uppercase}
 .is-lowercase {text-transform: lowercase}
