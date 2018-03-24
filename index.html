@@ -44,15 +44,9 @@
                 color: #FAFAFA;
             }
 
-            .is-primary {
-                color: white;
-                background-color: blue;
-            }
-
-            .is-secondary {
-                color: white;
-                background-color: green;
-            }
+            .is-primary {color: #FFF; background-color: steelblue}
+            .is-secondary {color: #FFF; background-color: #23415a}
+            .is-highlight {color: #FFF; background-color: lightsteelblue}
 
         </style>
     </head>
@@ -134,21 +128,21 @@
             <h2 class="is-divided">Shades of Gray</h2>
 
             <blockquote class="quote">
-                Grayscale CSS revolves arounds shades of gray to help quickly block out your designs,
+                The core of Grayscale CSS revolves arounds shades of gray to help quickly block out your designs,
                 as such it provides helper classes to get you a full range of shades from white to black.
             </blockquote>
 
             <div class="row is-wide is-block">
                 <div class="is-well border">
-                    <div class="white">.white</div>
-                    <div class="lightest">.lightest</div>
-                    <div class="lighter">.lighter</div>
-                    <div class="light">.light</div>
-                    <div class="gray">.gray</div>
-                    <div class="dark">.dark</div>
-                    <div class="darker">.darker</div>
-                    <div class="darkest">.darkest</div>
-                    <div class="black">.black</div>
+                    <div class="is-white">.is-white</div>
+                    <div class="is-lightest">.is-lightest</div>
+                    <div class="is-lighter">.is-lighter</div>
+                    <div class="is-light">.is-light</div>
+                    <div class="is-gray">.is-gray</div>
+                    <div class="is-dark">.is-dark</div>
+                    <div class="is-darker">.is-darker</div>
+                    <div class="is-darkest">.is-darkest</div>
+                    <div class="is-black">.is-black</div>
                 </div>
             </div>
 
@@ -162,8 +156,8 @@
 
             <button class="button is-disabled">Disabled</button>
             <button class="button">Default</button>
-            <button class="button darker">Darker</button>
-            <button class="button black">Black</button>
+            <button class="button is-darker">Darker</button>
+            <button class="button is-black">Black</button>
             <button class="button is-link">Link</button>
 
             <div class="indent">
@@ -172,7 +166,7 @@
                 <p>
                     <em>Add Color</em>
                 </p>
-                    <code class="is-block">.is-primary {color: #FFF; background-color: blue;}</code>
+                    <code class="is-block">.is-primary {color: #FFF; background-color: steelblue;}</code>
                 <p>
                     <button class="button is-primary">Primary</button>
                 </p>
@@ -180,10 +174,10 @@
                 <p>
                     <em>Add Flair</em>
                 </p>
-                <code class="is-block">.is-rounded {border-radius: .5px;}</code>
+                <code class="is-block">.is-rounded {border-radius: 5px;}</code>
 
                 <p>
-                    <button class="button is-secondary is-rounded clear">Rounded</button>
+                    <button class="button is-primary is-rounded clear">Rounded</button>
                 </p>
             </div>
 
@@ -208,11 +202,11 @@
                 <div class="row">
                     <div class="column-50">
                         <label class="label" for="email">Your Email</label>
-                        <input class="input is-wide" type="email" placeholder="youremail@example.com" name="email">
+                        <input class="field is-wide" type="email" placeholder="youremail@example.com" name="email">
                     </div>
                     <div class="column-50">
                         <label class="label" for="reason">Contact Reason</label>
-                        <select class="select" name="reason">
+                        <select class="field" name="reason">
                             <option value="Option 1">Questions</option>
                             <option value="Option 2">Admiration</option>
                             <option value="Option 3">Can I get your number?</option>
@@ -224,13 +218,14 @@
                     <textarea class="textarea" placeholder="What would you like to say..." name="message"></textarea>
                 </div>
                 <div class="row">
-                    <label class="label">
-                        <input type="checkbox">
-                        <strong>Recieve Copy?</strong>
+                    <label class="label" style="">
+                        <input class="field" type="checkbox" style="">
+                        Recieve Copy?
                     </label>
                 </div>
+                <br>
                 <div class="row">
-                    <input class="input" type="submit" value="Submit">
+                    <input class="button" type="submit" value="Submit">
                 </div>
             </form>
 
@@ -275,15 +270,41 @@
             <h2 class="is-divided">Grid</h2>
 
             <blockquote class="quote">
-                <strong class="is-uppercase">Grayscale CSS</strong> uses a precent-based fluid grid system with 6 column sizes, and a max width of 1140px.
-                Add a <code>.column-%</code> class to every column, where % can be<strong> 20, 25, 33, 50, 100</strong>. For example:
+                <strong class="is-uppercase">Grayscale CSS</strong>
+                Grid system is both precent-based and <code>flexbox</code>-based,
+                for a max width of 1140px.
+                <p>
+                Using <code>.column</code> creates a dynamic layout or you size your columns
+                by apending a <code>-%</code> to the end of the .column class like <code>.column-%</code>,
+                where % can be<strong> 20, 25, 33, 50, 100</strong>.
+                </p>
+                You can choose one, the other or mix and match
+                <br>
+                For example:
             </blockquote>
 
             <div>
                 <div class="row">
+                    <div class="doc-column column">.column</div>
+                </div>
+                <div class="row">
+                    <div class="doc-column column">.column</div>
+                    <div class="doc-column column">.column</div>
+                </div>
+                <div class="row">
+                    <div class="doc-column column">.column</div>
+                    <div class="doc-column column">.column</div>
+                    <div class="doc-column column">.column</div>
+                </div>
+                <div class="row">
+                    <div class="doc-column column">.column</div>
+                    <div class="doc-column column">.column</div>
+                    <div class="doc-column column">.column</div>
+                    <div class="doc-column column">.column</div>
+                </div>
+                <div class="row">
                     <div class="doc-column column-100">.column-100</div>
                 </div>
-
                 <div class="row">
                     <div class="doc-column column-20">.column-20</div>
                     <div class="doc-column column-20">.column-20</div>
@@ -305,10 +326,12 @@
                 <div class="row">
                     <div class="doc-column column-50">.column-50</div>
                     <div class="doc-column column-50">.column-50</div>
+                </div>
+                <div class="row">
+                    <div class="doc-column column-33">.column-33</div>
+                    <div class="doc-column column">.column</div>
                 </div>
             </div>
-
-            <p>NOTE: A flex grid is also available</p>
 
             <h2 class="is-divided">Utility</h2>
 
@@ -368,6 +391,10 @@
                     <tr>
                         <td><code>.is-clear</code></td>
                         <td>applys clear:both</td>
+                    </tr>
+                    <tr>
+                        <td><code>.is-indented</code></td>
+                        <td>adds a left margin</td>
                     </tr>
                 </tbody>
             </table>
