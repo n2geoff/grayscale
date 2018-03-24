@@ -1,4 +1,4 @@
-/* Grayscale CSS v:0.7.0 */
+/* Grayscale.css v:0.8.0 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 
 /* CSS Reset */
 
@@ -218,7 +218,8 @@ a.button:visited {
 
 /* Forms */
 
-.field {
+.field,
+.textarea {
   font-size: 1em;
   height: 36px;
   width: 100%;
@@ -238,7 +239,10 @@ a.button:visited {
 
 .field[type="checkbox"],
 .field[type="radio"] {
-  display: inline;
+  position: relative;
+  bottom: -3px;
+  height: 16px;
+  width: 16px;
 }
 
 .field:hover,
@@ -498,47 +502,47 @@ p {
 
 /* Colors */
 
-.white {
+.is-white {
   background-color: #FFF;
   color: #000;
 }
 
-.lightest {
+.is-lightest {
   background-color: #F9F9F9;
   color: #2A2A2A;
 }
 
-.lighter {
+.is-lighter {
   background-color: #E6E6E6;
   color: #2A2A2A;
 }
 
-.light {
+.is-light {
   background-color: #c6c6c6;
   color: #2A2A2A;
 }
 
-.gray {
+.is-gray {
   background-color: #acacac;
   color: #F9F9F9;
 }
 
-.dark {
+.is-dark {
   background-color: #787878;
   color: #F9F9F9;
 }
 
-.darker {
+.is-darker {
   background-color: #545454;
   color: #F9F9F9;
 }
 
-.darkest {
+.is-darkest {
   background-color: #2A2A2A;
   color: #F9F9F9;
 }
 
-.black {
+.is-black {
   background-color: #000;
   color: #FFF;
 }
