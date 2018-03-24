@@ -24,9 +24,9 @@ All in, this package is **only 2kb gzipped!**
 
 ## Getting Started
 
-Latest build available in the `dist` folder. or you can
+Latest build is available in the `dist` folder. or you can
 
-- [Save As...](http://n2geoff.github.io/grayscale/dist/grayscale.min.css) 
+- [Save As...](http://n2geoff.github.io/grayscale/dist/grayscale.min.css)
 
 To see what it looks like, see
 
@@ -34,7 +34,7 @@ To see what it looks like, see
 
 ## Develop
 
-clone repository and 
+clone repository and
 
 	npm install
 
@@ -42,7 +42,7 @@ to install dependencies
 
 	npm run build
 
-to build the latest version 
+to build the latest version
 
 ## License
 
