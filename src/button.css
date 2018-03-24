@@ -1,9 +1,10 @@
 /* Buttons */
+
 .button,
 a.button,
-.input[type="submit"],
-.input[type="reset"],
-.input[type="button"] {
+.button[type="submit"],
+.button[type="reset"],
+.button[type="button"] {
     position: relative;
     zoom: 1;
     line-height: normal;
@@ -40,26 +41,26 @@ a.button,
 }
 
 .button:hover,
-.input[type="submit"]:hover,
-.input[type="reset"]:hover,
-.input[type="button"]:hover {
+.button[type="submit"]:hover,
+.button[type="reset"]:hover,
+.button[type="button"]:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
     background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
 
 .button:active,
-.input[type="submit"]:active,
-.input[type="reset"]:active,
-.input[type="button"]:active {
+.button[type="submit"]:active,
+.button[type="reset"]:active,
+.button[type="button"]:active {
     box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
     border-color: #000;
 }
 
 .button:focus,
-.input[type="submit"]:focus,
-.input[type="reset"]:focus,
-.input[type="button"]:focus {
+.button[type="submit"]:focus,
+.button[type="reset"]:focus,
+.button[type="button"]:focus {
     outline: 0;
 }
 
