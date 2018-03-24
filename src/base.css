@@ -1,4 +1,4 @@
-/* Grayscale CSS v:0.7.0 */
+/* Grayscale.css v:0.8.0 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 
 :root {
     --white:#FFF;
@@ -14,9 +14,6 @@
 
 /* CSS Reset */
 
-div{margin:0;padding:0;border:0;font-size:1em;}
-img,object,embed{max-width:100%;}
-
 html, body {
     font-family: georgia, serif;
     font-size: 16px;
@@ -25,17 +22,30 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-img {
-    height:auto;
-    filter: gray;
-    border: none;
-    filter: grayscale(1);
+html {box-sizing: border-box;}
+
+*,*:before, *:after {box-sizing: inherit;}
+
+span,div{margin:0;padding:0;border:0;font-size:1em;vertical-align: top}
+
+ul {list-style: none}
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+  border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 hr {
     margin: .3em 0 .3em 0
-}
-
-small, .small {
-    font-size: .8em;
 }
