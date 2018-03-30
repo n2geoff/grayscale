@@ -1,7 +1,7 @@
 /* Grayscale.css v:0.8.0 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 
 :root {
-    --white:#FFF;
+    --white: #FFF;
     --lightest: #F9F9F9;
     --lighter: #E6E6E6;
     --light: #c6c6c6;
@@ -9,7 +9,13 @@
     --dark: #787878;
     --darker: #545454;
     --darkest: #2A2A2A;
-    --black: #000;
+    --black: #101111;
+    --primary: steelblue;
+    --secondary: #264863;
+    --accent: lightsteelblue;
+    --danger: indianred;
+    --warning: khaki;
+    --safe: darkseagreen;
 }
 
 /* CSS Reset */
