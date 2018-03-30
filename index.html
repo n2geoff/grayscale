@@ -33,6 +33,17 @@
                 background-color: #EEE;
             }
 
+            .square {
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: 100px;
+                width: 100px;
+                max-width: 100px;
+                line-height: 6em;
+                vertical-align: middle;
+                text-align: center;
+            }
+
             .box {
                 height: 1.5em;
                 min-width: 1.5em;
@@ -43,11 +54,6 @@
                 letter-spacing: .2em;
                 color: #FAFAFA;
             }
-
-            .is-primary {color: #FFF; background-color: steelblue}
-            .is-secondary {color: #FFF; background-color: #23415a}
-            .is-highlight {color: #FFF; background-color: lightsteelblue}
-
         </style>
     </head>
     <body>
@@ -69,7 +75,7 @@
             <div class="row">
                 <div class="is-well" style="letter-spacing: .2em; line-height: 1.5em;">
                     Grayscale CSS provides a minimalistic approach to styling by putting layout in the forefront,
-                    removing color, allowing for developers to rapidly prototype layouts. Everything is extendable,
+                    removing excess distractions, allowing for developers to rapidly prototype layouts. Everything is extendable,
                     so just apply your theme later! All-in, the package is <b>only 2kb gzipped!</b>
                 </div>
             </div>
@@ -129,11 +135,12 @@
 
             <blockquote class="quote">
                 The core of Grayscale CSS revolves arounds shades of gray to help quickly block out your designs,
-                as such it provides helper classes to get you a full range of shades from white to black.
+                as such it provides helper classes to get you a full range of shades from white to black, <em>however
+                A few colors were added for splash, but these can easly be <u>overridden</u></em>
             </blockquote>
 
-            <div class="row is-wide is-block">
-                <div class="is-well border">
+            <div class="row is-well">
+                <div class="border column">
                     <div class="is-white">.is-white</div>
                     <div class="is-lightest">.is-lightest</div>
                     <div class="is-lighter">.is-lighter</div>
@@ -143,6 +150,14 @@
                     <div class="is-darker">.is-darker</div>
                     <div class="is-darkest">.is-darkest</div>
                     <div class="is-black">.is-black</div>
+                </div>
+                <div class="addon">
+                    <div class="square is-primary">primary</div>
+                    <div class="square is-secondary">secondary</div>
+                    <div class="square is-accent">accent</div>
+                    <div class="square is-dangerous">dangerous</div>
+                    <div class="square is-safe">safe</div>
+                    <div class="square is-warning">warning</div>
                 </div>
             </div>
 
@@ -267,20 +282,15 @@
                 </table>
             </div>
 
-            <h2 class="is-divided">Grid</h2>
+            <h2 class="is-divided">Page Layout</h2>
 
             <blockquote class="quote">
                 <strong class="is-uppercase">Grayscale CSS</strong>
-                Grid system is both precent-based and <code>flexbox</code>-based,
-                for a max width of 1140px.
-                <p>
-                Using <code>.column</code> creates a dynamic layout or you size your columns
+                Layout system is interchangeable precent-based and <code>flexbox</code>-based,
+                for a max width of <strong>1140px</strong>.
+                Using <code>.column</code> creates a dynamic layout or bases your columns
                 by apending a <code>-%</code> to the end of the .column class like <code>.column-%</code>,
                 where % can be<strong> 20, 25, 33, 50, 100</strong>.
-                </p>
-                You can choose one, the other or mix and match
-                <br>
-                For example:
             </blockquote>
 
             <div>
@@ -345,56 +355,70 @@
                     <tr>
                         <th>Style</th>
                         <th>Description</th>
+                        <th>Style</th>
+                        <th>Description</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><code>.is-well</code></td>
                         <td>Adds .5em padding to tag</td>
+                        <td><code>.is-small</code></td>
+                        <td>decreses font size</td>
                     </tr>
                     <tr>
                         <td><code>.is-wall</code></td>
                         <td>Adds .5em padding-left and padding-right to tag</td>
+                        <td><code>.is-borderless</code></td>
+                        <td>removes all borders</td>
                     </tr>
                     <tr>
                         <td><code>.is-wide</code></td>
                         <td>sets tag width 100%</td>
+                        <td><code>.is-hidden</code></td>
+                        <td>sets display to none</td>
                     </tr>
                     <tr>
                         <td><code>.is-tall</code></td>
                         <td>sets tag height 100%</td>
+                        <td><code>.is-upper</code></td>
+                        <td>sets font to uppercase</td>
                     </tr>
                     <tr>
                         <td><code>.is-fit</code></td>
                         <td>sets tag width / height 100%</td>
+                        <td><code>.is-lower</code></td>
+                        <td>sets font to lowercase</td>
                     </tr>
                     <tr>
                         <td><code>.is-right</code></td>
                         <td>float tag right</td>
+                        <td><code>.is-title</code></td>
+                        <td>capitalizes font</td>
                     </tr>
                     <tr>
                         <td><code>.is-left</code></td>
                         <td>float tag left</td>
+                        <td><code>.is-weak</code></td>
+                        <td>lightens font color</td>
                     </tr>
                     <tr>
                         <td><code>.is-centered</code></td>
                         <td>centers tag</td>
-                    </tr>
-                    <tr>
                         <td><code>.is-block</code></td>
                         <td>applys display:block</td>
                     </tr>
                     <tr>
                         <td><code>.is-inline</code></td>
                         <td>applys display:inline</td>
-                    </tr>
-                    <tr>
                         <td><code>.is-clear</code></td>
                         <td>applys clear:both</td>
                     </tr>
                     <tr>
                         <td><code>.is-indented</code></td>
                         <td>adds a left margin</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
@@ -411,7 +435,13 @@
 
             <h3>Cards</h3>
 
-            <em>Coming soon...</em>
+            <blockquote class="quote">
+                Cards are a versitle way to display sections of contents.
+                The information boxs under <strong>Getting Started</strong> are cards
+            </blockquote>
+            <p>
+                Coming soon...
+            </p>
         </div>
     </body>
 </html>
