@@ -23,12 +23,19 @@
 
 /* Colors */
 
-.is-white {background-color: var(--white); color: var(--black);}
+.is-primary {background-color: var(--primary); color: var(--lightest);}
+.is-secondary {background-color: var(--secondary); color: var(--lightest);}
+.is-accent {background-color: var(--accent); color: var(--darkest);}
+.is-dangerous {background-color: var(--danger); color: var(--lightest);}
+.is-safe {background-color: var(--safe); color: var(--darkest);}
+.is-warning {background-color: var(--warning); color: var(--darkest);}
+
+.is-white {background-color: var(--white); color: var(--darkest);}
 .is-lightest {background-color: var(--lightest); color: var(--darkest);}
 .is-lighter {background-color: var(--lighter); color: var(--darkest);}
 .is-light {background-color: var(--light); color: var(--darkest);}
-.is-gray {background-color: var(--gray); color: var(--lightest);}
+.is-gray {background-color: var(--gray); color: var(--black);}
 .is-dark {background-color: var(--dark); color: var(--lightest);}
 .is-darker {background-color: var(--darker); color: var(--lightest);}
 .is-darkest {background-color: var(--darkest); color: var(--lightest);}
-.is-black {background-color: var(--black); color: var(--white);}
+.is-black {background-color: var(--black); color: var(--lightest);}
