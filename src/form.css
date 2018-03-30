@@ -36,9 +36,22 @@
     outline: 0;
 }
 
-.field-group {
+.field-group, .group {
     display: flex;
     justify-content: space-around;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.addon {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 1em;
+    line-height: 2em;
+    vertical-align: middle;
 }
 
 .label,
