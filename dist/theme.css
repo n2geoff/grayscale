@@ -1,0 +1,8 @@
+/* Colors */
+
+.is-primary {background-color: steelblue; color: #F9F9F9;}
+.is-secondary {background-color: #264863; color: #F9F9F9;}
+.is-accent {background-color: lightsteelblue; color: #2A2A2A;}
+.is-dangerous {background-color: indianred; color: #F9F9F9;}
+.is-safe {background-color: darkseagreen; color: #2A2A2A;}
+.is-warning {background-color: khaki; color: #2A2A2A;}

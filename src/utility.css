@@ -21,14 +21,6 @@
 .is-indented {margin-left: 1em;}
 .is-weak {font-size: .7em; color: var(--gray);}
 
-/* Colors */
-
-.is-primary {background-color: var(--primary); color: var(--lightest);}
-.is-secondary {background-color: var(--secondary); color: var(--lightest);}
-.is-accent {background-color: var(--accent); color: var(--darkest);}
-.is-dangerous {background-color: var(--danger); color: var(--lightest);}
-.is-safe {background-color: var(--safe); color: var(--darkest);}
-.is-warning {background-color: var(--warning); color: var(--darkest);}
 
 .is-white {background-color: var(--white); color: var(--darkest);}
 .is-lightest {background-color: var(--lightest); color: var(--darkest);}

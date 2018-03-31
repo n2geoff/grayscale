@@ -10,17 +10,12 @@
     --darker: #545454;
     --darkest: #2A2A2A;
     --black: #101111;
-    --primary: steelblue;
-    --secondary: #264863;
-    --accent: lightsteelblue;
-    --danger: indianred;
-    --warning: khaki;
-    --safe: darkseagreen;
 }
 
 /* CSS Reset */
 
-html, body {
+html {
+    box-sizing: border-box;
     font-family: georgia, serif;
     font-size: 16px;
     line-height: 1.4em;
