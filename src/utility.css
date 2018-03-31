@@ -14,13 +14,15 @@
 .is-borderless {border: none}
 .is-clear {clear: both;}
 .is-small {font-size: .8em;}
+.is-large {font-size: 1.2em;}
 .is-hidden {display: none;}
-.is-uppercase {text-transform: uppercase;}
-.is-lowercase {text-transform: lowercase;}
+.is-upper {text-transform: uppercase;}
+.is-lower {text-transform: lowercase;}
 .is-title {text-transform: capitalize;}
 .is-indented {margin-left: 1em;}
-.is-weak {font-size: .7em; color: var(--gray);}
+.is-weak {font-size: .7em; color: var(--light);}
 
+/* Grayscale */
 
 .is-white {background-color: var(--white); color: var(--darkest);}
 .is-lightest {background-color: var(--lightest); color: var(--darkest);}
