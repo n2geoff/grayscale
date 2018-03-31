@@ -1,18 +1,14 @@
-/* Grayscale.css v:0.8.0 | MIT LICENSE | https://github.com/n2geoff/grayscale */
+/* Grayscale.css v:0.8.1 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 
 /* CSS Reset */
 
-html,
-body {
+html {
+  box-sizing: border-box;
   font-family: georgia, serif;
   font-size: 16px;
   line-height: 1.4em;
   color: #2A2A2A;
   -webkit-font-smoothing: antialiased;
-}
-
-html {
-  box-sizing: border-box;
 }
 
 *,
@@ -21,15 +17,16 @@ html {
   box-sizing: inherit;
 }
 
+body,
+html,
 span,
 div {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 1em;
-  vertical-align: top;
+  font-weight: normal;
 }
 
+ol,
 ul {
   list-style: none;
 }
@@ -48,10 +45,6 @@ video {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-hr {
-  margin: .3em 0 .3em 0;
 }
 
 /* Blockquote */
@@ -267,7 +260,7 @@ a.button:visited {
   justify-content: space-around;
 }
 
-.list {
+.stack {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,18 +367,21 @@ a.button:visited {
 
 /* Navigation */
 
-ul.navigation {
-  margin: 0;
-  padding: 1px 0;
-  clear: right;
-  list-style-type: none;
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
-.navigation > li {
-  display: block;
-  float: left;
-  text-align: bottom;
-  padding: 1em;
+.nav {
+  margin: 0 .5em;
+  -webkit-box-align: bottom;
+  -ms-flex-align: bottom;
+  align-items: bottom;
 }
 
 /* Tables */
@@ -498,15 +494,19 @@ p {
   font-size: .8em;
 }
 
+.is-large {
+  font-size: 1.2em;
+}
+
 .is-hidden {
   display: none;
 }
 
-.is-uppercase {
+.is-upper {
   text-transform: uppercase;
 }
 
-.is-lowercase {
+.is-lower {
   text-transform: lowercase;
 }
 
@@ -520,40 +520,10 @@ p {
 
 .is-weak {
   font-size: .7em;
-  color: #acacac;
+  color: #c6c6c6;
 }
 
-/* Colors */
-
-.is-primary {
-  background-color: steelblue;
-  color: #F9F9F9;
-}
-
-.is-secondary {
-  background-color: #264863;
-  color: #F9F9F9;
-}
-
-.is-accent {
-  background-color: lightsteelblue;
-  color: #2A2A2A;
-}
-
-.is-dangerous {
-  background-color: indianred;
-  color: #F9F9F9;
-}
-
-.is-safe {
-  background-color: darkseagreen;
-  color: #2A2A2A;
-}
-
-.is-warning {
-  background-color: khaki;
-  color: #2A2A2A;
-}
+/* Grayscale */
 
 .is-white {
   background-color: #FFF;
