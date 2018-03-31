@@ -1,4 +1,4 @@
-/* Grayscale.css v:0.8.0 | MIT LICENSE | https://github.com/n2geoff/grayscale */
+/* Grayscale.css v:0.8.1 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 
 :root {
     --white: #FFF;
@@ -23,23 +23,17 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,*:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
-span, div {
+body, html, span, div {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 1em;
-    vertical-align: top;
+    font-weight: normal;
 }
 
-ul {
+ol, ul {
     list-style: none;
 }
 
@@ -49,16 +43,12 @@ iframe,
 object,
 audio,
 video {
-  height: auto;
-  max-width: 100%;
-  border: none;
+    height: auto;
+    max-width: 100%;
+    border: none;
 }
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
-
-hr {
-    margin: .3em 0 .3em 0
 }
