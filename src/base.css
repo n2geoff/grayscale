@@ -27,6 +27,7 @@ html {
     box-sizing: inherit;
 }
 
+html,body {height:100%;}
 body, html, span, div {
     margin: 0;
     padding: 0;
