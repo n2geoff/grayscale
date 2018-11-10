@@ -6,6 +6,8 @@
 .is-inline {display: inline}
 .is-block {display: block}
 .is-bordered {border: 1px solid var(--lighter)}
+.is-divider {border-top: .05em solid var(--lighter);height: .05em;margin: .4em 0;}
+.is-divider[data-content] {margin: .8em 0;}
 .is-well {padding: 1em}
 .is-wall {padding: 0 .5em 0 .5em}
 .is-wide {width: 100%; margin: inherit 0;}
