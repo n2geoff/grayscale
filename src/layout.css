@@ -1,20 +1,48 @@
 /* Layout Container */
 
 .layout {
-  width: 90%;
-  max-width: 1140px;
-  margin: 0 auto;
-  overflow: hidden;
-  zoom: 1;
-  letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: top;
-  text-rendering: auto;
+    margin: 0 auto;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+    height: 100%;
+}
+
+.page {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 /* Flex-Based Grid Solution */
-.row{display:flex;flex-flow: row wrap;justify-content: space-between;}
-.column{flex:1}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+}
+
+.expand {
+    flex: 1 1 auto;
+}
 
 /* Precent-Based Grid Solution */
 .column-100,.column-20,.column-25,.column-33,.column-50,.column-67

@@ -2,7 +2,7 @@
 
 A Minimalist Dream of CSS
 
-Grayscale CSS provides a minimalist approach to styling, placing layout in the fore-front, removing distractions like color, allowing  developers to prototype layouts rapidly -- add color later.
+Grayscale CSS provides a minimalist approach to styling, placing layout in the fore-front, removing excess distractions, allowing  developers to prototype designs rapidly -- add flair later.
 
 Extend with minimal styles to create your final theme/design.
 
@@ -50,6 +50,5 @@ MIT
 
 ## Todo
 
-- add more styles to common tags
 - improve documentation
 - test

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
         <style media="screen">
 
-            .is-divided {
+            .heading {
                 margin: 1em 0;
                 padding: .5em 1em;
                 background-color: #EEE;
@@ -17,6 +17,8 @@
                 border-bottom: 1px solid gray;
                 clear:both;
             }
+
+            .is-primary {color: #FFF; background-color:steelblue;}
 
             .doc-column {
                 background-color: #ECECEC;
@@ -28,9 +30,49 @@
             }
 
             code {
-                border: 1px solid #999;
-                padding: 4px;
-                background-color: #EEE;
+                background: #fcf2f2;
+                border-radius: .1em;
+                color: #d73e48;
+                font-size: 85%;
+                font-family: monospace;
+                line-height: 1.5;
+                padding: .1em .2em;
+            }
+
+            .code {
+                border-radius: .1em;
+                color: #50596c;
+                position: relative;
+            }
+
+            .code::before {
+                color: #acb3c2;
+                content: attr(data-lang);
+                font-size: .7em;
+                position: absolute;
+                right: .4em;
+                top: .1em;
+            }
+
+            .code code {
+                background: #f8f9fa;
+                color: inherit;
+                display: block;
+                line-height: 1.5;
+                overflow-x: auto;
+                padding: 1em;
+                width: 100%;
+            }
+
+            .square {
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: 100px;
+                width: 100px;
+                max-width: 100px;
+                line-height: 6em;
+                vertical-align: middle;
+                text-align: center;
             }
 
             .box {
@@ -43,33 +85,28 @@
                 letter-spacing: .2em;
                 color: #FAFAFA;
             }
-
-            .is-primary {color: #FFF; background-color: steelblue}
-            .is-secondary {color: #FFF; background-color: #23415a}
-            .is-highlight {color: #FFF; background-color: lightsteelblue}
-
         </style>
     </head>
     <body>
-        <div class="layout" style="margin-bottom: 4em;">
+        <div class="layout page" style="margin-bottom: 4em;">
             <div class="">
-                <div class="box lightest">&nbsp;</div>
-                <div class="box lighter">&nbsp;</div>
-                <div class="box light">&nbsp;</div>
-                <div class="box dark is-wall">
+                <div class="box is-lightest">&nbsp;</div>
+                <div class="box is-lighter">&nbsp;</div>
+                <div class="box is-light">&nbsp;</div>
+                <div class="box is-dark is-wall">
                   GRAYSCALE
                 </div>
-                <div class="box darker" style="background-color: #404040; padding: 0 .5em 0 .5em;">CSS</div>
-                <div class="box darkest" style="background-color: #1A1A1A">&nbsp;</div>
+                <div class="box is-darker" style="background-color: #404040; padding: 0 .5em 0 .5em;">CSS</div>
+                <div class="box is-darkest" style="background-color: #1A1A1A">&nbsp;</div>
                 <em>A Minimalist Dream of CSS</em>
             </div>
 
-            <h1 class="is-divided">Getting Started</h1>
+            <h1 class="heading">Getting Started</h1>
 
             <div class="row">
                 <div class="is-well" style="letter-spacing: .2em; line-height: 1.5em;">
                     Grayscale CSS provides a minimalistic approach to styling by putting layout in the forefront,
-                    removing color, allowing for developers to rapidly prototype layouts. Everything is extendable,
+                    removing excess distractions, allowing for developers to rapidly prototype layouts. Everything is extendable,
                     so just apply your theme later! All-in, the package is <b>only 2kb gzipped!</b>
                 </div>
             </div>
@@ -77,7 +114,7 @@
             <div class="row">
                 <div class="column">
                     <div class="card is-well">
-                        <div class="card-header is-divided">
+                        <div class="card-header heading">
                             Simple Conventions
                         </div>
                         <div class="card-content">
@@ -93,7 +130,7 @@
                 </div>
                 <div class="column">
                     <div class="card is-well">
-                        <div class="card-header is-divided">
+                        <div class="card-header heading">
                             Simple Build
                         </div>
                         <div class="card-content">
@@ -109,7 +146,7 @@
                 </div>
                 <div class="column">
                     <div class="card is-well">
-                        <div class="card-header is-divided">
+                        <div class="card-header heading">
                             Utilize CDN
                         </div>
                         <div class="card-content">
@@ -125,15 +162,16 @@
                 </div>
             </div>
 
-            <h2 class="is-divided">Shades of Gray</h2>
+            <h2 class="heading">Shades of Gray</h2>
 
             <blockquote class="quote">
                 The core of Grayscale CSS revolves arounds shades of gray to help quickly block out your designs,
-                as such it provides helper classes to get you a full range of shades from white to black.
+                as such it provides helper classes to get you a full range of shades from white to black, <em>however
+                A few colors were added for splash, but these can easly be <u>overridden</u></em>
             </blockquote>
 
-            <div class="row is-wide is-block">
-                <div class="is-well border">
+            <div class="row is-well">
+                <div class="border column">
                     <div class="is-white">.is-white</div>
                     <div class="is-lightest">.is-lightest</div>
                     <div class="is-lighter">.is-lighter</div>
@@ -146,7 +184,7 @@
                 </div>
             </div>
 
-            <h2 class="is-divided">Buttons</h2>
+            <h2 class="heading">Buttons</h2>
 
             <blockquote class="quote">
                 Button styles are automaticly applyed for inherited button types and
@@ -166,7 +204,7 @@
                 <p>
                     <em>Add Color</em>
                 </p>
-                    <code class="is-block">.is-primary {color: #FFF; background-color: steelblue;}</code>
+                    <code class="code is-block">.is-primary {color: #FFF; background-color: steelblue;}</code>
                 <p>
                     <button class="button is-primary">Primary</button>
                 </p>
@@ -174,27 +212,30 @@
                 <p>
                     <em>Add Flair</em>
                 </p>
-                <code class="is-block">.is-rounded {border-radius: 5px;}</code>
+                <code class="code is-block">.is-rounded {border-radius: 5px;}</code>
 
                 <p>
                     <button class="button is-primary is-rounded clear">Rounded</button>
                 </p>
             </div>
 
-            <h2 class="is-divided">Navigation</h2>
+            <h2 class="heading">Navigation</h2>
 
             <blockquote class="quote">
-                Decorate a <em>&lt;ul&gt;</em> with a <code>.navigation</code> class and all the child list items will fall in place
+               with <code>.navbar</code> class and all the child list items having a <code>.navbar-item</code>will fall in place
             </blockquote>
 
-            <ul class="navigation">
-                <li><h2 class="is-inline">Brand</h2></li>
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-            </ul>
+            <div class="navbar">
+                <h2 class="navbar-item" class="is-inline">Brand</h2>
+                <a class="navbar-item" href="#">One</a>
+                <a class="navbar-item expand" href="#">Two</a>
+                <div class="navbar-item">
+                    <a href="#">Login</a>
+                </div>
+            </div>
             <br>
 
-            <h2 class="is-divided">Forms</h2>
+            <h2 class="heading">Forms</h2>
             <blockquote class="quote">
                 Hmm...
             </blockquote>
@@ -214,8 +255,10 @@
                     </div>
                 </div>
                 <div class="row" style="margin: 1em 0;">
-                    <label class="label" for="message">Message</label>
-                    <textarea class="textarea" placeholder="What would you like to say..." name="message"></textarea>
+                    <div class="column">
+                        <label class="label" for="message">Message</label>
+                        <textarea class="textarea" placeholder="What would you like to say..." name="message"></textarea>
+                    </div>
                 </div>
                 <div class="row">
                     <label class="label" style="">
@@ -229,7 +272,7 @@
                 </div>
             </form>
 
-            <h2 class="is-divided">Tables</h2>
+            <h2 class="heading">Tables</h2>
 
             <blockquote class="quote">
                 Simple, designed with tabular data in mind. supports
@@ -267,20 +310,15 @@
                 </table>
             </div>
 
-            <h2 class="is-divided">Grid</h2>
+            <h2 class="heading">Page Layout</h2>
 
             <blockquote class="quote">
                 <strong class="is-uppercase">Grayscale CSS</strong>
-                Grid system is both precent-based and <code>flexbox</code>-based,
-                for a max width of 1140px.
-                <p>
-                Using <code>.column</code> creates a dynamic layout or you size your columns
+                Layout system is interchangeable precent-based and <code>flexbox</code>-based,
+                for a max width of <strong>1140px</strong>.
+                Using <code>.column</code> creates a dynamic layout or bases your columns
                 by apending a <code>-%</code> to the end of the .column class like <code>.column-%</code>,
                 where % can be<strong> 20, 25, 33, 50, 100</strong>.
-                </p>
-                You can choose one, the other or mix and match
-                <br>
-                For example:
             </blockquote>
 
             <div>
@@ -333,7 +371,7 @@
                 </div>
             </div>
 
-            <h2 class="is-divided">Utility</h2>
+            <h2 class="heading">Utility</h2>
 
             <blockquote class="quote">
                 Below are some <em>helper</em> and <em>modifer</em> classes.
@@ -345,61 +383,81 @@
                     <tr>
                         <th>Style</th>
                         <th>Description</th>
+                        <th>Style</th>
+                        <th>Description</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><code>.is-well</code></td>
                         <td>Adds .5em padding to tag</td>
+                        <td><code>.is-indented</code></td>
+                        <td>adds a left margin</td>
                     </tr>
                     <tr>
                         <td><code>.is-wall</code></td>
                         <td>Adds .5em padding-left and padding-right to tag</td>
+                        <td><code>.is-borderless</code></td>
+                        <td>removes all borders</td>
                     </tr>
                     <tr>
                         <td><code>.is-wide</code></td>
                         <td>sets tag width 100%</td>
+                        <td><code>.is-hidden</code></td>
+                        <td>sets display to none</td>
                     </tr>
                     <tr>
                         <td><code>.is-tall</code></td>
                         <td>sets tag height 100%</td>
+                        <td><code>.is-upper</code></td>
+                        <td>sets font to uppercase</td>
                     </tr>
                     <tr>
                         <td><code>.is-fit</code></td>
                         <td>sets tag width / height 100%</td>
+                        <td><code>.is-lower</code></td>
+                        <td>sets font to lowercase</td>
                     </tr>
                     <tr>
                         <td><code>.is-right</code></td>
                         <td>float tag right</td>
+                        <td><code>.is-title</code></td>
+                        <td>capitalizes font</td>
                     </tr>
                     <tr>
                         <td><code>.is-left</code></td>
                         <td>float tag left</td>
+                        <td><code>.is-muted</code></td>
+                        <td>lightens font color</td>
                     </tr>
                     <tr>
                         <td><code>.is-centered</code></td>
                         <td>centers tag</td>
-                    </tr>
-                    <tr>
                         <td><code>.is-block</code></td>
                         <td>applys display:block</td>
                     </tr>
                     <tr>
                         <td><code>.is-inline</code></td>
                         <td>applys display:inline</td>
-                    </tr>
-                    <tr>
                         <td><code>.is-clear</code></td>
                         <td>applys clear:both</td>
                     </tr>
                     <tr>
-                        <td><code>.is-indented</code></td>
-                        <td>adds a left margin</td>
+                        <td><code>.is-small</code></td>
+                        <td>decreses font size</td>
+                        <td><code>.is-large</code></td>
+                        <td>increase font size</td>
+                    </tr>
+                    <tr>
+                        <td><code>.is-divider</code></td>
+                        <td>draws hr rule</td>
+                        <td><code></code></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
 
-            <h2 class="is-divided">Extras</h2>
+            <h2 class="heading">Extras</h2>
 
             <h3>Blockquote</h3>
             <p>
@@ -411,7 +469,14 @@
 
             <h3>Cards</h3>
 
-            <em>Coming soon...</em>
+            <blockquote class="quote">
+                Cards are a versitle way to display sections of contents.
+                The information boxs under <strong>Getting Started</strong> are cards
+            </blockquote>
+            <p>
+                <hr>
+                <div class="is-centered is-muted">More Coming Soon</div>
+            </p>
         </div>
     </body>
 </html>
