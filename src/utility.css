@@ -2,12 +2,11 @@
 
 .is-right {float: right}
 .is-left {float: left}
-.is-centered {margin: auto}
+.is-centered {margin: auto;text-align: center;}
 .is-inline {display: inline}
 .is-block {display: block}
 .is-bordered {border: 1px solid var(--lighter)}
-.is-divider {border-top: .05em solid var(--lighter);height: .05em;margin: .4em 0;}
-.is-divider[data-content] {margin: .8em 0;}
+.is-divider, hr {border-top: 1px solid var(--lighter);border-top: 1px solid var(--lighter)}
 .is-well {padding: 1em}
 .is-wall {padding: 0 .5em 0 .5em}
 .is-wide {width: 100%; margin: inherit 0;}
@@ -22,7 +21,7 @@
 .is-lower {text-transform: lowercase;}
 .is-title {text-transform: capitalize;}
 .is-indented {margin-left: 1em;}
-.is-weak {font-size: .7em; color: var(--light);}
+.is-muted {color: var(--light);}
 
 /* Grayscale */
 
