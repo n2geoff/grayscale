@@ -1,6 +1,15 @@
 /* Layout Container */
 
 .layout {
+    margin: 0 auto;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -8,14 +17,6 @@
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-
-    margin: 0 auto;
-    overflow: hidden;
-    zoom: 1;
-    letter-spacing: normal;
-    word-spacing: normal;
-    vertical-align: top;
-    text-rendering: auto;
 
     height: 100%;
 }
