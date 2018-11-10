@@ -5,7 +5,9 @@
     flex-direction: row;
 }
 
-.nav {
+.navbar-item {
+    display:flex;
+    flex-direction: row;
     margin: 0 .5em;
     align-items: bottom;
 }
