@@ -36,10 +36,6 @@ a.button,
     text-decoration: underline;
 }
 
-.button.is-rounded {
-    border-radius: 5px;
-}
-
 .button:hover,
 .button[type="submit"]:hover,
 .button[type="reset"]:hover,

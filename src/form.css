@@ -2,7 +2,7 @@
 
 .field, .textarea {
     font-size: 1em;
-    height: 36px;
+    height: 38px;
     width: 100%;
     padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
     background-color: var(--lightest);

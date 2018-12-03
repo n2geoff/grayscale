@@ -11,3 +11,7 @@
     margin: 0 .5em;
     align-items: bottom;
 }
+
+.nav a, a.nav {
+    text-decoration: none;
+}
