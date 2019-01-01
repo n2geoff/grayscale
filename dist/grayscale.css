@@ -384,6 +384,8 @@ ul.navbar {
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 li.nav {
