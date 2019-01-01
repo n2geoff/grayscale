@@ -1,17 +1,18 @@
 /* Navigation */
 
-.navbar {
+ul.navbar {
     display: flex;
     flex-direction: row;
 }
 
-.nav {
+li.nav {
     display:flex;
     flex-direction: row;
-    margin: 0 .5em;
+    text-align: center;
+    padding: .3em .5em;
     align-items: bottom;
 }
 
-.nav a, a.nav {
+li.nav a {
     text-decoration: none;
 }
