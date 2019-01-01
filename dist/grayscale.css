@@ -154,12 +154,9 @@ a.button:visited {
 /* Card Component */
 
 .card {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden;
-  -webkit-box-flex: 0;
   -ms-flex: 0 1 calc(50% - 0.5em);
   flex: 0 1 calc(50% - 0.5em);
   margin-bottom: 1em;
@@ -177,29 +174,22 @@ a.button:visited {
 }
 
 .card-footer {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
   border-top: 1px solid #dbdbdb;
-  -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 .card-footer .card-footer-item {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
   -ms-flex: 1 0 0;
   flex: 1 0 0;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0;
@@ -254,7 +244,6 @@ a.button:visited {
 
 .field-group,
 .group {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -262,20 +251,15 @@ a.button:visited {
 }
 
 .stack {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .addon {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 0 1em;
@@ -308,19 +292,14 @@ a.button:visited {
 }
 
 .container {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
   -ms-flex-line-pack: stretch;
@@ -337,11 +316,8 @@ a.button:visited {
 /* Flex-Based Grid Solution */
 
 .row {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: nowrap;
@@ -349,23 +325,17 @@ a.button:visited {
 }
 
 .column {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 .expand {
-  -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
@@ -409,32 +379,25 @@ a.button:visited {
 
 /* Navigation */
 
-.navbar {
-  display: -webkit-box;
+ul.navbar {
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.nav {
-  display: -webkit-box;
+li.nav {
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: 0 .5em;
-  -webkit-box-align: bottom;
+  text-align: center;
+  padding: .3em .5em;
   -ms-flex-align: bottom;
   align-items: bottom;
 }
 
-.nav a,
-a.nav {
+li.nav a {
   text-decoration: none;
 }
 
