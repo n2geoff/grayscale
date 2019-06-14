@@ -2,36 +2,24 @@
 
 .card {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    overflow: hidden;
-    margin-bottom: 1em;
 }
 
 .card-header {
     font-weight: bold;
     margin: 0;
-    padding: .5em;
+    padding: 1em;
 }
 
 .card-content {
     flex: 1 1 auto;
-    padding: 1em .5em;
+    padding: 1em;
 }
 
 .card-footer {
     display: flex;
     align-items: stretch;
-    border-top: 1px solid #dbdbdb;
-    flex: 1;
-}
-
-.card-footer .card-footer-item {
-    display: flex;
-    flex: 1 0 0;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 1em;
 }
 
 .card.is-shadowed {
