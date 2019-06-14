@@ -1,4 +1,4 @@
-/* Grayscale.css v:0.8.4 | MIT LICENSE | https://github.com/n2geoff/grayscale */
+/* Grayscale.css v:0.8.5 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 
 /* CSS Reset */
 
@@ -72,10 +72,12 @@ table {
 
 .button,
 a.button,
+a.is-button,
 .button[type="submit"],
 .button[type="reset"],
 .button[type="button"] {
   position: relative;
+  overflow: hidden;
   zoom: 1;
   line-height: normal;
   margin: 0;
@@ -92,22 +94,27 @@ a.button,
   font-size: 1em;
   padding: .5em 1em;
   background-color: #F9F9F9;
+  color: #2A2A2A;
   text-decoration: none;
   border: 1px solid #c6c6c6;
 }
 
-.button.is-link {
-  color: #101111;
+.button.is-link,
+button.is-link {
+  color: #2A2A2A;
   border-color: transparent;
   background-color: transparent;
   text-decoration: none;
+  outline: 0;
+  cursor: pointer;
 }
 
 .button.is-link:hover {
   background-image: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
+a.is-button:hover,
 .button:hover,
 .button[type="submit"]:hover,
 .button[type="reset"]:hover,
@@ -116,19 +123,24 @@ a.button,
   background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
 
+a.is-button:active,
 .button:active,
 .button[type="submit"]:active,
 .button[type="reset"]:active,
 .button[type="button"]:active {
   box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
   border-color: #000;
+  color: inherit;
 }
 
+a.is-button:focus,
 .button:focus,
 .button[type="submit"]:focus,
 .button[type="reset"]:focus,
-.button[type="button"]:focus {
+.button[type="button"]:focus,
+a.is-button:visited {
   outline: 0;
+  color: inherit;
 }
 
 .is-disabled,
@@ -144,34 +156,26 @@ a.button,
   box-shadow: none;
 }
 
-a.button,
-a.button:active,
-a.button:visited {
-  display: inline-block;
-  color: inherit;
-}
-
 /* Card Component */
 
 .card {
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow: hidden;
-  margin-bottom: 1em;
 }
 
 .card-header {
   font-weight: bold;
   margin: 0;
-  padding: .5em;
+  padding: 1em;
 }
 
 .card-content {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1em .5em;
+  padding: 1em;
 }
 
 .card-footer {
@@ -179,22 +183,6 @@ a.button:visited {
   display: flex;
   -ms-flex-align: stretch;
   align-items: stretch;
-  border-top: 1px solid #dbdbdb;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.card-footer .card-footer-item {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 1 0 0;
-  flex: 1 0 0;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0;
-  padding: 1em;
 }
 
 .card.is-shadowed {
@@ -378,6 +366,36 @@ a.button:visited {
   width: 100%;
 }
 
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, .6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  display: none;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.modal.is-active {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-content {
+  display: -ms-flexbox;
+  display: flex;
+  width: 28rem;
+  height: 20rem;
+  background: white;
+}
+
 /* Navigation */
 
 .nav {
@@ -415,7 +433,7 @@ a.button:visited {
 }
 
 .nav .nav-brand {
-  font-size: 2em;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
@@ -468,6 +486,26 @@ p {
 }
 
 /* Utilities */
+
+.content {
+  padding: .5em 1em;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: .6em;
+}
+
+/* Modifiers */
 
 .is-right {
   float: right;
@@ -528,6 +566,11 @@ hr {
   border: none;
 }
 
+.is-spaceless {
+  padding: 0px;
+  margin: 0px;
+}
+
 .is-clear {
   clear: both;
 }
@@ -557,7 +600,7 @@ hr {
 }
 
 .is-indented {
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 .is-muted {
