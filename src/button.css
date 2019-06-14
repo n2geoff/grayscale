@@ -21,14 +21,14 @@ a.is-button,
     font-family: inherit;
     font-size: 1em;
     padding: .5em 1em;
-    background-color: var(--lightest);
-    color: var(--darkest);
+    background-color: var(--light);
+    color: var(--black);
     text-decoration: none;
-    border: 1px solid var(--light);
+    border: 1px solid var(--gray);
 }
 
 .button.is-link, button.is-link {
-    color: var(--darkest);
+    color: var(--dark);
     border-color: transparent;
     background-color: transparent;
     text-decoration: none;

@@ -1,4 +1,4 @@
-/* Grayscale.css v:0.8.5 | MIT LICENSE | https://github.com/n2geoff/grayscale */
+/* Grayscale.css v:0.8.6 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 
 /* CSS Reset */
 
@@ -7,7 +7,7 @@ html {
   font-family: georgia, serif;
   font-size: 16px;
   line-height: 1.4em;
-  color: #2A2A2A;
+  color: #474747;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -56,8 +56,8 @@ table {
 
 .blockquote,
 .quote {
-  border-left: 0.4em solid #E6E6E6;
-  background-color: #F9F9F9;
+  border-left: 0.4em solid #EBEBEB;
+  background-color: #FAFAFA;
   margin-left: 0;
   margin-right: 0;
   padding: 1em 1.5em;
@@ -93,15 +93,15 @@ a.is-button,
   font-family: inherit;
   font-size: 1em;
   padding: .5em 1em;
-  background-color: #F9F9F9;
-  color: #2A2A2A;
+  background-color: #EBEBEB;
+  color: #1A1A1A;
   text-decoration: none;
-  border: 1px solid #c6c6c6;
+  border: 1px solid #BABABA;
 }
 
 .button.is-link,
 button.is-link {
-  color: #2A2A2A;
+  color: #474747;
   border-color: transparent;
   background-color: transparent;
   text-decoration: none;
@@ -147,7 +147,7 @@ a.is-button:visited {
 .is-disabled:hover,
 .is-disabled:active,
 .is-disabled:focus {
-  border: 1px solid #c6c6c6;
+  border: 1px solid #EBEBEB;
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   filter: alpha(opacity=40);
@@ -198,8 +198,8 @@ a.is-button:visited {
   width: 100%;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #F9F9F9;
-  border: 1px solid #E6E6E6;
+  background-color: #FAFAFA;
+  border: 1px solid #EBEBEB;
   box-shadow: none;
   box-sizing: border-box;
 }
@@ -220,14 +220,14 @@ a.is-button:visited {
 
 .field:hover,
 .textarea:hover {
-  border: 1px solid #c6c6c6;
+  border: 1px solid #EBEBEB;
   outline: 0;
 }
 
 .field:focus,
 .textarea:focus {
-  border: 1px solid #787878;
-  background-color: #FFF;
+  border: 1px solid #474747;
+  background-color: #FAFAFA;
   outline: 0;
 }
 
@@ -445,14 +445,14 @@ a.is-button:visited {
 }
 
 .table thead tr th {
-  border-bottom: 2px solid #c6c6c6;
+  border-bottom: 2px solid #EBEBEB;
 }
 
 .table th,
 .table td {
   padding: .5em 0;
   text-align: left;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #EBEBEB;
 }
 
 .table tr th:first-child,
@@ -461,7 +461,7 @@ a.is-button:visited {
 }
 
 .table.is-striped tbody tr:nth-child(odd) {
-  background-color: #E6E6E6;
+  background-color: #EBEBEB;
 }
 
 .table.is-condensed th,
@@ -470,12 +470,12 @@ table.is-condensed td {
 }
 
 .table.is-bordered td {
-  border: 1px solid #E6E6E6;
+  border: 1px solid #EBEBEB;
 }
 
 .table.is-bordered th {
-  border: 1px solid #E6E6E6;
-  border-bottom: 2px solid #E6E6E6;
+  border: 1px solid #EBEBEB;
+  border-bottom: 2px solid #EBEBEB;
 }
 
 /* Typeography */
@@ -529,13 +529,13 @@ p {
 }
 
 .is-bordered {
-  border: 1px solid #E6E6E6;
+  border: 1px solid #EBEBEB;
 }
 
 .is-divider,
 hr {
-  border-top: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #EBEBEB;
+  border-top: 1px solid #EBEBEB;
 }
 
 .is-well {
@@ -604,52 +604,32 @@ hr {
 }
 
 .is-muted {
-  color: #c6c6c6;
+  color: #BABABA;
 }
 
 /* Grayscale */
 
 .is-white {
-  background-color: #FFF;
-  color: #2A2A2A;
-}
-
-.is-lightest {
-  background-color: #F9F9F9;
-  color: #2A2A2A;
-}
-
-.is-lighter {
-  background-color: #E6E6E6;
-  color: #2A2A2A;
+  background-color: #FAFAFA;
+  color: #1A1A1A;
 }
 
 .is-light {
-  background-color: #c6c6c6;
-  color: #2A2A2A;
+  background-color: #EBEBEB;
+  color: #1A1A1A;
 }
 
 .is-gray {
-  background-color: #acacac;
-  color: #101111;
+  background-color: #BABABA;
+  color: #1A1A1A;
 }
 
 .is-dark {
-  background-color: #787878;
-  color: #F9F9F9;
-}
-
-.is-darker {
-  background-color: #545454;
-  color: #F9F9F9;
-}
-
-.is-darkest {
-  background-color: #2A2A2A;
-  color: #F9F9F9;
+  background-color: #474747;
+  color: #FAFAFA;
 }
 
 .is-black {
-  background-color: #101111;
-  color: #F9F9F9;
+  background-color: #1A1A1A;
+  color: #FAFAFA;
 }

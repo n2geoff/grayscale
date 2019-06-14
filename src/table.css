@@ -22,7 +22,7 @@
 }
 
 .table.is-striped tbody tr:nth-child(odd) {
-    background-color: var(--lighter);
+    background-color: var(--light);
 }
 
 .table.is-condensed th, table.is-condensed td {
@@ -30,10 +30,10 @@
 }
 
 .table.is-bordered td {
-    border: 1px solid var(--lighter);
+    border: 1px solid var(--light);
 }
 
 .table.is-bordered th {
-    border: 1px solid var(--lighter);
-    border-bottom: 2px solid var(--lighter);
+    border: 1px solid var(--light);
+    border-bottom: 2px solid var(--light);
 }

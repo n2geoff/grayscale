@@ -12,7 +12,7 @@
             .heading {
                 margin: 1em 0;
                 padding: .5em 1em;
-                background-color: #EEE;
+                background-color: #EBEBEB;
                 border-top: 1px solid gray;
                 border-bottom: 1px solid gray;
                 clear:both;
@@ -91,14 +91,14 @@
     <body>
         <div class="layout page" style="margin-bottom: 4em;">
             <div class="">
-                <div class="box is-lightest">&nbsp;</div>
-                <div class="box is-lighter">&nbsp;</div>
+                <div class="box is-white">&nbsp;</div>
                 <div class="box is-light">&nbsp;</div>
+                <div class="box is-gray">&nbsp;</div>
                 <div class="box is-dark is-wall">
                     GRAYSCALE
                 </div>
-                <div class="box is-darker" style="background-color: #404040; padding: 0 .5em 0 .5em;">CSS</div>
-                <div class="box is-darkest" style="background-color: #1A1A1A">&nbsp;</div>
+                <div class="box is-dark" style="padding: 0 .5em 0 .5em;">CSS</div>
+                <div class="box is-black">&nbsp;</div>
                 <em>A Minimalist Dream of CSS</em>
             </div>
 
@@ -203,13 +203,9 @@
                 <div class="row is-well">
                     <div class="border column">
                         <div class="is-white">.is-white</div>
-                        <div class="is-lightest">.is-lightest</div>
-                        <div class="is-lighter">.is-lighter</div>
                         <div class="is-light">.is-light</div>
                         <div class="is-gray">.is-gray</div>
                         <div class="is-dark">.is-dark</div>
-                        <div class="is-darker">.is-darker</div>
-                        <div class="is-darkest">.is-darkest</div>
                         <div class="is-black">.is-black</div>
                     </div>
                 </div>
@@ -226,9 +222,9 @@
                 </blockquote>
 
                 <button class="button is-disabled">Disabled</button>
-                <button class="button">Default</button>
-                <button class="button is-darker">Darker</button>
-                <button class="button is-black">Black</button>
+                <button class="button is-light">Light</button>
+                <button class="button is-gray">Default</button>
+                <button class="button is-dark">Dark</button>
                 <button class="button is-link">Link</button>
 
                 <div class="indent">
@@ -266,8 +262,8 @@
                 <nav class="nav">
                     <h2 class="nav-brand">Brand</h2>
                     <section class="nav-section">
-                        <a class="is-link" href="#">One</a>
-                        <a class="is-link" href="#">Two</a>
+                        <a class="is-link content" href="#">One</a>
+                        <a class="is-link content" href="#">Two</a>
                     </section>
 
                     <section class="nav-section is-right">
@@ -333,8 +329,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="label" style="">
-                            <input class="field" type="checkbox" style="">
+                        <label class="label">
+                            <input class="field" type="checkbox">
                             Recieve Copy?
                         </label>
                     </div>
