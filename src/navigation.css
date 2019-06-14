@@ -1,20 +1,29 @@
 /* Navigation */
 
-ul.navbar {
+.nav {
+    align-items: stretch;
     display: flex;
-    flex-direction: row;
-    margin:0;
-    padding:0;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-li.nav {
-    display:flex;
-    flex-direction: row;
-    text-align: center;
-    padding: .3em .5em;
-    align-items: bottom;
+.nav .nav-section {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
 }
 
-li.nav a {
+.nav .nav-section:not(:first-child):last-child {
+    justify-content: flex-end;
+}
+
+.nav .nav-center {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.nav .nav-brand {
+    font-size: 2em;
     text-decoration: none;
 }

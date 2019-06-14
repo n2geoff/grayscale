@@ -1,6 +1,6 @@
 {
   "name": "grayscale",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "A Minimalist Dream of CSS",
   "main": "dist/grayscale.min.css",
   "scripts": {

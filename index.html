@@ -95,7 +95,7 @@
                 <div class="box is-lighter">&nbsp;</div>
                 <div class="box is-light">&nbsp;</div>
                 <div class="box is-dark is-wall">
-                  GRAYSCALE
+                    GRAYSCALE
                 </div>
                 <div class="box is-darker" style="background-color: #404040; padding: 0 .5em 0 .5em;">CSS</div>
                 <div class="box is-darkest" style="background-color: #1A1A1A">&nbsp;</div>
@@ -163,302 +163,388 @@
                 </div>
             </div>
 
-            <h2 class="heading">Shades of Gray</h2>
+            <section>
+                <h2 class="heading">Elements of Style</h2>
 
-            <blockquote class="quote">
-                The core of Grayscale CSS revolves arounds shades of gray to help quickly block out your designs,
-                as such it provides helper classes to get you a full range of shades from white to black, <em>however
-                A few colors were added for splash, but these can easly be <u>overridden</u></em>
-            </blockquote>
+                <blockquote class="quote">
+                    Quickly jump to the sections your interested from the links below
+                </blockquote>
 
-            <div class="row is-well">
-                <div class="border column">
-                    <div class="is-white">.is-white</div>
-                    <div class="is-lightest">.is-lightest</div>
-                    <div class="is-lighter">.is-lighter</div>
-                    <div class="is-light">.is-light</div>
-                    <div class="is-gray">.is-gray</div>
-                    <div class="is-dark">.is-dark</div>
-                    <div class="is-darker">.is-darker</div>
-                    <div class="is-darkest">.is-darkest</div>
-                    <div class="is-black">.is-black</div>
+                <div class="row" style="text-align: center">
+                    <div class="column"><a href="#colors">Colors</a></div>
+                    <div class="column"><a href="#theme">Theme</a></div>
+                    <div class="column"><a href="#buttons">Buttons</a></div>
+                    <div class="column"><a href="#navigation">Navigation</a></div>
                 </div>
-            </div>
-
-            <h2 class="heading">Buttons</h2>
-
-            <blockquote class="quote">
-                Button styles are automaticly applyed for inherited button types and
-                you can add the <code>.button</code> class to links.  In addition, you
-                can mix the shades above for variety.
-            </blockquote>
-
-            <button class="button is-disabled">Disabled</button>
-            <button class="button">Default</button>
-            <button class="button is-darker">Darker</button>
-            <button class="button is-black">Black</button>
-            <button class="button is-link">Link</button>
-
-            <div class="indent">
-                <h3>Extend</h3>
-                It is easy to extend buttons with your own css, for example
-                <p>
-                    <em>Add Color</em>
-                </p>
-                    <code class="code is-block">.is-primary {color: #FFF; background-color: steelblue;}</code>
-                <p>
-                    <button class="button is-primary">Primary</button>
-                </p>
-
-                <p>
-                    <em>Add Flair</em>
-                </p>
-                <code class="code is-block">.is-rounded {border-radius: 5px;}</code>
-
-                <p>
-                    <button class="button is-primary is-rounded clear">Rounded</button>
-                </p>
-            </div>
-
-            <h2 class="heading">Navigation</h2>
-
-            <blockquote class="quote">
-               with <code>.navbar</code> class and all the child list items having a <code>.nav</code>will fall in place
-            </blockquote>
-
-            <div class="navbar">
-                <h2 class="nav" class="is-inline">Brand</h2>
-                <a class="nav" href="#">One</a>
-                <a class="nav expand" href="#">Two</a>
-                <div class="nav">
-                    <a href="#">Login</a>
+                <div class="row" style="text-align: center">
+                    <div class="column"><a href="#forms">Forms</a></div>
+                    <div class="column"><a href="#tables">Tables</a></div>
+                    <div class="column"><a href="#layout">Layout</a></div>
+                    <div class="column"><a href="#utility">Utility</a></div>
                 </div>
-            </div>
+                <div class="row" style="text-align: center">
+                    <div class="column"><a href="#more">More...</a></div>
+                    <div class="column"><a href="#blockquote"></a></div>
+                    <div class="column"><a href="#cards"></a></div>
+                    <div class="column"><a href="."></a></div>
+                </div>
+            </section>
+
+            <section>
+                <a name="colors"></a>
+                <h2 class="heading">Shades of Gray</h2>
+
+                <blockquote class="quote">
+                    The core of Grayscale CSS revolves arounds shades of gray to help quickly block out your designs,
+                    as such it provides helper classes to get you a full range of shades from white to black, <em>however
+                    A few colors were added for splash, but these can easly be <u>overridden</u></em>
+                </blockquote>
+
+                <div class="row is-well">
+                    <div class="border column">
+                        <div class="is-white">.is-white</div>
+                        <div class="is-lightest">.is-lightest</div>
+                        <div class="is-lighter">.is-lighter</div>
+                        <div class="is-light">.is-light</div>
+                        <div class="is-gray">.is-gray</div>
+                        <div class="is-dark">.is-dark</div>
+                        <div class="is-darker">.is-darker</div>
+                        <div class="is-darkest">.is-darkest</div>
+                        <div class="is-black">.is-black</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <a name="buttons"></a>
+                <h2 class="heading">Buttons</h2>
+
+                <blockquote class="quote">
+                    Button styles are automaticly applyed for inherited button types and
+                    you can add the <code>.button</code> class to links.  In addition, you
+                    can mix the shades above for variety.
+                </blockquote>
+
+                <button class="button is-disabled">Disabled</button>
+                <button class="button">Default</button>
+                <button class="button is-darker">Darker</button>
+                <button class="button is-black">Black</button>
+                <button class="button is-link">Link</button>
+
+                <div class="indent">
+                    <h3>Extend</h3>
+                    It is easy to extend buttons with your own css, for example
+                    <p>
+                        <em>Add Color</em>
+                    </p>
+                        <code class="code is-block">.is-primary {color: #FFF; background-color: steelblue;}</code>
+                    <p>
+                        <button class="button is-primary">Primary</button>
+                    </p>
+
+                    <p>
+                        <em>Add Flair</em>
+                    </p>
+                    <code class="code is-block">.is-rounded {border-radius: 5px;}</code>
+
+                    <p>
+                        <button class="button is-primary is-rounded clear">Rounded</button>
+                    </p>
+                </div>
+
+            </section>
+
+            <section>
+                <a name="navigation"></a>
+                <h2 class="heading">Navigation</h2>
+
+                <blockquote class="quote">
+                    With the <code>.nav</code> class and all the child items wrapped in <code>.nav-section</code>
+                    your navigation bar will fall right into place
+                </blockquote>
+
+                <nav class="nav">
+                    <h2 class="nav-brand">Brand</h2>
+                    <section class="nav-section">
+                        <a class="button is-link" href="#">One</a>
+                        <a class="button is-link" href="#">Two</a>
+                    </section>
+
+                    <section class="nav-section is-right">
+                        <a class="" href="#">Login</a>
+                    </section>
+                </nav>
+
+                <details>
+                    <summary class="is-muted">Code</summary>
+                    <pre>
+                        <script >
+                            var nav = `
+                            <nav class="nav">
+                                <h2 class="nav-brand">Brand</h2>
+                                <section class="nav-section">
+                                    <a class="button is-link" href="#">One</a>
+                                    <a class="button is-link" href="#">Two</a>
+                                </section>
+
+                                <section class="nav-section is-right">
+                                    <a class="" href="#">Login</a>
+                                </section>
+                            </nav>`;
+
+                            let code = nav.replace(/./g, function(e) {
+                                return "&#"+e.charCodeAt(0)+";";
+                            });
+                            document.write('<code>' + code + '</code>');
+
+                        </script>
+                    </pre>
+                </details>
+            </section>
+
             <br>
 
-            <h2 class="heading">Forms</h2>
-            <blockquote class="quote">
-                Hmm...
-            </blockquote>
-            <form>
-                <div class="row">
-                    <div class="column-50">
-                        <label class="label" for="email">Your Email</label>
-                        <input class="field is-wide" type="email" placeholder="youremail@example.com" name="email">
-                    </div>
-                    <div class="column-50">
-                        <label class="label" for="reason">Contact Reason</label>
-                        <select class="field" name="reason">
-                            <option value="Option 1">Questions</option>
-                            <option value="Option 2">Admiration</option>
-                            <option value="Option 3">Can I get your number?</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row" style="margin: 1em 0;">
-                    <div class="column">
-                        <label class="label" for="message">Message</label>
-                        <textarea class="textarea" placeholder="What would you like to say..." name="message"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <label class="label" style="">
-                        <input class="field" type="checkbox" style="">
-                        Recieve Copy?
-                    </label>
-                </div>
-                <br>
-                <div class="row">
-                    <input class="button" type="submit" value="Submit">
-                </div>
-            </form>
+            <section>
+                <a name="forms"></a>
+                <h2 class="heading">Forms</h2>
 
-            <h2 class="heading">Tables</h2>
+                <blockquote class="quote">
+                    Hmm...
+                </blockquote>
+                <form>
+                    <div class="row">
+                        <div class="column-50">
+                            <label class="label" for="email">Your Email</label>
+                            <input class="field is-wide" type="email" placeholder="youremail@example.com" name="email">
+                        </div>
+                        <div class="column-50">
+                            <label class="label" for="reason">Contact Reason</label>
+                            <select class="field" name="reason">
+                                <option value="Option 1">Questions</option>
+                                <option value="Option 2">Admiration</option>
+                                <option value="Option 3">Can I get your number?</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 1em 0;">
+                        <div class="column">
+                            <label class="label" for="message">Message</label>
+                            <textarea class="textarea" placeholder="What would you like to say..." name="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="label" style="">
+                            <input class="field" type="checkbox" style="">
+                            Recieve Copy?
+                        </label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input class="button" type="submit" value="Submit">
+                    </div>
+                </form>
+            </section>
 
-            <blockquote class="quote">
-                Simple, designed with tabular data in mind. supports
-                <code>.is-condensed</code>,
-                <code>.is-striped</code>, and
-                <code>.is-bordered</code>
-            </blockquote>
+            <section>
+                <h2 class="heading">
+                    <a name="tables">Tables</a>
+                </h2>
 
-            <div class="is-well">
+                <blockquote class="quote">
+                    Simple, designed with tabular data in mind. supports
+                    <code>.is-condensed</code>,
+                    <code>.is-striped</code>, and
+                    <code>.is-bordered</code>
+                </blockquote>
+
+                <div class="is-well">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Two</th>
+                                <th>Three</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Two</td>
+                                <td>Three</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Two</td>
+                                <td>Three</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Two</td>
+                                <td>Three</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <section>
+                <a name="layout"></a>
+                <h2 class="heading">Page Layout</h2>
+
+                <blockquote class="quote">
+                    <strong class="is-uppercase">Grayscale CSS</strong>
+                    Layout system is interchangeable precent-based and <code>flexbox</code>-based,
+                    for a max width of <strong>1140px</strong>.
+                    Using <code>.column</code> creates a dynamic layout or bases your columns
+                    by apending a <code>-%</code> to the end of the .column class like <code>.column-%</code>,
+                    where % can be<strong> 20, 25, 33, 50, 100</strong>.
+                </blockquote>
+
+                <div>
+                    <div class="row">
+                        <div class="doc-column column">.column</div>
+                    </div>
+                    <div class="row">
+                        <div class="doc-column column">.column</div>
+                        <div class="doc-column column">.column</div>
+                    </div>
+                    <div class="row">
+                        <div class="doc-column column">.column</div>
+                        <div class="doc-column column">.column</div>
+                        <div class="doc-column column">.column</div>
+                    </div>
+                    <div class="row">
+                        <div class="doc-column column">.column</div>
+                        <div class="doc-column column">.column</div>
+                        <div class="doc-column column">.column</div>
+                        <div class="doc-column column">.column</div>
+                    </div>
+                    <div class="row">
+                        <div class="doc-column column-100">.column-100</div>
+                    </div>
+                    <div class="row">
+                        <div class="doc-column column-20">.column-20</div>
+                        <div class="doc-column column-20">.column-20</div>
+                        <div class="doc-column column-20">.column-20</div>
+                        <div class="doc-column column-20">.column-20</div>
+                        <div class="doc-column column-20">.column-20</div>
+                    </div>
+                    <div class="row">
+                        <div class="doc-column column-33">.column-33</div>
+                        <div class="doc-column column-33">.column-33</div>
+                        <div class="doc-column column-33">.column-33</div>
+                    </div>
+                    <div class="row">
+                        <div class="doc-column column-25">.column-25</div>
+                        <div class="doc-column column-25">.column-25</div>
+                        <div class="doc-column column-25">.column-25</div>
+                        <div class="doc-column column-25">.column-25</div>
+                    </div>
+                    <div class="row">
+                        <div class="doc-column column-50">.column-50</div>
+                        <div class="doc-column column-50">.column-50</div>
+                    </div>
+                    <div class="row">
+                        <div class="doc-column column-33">.column-33</div>
+                        <div class="doc-column column">.column</div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <a name="utility"></a>
+                <h2 class="heading">Utility</h2>
+
+                <blockquote class="quote">
+                    Below are some <em>helper</em> and <em>modifer</em> classes.
+                    All <em>modifier</em> classes start with <code>.is-</code>
+                </blockquote>
+
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Two</th>
-                            <th>Three</th>
+                            <th>Style</th>
+                            <th>Description</th>
+                            <th>Style</th>
+                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th>1</th>
-                            <td>Two</td>
-                            <td>Three</td>
+                            <td><code>.is-well</code></td>
+                            <td>Adds .5em padding to tag</td>
+                            <td><code>.is-indented</code></td>
+                            <td>adds a left margin</td>
                         </tr>
                         <tr>
-                            <th>2</th>
-                            <td>Two</td>
-                            <td>Three</td>
+                            <td><code>.is-wall</code></td>
+                            <td>Adds .5em padding-left and padding-right to tag</td>
+                            <td><code>.is-borderless</code></td>
+                            <td>removes all borders</td>
                         </tr>
                         <tr>
-                            <th>3</th>
-                            <td>Two</td>
-                            <td>Three</td>
+                            <td><code>.is-wide</code></td>
+                            <td>sets tag width 100%</td>
+                            <td><code>.is-hidden</code></td>
+                            <td>sets display to none</td>
+                        </tr>
+                        <tr>
+                            <td><code>.is-tall</code></td>
+                            <td>sets tag height 100%</td>
+                            <td><code>.is-upper</code></td>
+                            <td>sets font to uppercase</td>
+                        </tr>
+                        <tr>
+                            <td><code>.is-fit</code></td>
+                            <td>sets tag width / height 100%</td>
+                            <td><code>.is-lower</code></td>
+                            <td>sets font to lowercase</td>
+                        </tr>
+                        <tr>
+                            <td><code>.is-right</code></td>
+                            <td>float tag right</td>
+                            <td><code>.is-title</code></td>
+                            <td>capitalizes font</td>
+                        </tr>
+                        <tr>
+                            <td><code>.is-left</code></td>
+                            <td>float tag left</td>
+                            <td><code>.is-muted</code></td>
+                            <td>lightens font color</td>
+                        </tr>
+                        <tr>
+                            <td><code>.is-centered</code></td>
+                            <td>centers tag</td>
+                            <td><code>.is-block</code></td>
+                            <td>applys display:block</td>
+                        </tr>
+                        <tr>
+                            <td><code>.is-inline</code></td>
+                            <td>applys display:inline</td>
+                            <td><code>.is-clear</code></td>
+                            <td>applys clear:both</td>
+                        </tr>
+                        <tr>
+                            <td><code>.is-small</code></td>
+                            <td>decreses font size</td>
+                            <td><code>.is-large</code></td>
+                            <td>increase font size</td>
+                        </tr>
+                        <tr>
+                            <td><code>.is-divider</code></td>
+                            <td>draws hr rule</td>
+                            <td><code></code></td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </section>
 
-            <h2 class="heading">Page Layout</h2>
-
-            <blockquote class="quote">
-                <strong class="is-uppercase">Grayscale CSS</strong>
-                Layout system is interchangeable precent-based and <code>flexbox</code>-based,
-                for a max width of <strong>1140px</strong>.
-                Using <code>.column</code> creates a dynamic layout or bases your columns
-                by apending a <code>-%</code> to the end of the .column class like <code>.column-%</code>,
-                where % can be<strong> 20, 25, 33, 50, 100</strong>.
-            </blockquote>
-
-            <div>
-                <div class="row">
-                    <div class="doc-column column">.column</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column">.column</div>
-                    <div class="doc-column column">.column</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column">.column</div>
-                    <div class="doc-column column">.column</div>
-                    <div class="doc-column column">.column</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column">.column</div>
-                    <div class="doc-column column">.column</div>
-                    <div class="doc-column column">.column</div>
-                    <div class="doc-column column">.column</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column-100">.column-100</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column-20">.column-20</div>
-                    <div class="doc-column column-20">.column-20</div>
-                    <div class="doc-column column-20">.column-20</div>
-                    <div class="doc-column column-20">.column-20</div>
-                    <div class="doc-column column-20">.column-20</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column-33">.column-33</div>
-                    <div class="doc-column column-33">.column-33</div>
-                    <div class="doc-column column-33">.column-33</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column-25">.column-25</div>
-                    <div class="doc-column column-25">.column-25</div>
-                    <div class="doc-column column-25">.column-25</div>
-                    <div class="doc-column column-25">.column-25</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column-50">.column-50</div>
-                    <div class="doc-column column-50">.column-50</div>
-                </div>
-                <div class="row">
-                    <div class="doc-column column-33">.column-33</div>
-                    <div class="doc-column column">.column</div>
-                </div>
-            </div>
-
-            <h2 class="heading">Utility</h2>
-
-            <blockquote class="quote">
-                Below are some <em>helper</em> and <em>modifer</em> classes.
-                All <em>modifier</em> classes start with <code>.is-</code>
-            </blockquote>
-
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Style</th>
-                        <th>Description</th>
-                        <th>Style</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>.is-well</code></td>
-                        <td>Adds .5em padding to tag</td>
-                        <td><code>.is-indented</code></td>
-                        <td>adds a left margin</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-wall</code></td>
-                        <td>Adds .5em padding-left and padding-right to tag</td>
-                        <td><code>.is-borderless</code></td>
-                        <td>removes all borders</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-wide</code></td>
-                        <td>sets tag width 100%</td>
-                        <td><code>.is-hidden</code></td>
-                        <td>sets display to none</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-tall</code></td>
-                        <td>sets tag height 100%</td>
-                        <td><code>.is-upper</code></td>
-                        <td>sets font to uppercase</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-fit</code></td>
-                        <td>sets tag width / height 100%</td>
-                        <td><code>.is-lower</code></td>
-                        <td>sets font to lowercase</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-right</code></td>
-                        <td>float tag right</td>
-                        <td><code>.is-title</code></td>
-                        <td>capitalizes font</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-left</code></td>
-                        <td>float tag left</td>
-                        <td><code>.is-muted</code></td>
-                        <td>lightens font color</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-centered</code></td>
-                        <td>centers tag</td>
-                        <td><code>.is-block</code></td>
-                        <td>applys display:block</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-inline</code></td>
-                        <td>applys display:inline</td>
-                        <td><code>.is-clear</code></td>
-                        <td>applys clear:both</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-small</code></td>
-                        <td>decreses font size</td>
-                        <td><code>.is-large</code></td>
-                        <td>increase font size</td>
-                    </tr>
-                    <tr>
-                        <td><code>.is-divider</code></td>
-                        <td>draws hr rule</td>
-                        <td><code></code></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2 class="heading">Extras</h2>
+            <h2 class="heading">
+                <a name="more">Extras</a>
+            </h2>
 
             <h3>Blockquote</h3>
             <p>
