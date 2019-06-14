@@ -125,7 +125,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="https://raw.githubusercontent.com/n2geoff/grayscale/master/dist/grayscale.min.css" class="button is-wide">Download</a>
+                            <a href="https://raw.githubusercontent.com/n2geoff/grayscale/master/dist/grayscale.min.css" class="is-button is-wide">Download</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="https://github.com/n2geoff/grayscale/archive/master.zip" target="_NEW" class="button is-wide">Download</a>
+                            <a href="https://github.com/n2geoff/grayscale/archive/master.zip" target="_NEW" class="is-button is-wide">Download</a>
                         </div>
                     </div>
                 </div>
@@ -266,12 +266,12 @@
                 <nav class="nav">
                     <h2 class="nav-brand">Brand</h2>
                     <section class="nav-section">
-                        <a class="button is-link" href="#">One</a>
-                        <a class="button is-link" href="#">Two</a>
+                        <a class="is-link" href="#">One</a>
+                        <a class="is-link" href="#">Two</a>
                     </section>
 
                     <section class="nav-section is-right">
-                        <a class="" href="#">Login</a>
+                        <a class="is-button" href="#">Login</a>
                     </section>
                 </nav>
 
@@ -542,28 +542,73 @@
                 </table>
             </section>
 
-            <h2 class="heading">
-                <a name="more">Extras</a>
-            </h2>
+            <section>
+                <a name="more"></a>
+                <h2 class="heading">Extras</h2>
+            </section>
 
-            <h3>Blockquote</h3>
-            <p>
-                Stylize your <em>&lt;blockquote&gt;</em> tags with <code>.quote</code>
-            </p>
-            <blockquote class="quote">
-                Hello Blockquote!
-            </blockquote>
+            <section>
+                <h3>Blockquote</h3>
+                <p>
+                    Stylize your <em>&lt;blockquote&gt;</em> tags with <code>.quote</code>
+                </p>
+                <blockquote class="quote">
+                    Hello Blockquote!
+                </blockquote>
+            </section>
 
-            <h3>Cards</h3>
+            <section>
+                <h3>Cards</h3>
 
-            <blockquote class="quote">
-                Cards are a versitle way to display sections of contents.
-                The information boxs under <strong>Getting Started</strong> are cards
-            </blockquote>
+                <blockquote class="quote">
+                    Cards are a versitle way to display sections of contents.
+                    The information boxs under <strong>Getting Started</strong> are cards
+                </blockquote>
+
+            </section>
+
+            <section>
+                <h3>Modal</h3>
+                <blockquote class="quote">
+                    Modals provide are useful for popup dialog boxes, confirmation message and
+                    other content that you need to call up with locked focus. To activate add
+                    <code>.is-active</code> class to the <code>.modal</code> class
+                </blockquote>
+
+                <button class="button" onclick="toggle()">Open Modal</button>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="card">
+                            <div class="card-header is-bordered">
+                                <h4 class="title" s>
+                                    This is a modal
+                                    <button class="is-link help is-right" onclick="toggle()">close</button>
+                                </h4>
+                            </div>
+                            <div class="card-content is-bordered">
+                                All you have to do is click on the close button
+                            </div>
+                            <div class="card-footer is-block content">
+                                <button class="button is-right" onclick="toggle()">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <p>
                 <hr>
                 <div class="is-centered is-muted">More Coming Soon</div>
             </p>
+
+            <script>
+
+                function toggle() {
+                    var modal = document.querySelector('.modal');
+                    modal.classList.toggle('is-active');
+                }
+            </script>
         </div>
     </body>
 </html>
