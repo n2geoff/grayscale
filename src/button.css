@@ -6,6 +6,7 @@ a.button,
 .button[type="reset"],
 .button[type="button"] {
     position: relative;
+    overflow: hidden;
     zoom: 1;
     line-height: normal;
     margin: 0;
@@ -33,7 +34,7 @@ a.button,
 
 .button.is-link:hover {
     background-image: none;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .button:hover,
