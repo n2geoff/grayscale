@@ -1,15 +1,6 @@
 /* Layout Container */
 
 .layout {
-    margin: 0 auto;
-    zoom: 1;
-    letter-spacing: normal;
-    word-spacing: normal;
-    vertical-align: top;
-    text-rendering: auto;
-}
-
-.container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -19,38 +10,47 @@
     align-content: stretch;
 
     height: 100%;
-}
-
-.page {
-    width: 90%;
     max-width: 1140px;
     margin: 0 auto;
+    padding: .25rem;
+}
+
+.content {
+    padding: .5em 1em;
 }
 
 /* Flex-Based Grid Solution */
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-}
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex:1;
+    flex-wrap: wrap;
 }
 
 .expand {
     flex: 1 1 auto;
 }
 
-/* Precent-Based Grid Solution */
-.column-100,.column-20,.column-25,.column-33,.column-50,.column-67
-{display:inline;box-sizing:border-box;*margin-left:-0.04em;}
+.column, .column-100,.column-20,.column-25,.column-33,.column-50,.column-67 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+}
 
-.column-20 {width: 20%}
-.column-25 {width:25%}
-.column-33 {width: 33.33%}
-.column-50 {width: 50%}
-.column-67 {width: 67.67%}
-.column-100 {width: 100%}
+.column-20 {flex-basis: 20%}
+.column-25 {flex-basis:25%}
+.column-33 {flex-basis: 33.33%}
+.column-50 {flex-basis: 50%}
+.column-67 {flex-basis: 67.67%}
+.column-100 {flex-basis: 100%}
+
+/* mobile */
+@media(max-width: 576px) {
+    html {font-size: 14px;}
+    .hero, .card, .layout {display: block}
+    .column {min-width: 276px;}
+    .modal-content {
+        min-width: 26rem;
+        width: 100%; padding: .25em
+    }
+}
