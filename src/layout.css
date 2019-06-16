@@ -47,7 +47,7 @@
 /* mobile */
 @media(max-width: 576px) {
     html {font-size: 14px;}
-    .hero, .card, .layout {display: block}
+    .hero, .layout {display: block}
     .column {min-width: 276px;}
     .modal-content {
         min-width: 26rem;
