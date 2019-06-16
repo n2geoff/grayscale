@@ -7,6 +7,7 @@
         <title>Grayscale CSS</title>
         <link rel="stylesheet" href="/grayscale/dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
         <style media="screen">
 
             .heading {
@@ -306,15 +307,16 @@
                 <h2 class="heading">Forms</h2>
 
                 <blockquote class="quote">
-                    Hmm...
+                    What can I say about forms?  They are the building blocks of applications.
                 </blockquote>
-                <form>
+
+                <form class="form">
                     <div class="row">
-                        <div class="column-50">
+                        <div class="column">
                             <label class="label" for="email">Your Email</label>
-                            <input class="field is-wide" type="email" placeholder="youremail@example.com" name="email">
+                            <input class="field" type="email" placeholder="youremail@example.com" name="email">
                         </div>
-                        <div class="column-50">
+                        <div class="column">
                             <label class="label" for="reason">Contact Reason</label>
                             <select class="field" name="reason">
                                 <option value="Option 1">Questions</option>
@@ -323,21 +325,33 @@
                             </select>
                         </div>
                     </div>
-                    <div class="row" style="margin: 1em 0;">
+                    <div class="row">
+                        <div class="column">
+                            <div class="group">
+                                <label class="label" for="">What are you doing</label>
+                                <input type="text" class="field">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="column">
                             <label class="label" for="message">Message</label>
                             <textarea class="textarea" placeholder="What would you like to say..." name="message"></textarea>
                         </div>
                     </div>
                     <div class="row">
-                        <label class="label">
-                            <input class="field" type="checkbox">
-                            Recieve Copy?
-                        </label>
+                        <div class="column">
+                            <label class="label">
+                                <input type="checkbox">
+                                Recieve Copy?
+                            </label>
+                        </div>
                     </div>
                     <br>
                     <div class="row">
-                        <input class="button" type="submit" value="Submit">
+                        <div class="column is-block">
+                            <input class="button is-right" type="submit" value="Submit">
+                        </div>
                     </div>
                 </form>
             </section>

@@ -1,4 +1,4 @@
-/* Grayscale.css v:0.8.7 | MIT LICENSE | https://github.com/n2geoff/grayscale */
+/* Grayscale.css v:0.8.8 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 
 /* CSS Reset */
 
@@ -52,6 +52,11 @@ table {
   border-spacing: 0;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: .5em;
+}
+
 a {
   text-decoration: none;
 }
@@ -100,6 +105,8 @@ a.is-button,
   box-sizing: border-box;
   font-family: inherit;
   font-size: 1em;
+  height: 40px;
+  max-height: 40px;
   padding: .5em 1em;
   background-color: #EBEBEB;
   color: #1A1A1A;
@@ -194,77 +201,64 @@ a.is-button:visited {
   align-items: stretch;
 }
 
-/* Forms */
+.form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.label {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  font-weight: bold;
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
 
 .field,
 .textarea {
-  font-size: 1em;
-  height: 38px;
-  width: 100%;
-  padding: 6px 10px;
-  /* The 6px vertically centers text on FF, ignored by Webkit */
+  -ms-flex: 6;
+  flex: 6;
+  height: 40px;
+  max-height: 40px;
+  line-height: 40px;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding-left: .5em;
+  padding-right: .5em;
   background-color: #FAFAFA;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #BABABA;
   box-shadow: none;
   box-sizing: border-box;
 }
 
+.form .button {
+  margin-right: 1em;
+}
+
+.field:hover {
+  background-color: #EBEBEB;
+}
+
+.field:focus {
+  background-color: #FAFAFA;
+}
+
 .textarea {
   min-height: 6em;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.field[type="checkbox"],
-.field[type="radio"] {
-  position: relative;
-  bottom: -3px;
-  height: 16px;
-  width: 16px;
-}
-
-.field:hover,
-.textarea:hover {
-  border: 1px solid #EBEBEB;
-  outline: 0;
-}
-
-.field:focus,
-.textarea:focus {
-  border: 1px solid #474747;
-  background-color: #FAFAFA;
-  outline: 0;
-}
-
-.field-group,
-.group {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-
-.addon {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  padding: 0 1em;
-  line-height: 2em;
-  vertical-align: middle;
-}
-
-.label,
-.legend {
-  display: block;
-  padding: 0.5em 0;
-  font-weight: 600;
-}
-
-.fieldset {
-  margin: .5em;
-  padding: 0;
-  border-width: 0;
 }
 
 /* Layout Container */

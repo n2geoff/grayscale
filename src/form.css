@@ -1,63 +1,49 @@
-/* Forms */
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    align-items: baseline;
+    font-weight: bold;
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
 
 .field, .textarea {
-    font-size: 1em;
-    height: 38px;
-    width: 100%;
-    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    flex: 6;
+    height: 40px;
+    max-height: 40px;
+    line-height: 40px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
     background-color: var(--white);
-    border: 1px solid var(--light);
+    border: 1px solid var(--gray);
     box-shadow: none;
     box-sizing: border-box;
 }
 
+.form .button {
+    margin-right: 1em;
+}
+
+.field:hover {
+    background-color: var(--light);
+}
+.field:focus {
+    background-color: var(--white);
+}
+
 .textarea {
     min-height: 6em;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.field[type="checkbox"],
-.field[type="radio"] {
-    position: relative;
-    bottom: -3px;
-    height: 16px;
-    width: 16px;
-}
-
-.field:hover, .textarea:hover {
-  border: 1px solid var(--light);
-  outline: 0;
-}
-
-.field:focus, .textarea:focus {
-    border: 1px solid var(--dark);
-    background-color: var(--white);
-    outline: 0;
-}
-
-.field-group, .group {
-    display: flex;
-    justify-content: space-around;
-}
-
-.addon {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0 1em;
-    line-height: 2em;
-    vertical-align: middle;
-}
-
-.label,
-.legend {
-    display: block;
-    padding: 0.5em 0;
-    font-weight: 600;
-}
-
-.fieldset {
-    margin: .5em;
-    padding: 0;
-    border-width: 0;
 }
