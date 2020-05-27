@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Grayscale CSS</title>
-        <link rel="stylesheet" href="/grayscale/dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="src/base.css">
+        <!-- <link rel="stylesheet" href="/grayscale/dist/grayscale.min.css" media="screen" title="no title" charset="utf-8"> -->
         <link rel="stylesheet" href="dist/grayscale.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
         <style media="screen">
@@ -93,10 +94,10 @@
     <body>
         <div class="layout" style="margin-bottom: 4em;">
             <div class="">
-                <div class="box is-white">&nbsp;</div>
+                <div class="box bordered">&nbsp;</div>
                 <div class="box is-light">&nbsp;</div>
                 <div class="box is-gray">&nbsp;</div>
-                <div class="box is-dark is-wall">
+                <div class="box is-dark wall">
                     GRAYSCALE
                 </div>
                 <div class="box is-dark" style="padding: 0 .5em 0 .5em;">CSS</div>
@@ -107,7 +108,7 @@
             <h1 class="heading">Getting Started</h1>
 
             <div class="row">
-                <div class="is-well" style="letter-spacing: .2em; line-height: 1.5em;">
+                <div class="well" style="letter-spacing: .2em; line-height: 1.5em;">
                     Grayscale CSS provides a minimalistic approach to styling by putting layout in the forefront,
                     removing excess distractions, allowing for developers to rapidly prototype layouts. Everything is extendable,
                     so just apply your theme later! All-in, the package is <b>only 2kb gzipped!</b>
@@ -115,40 +116,40 @@
             </div>
 
             <div class="row">
-                <div class="column">
-                    <div class="card is-well">
+                <div class="col">
+                    <div class="card well">
                         <div class="card-header heading">
                             Simple Conventions
                         </div>
                         <div class="card-content">
-                            READ-able classes anyone can remember, like <em>.button</em> or <em>.field</em>
+                            Simple classes anyone can remember, like <em>.btn</em> or <em>.field</em>
                             <p>
-                                Modify bases classes with <em>.is-*</em>
+                                Easily modify bases classes
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="https://raw.githubusercontent.com/n2geoff/grayscale/master/dist/grayscale.min.css" class="is-button is-wide">Download</a>
+                            <a href="https://raw.githubusercontent.com/n2geoff/grayscale/master/dist/grayscale.min.css" class="btn is-light wide">Download</a>
                         </div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="card is-well">
+                <div class="col">
+                    <div class="card well">
                         <div class="card-header heading">
                             Simple Build
                         </div>
                         <div class="card-content">
                             Customize your build, extend, fork, contribute it all starts here.
                             <p>
-                                Uses NODE and Myth CSS
+                                Uses GULP and CSS3
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="https://github.com/n2geoff/grayscale/archive/master.zip" target="_NEW" class="is-button is-wide">Download</a>
+                            <a href="https://github.com/n2geoff/grayscale/archive/master.zip" target="_NEW" class="btn is-light wide">Download</a>
                         </div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="card is-well">
+                <div class="col">
+                    <div class="card well">
                         <div class="card-header heading">
                             Utilize CDN
                         </div>
@@ -159,7 +160,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <button class="button is-disabled is-wide">Find on CDN</button>
+                            <button class="btn disabled wide">Find on CDN</button>
                         </div>
                     </div>
                 </div>
@@ -173,22 +174,22 @@
                 </blockquote>
 
                 <div class="row" style="text-align: center">
-                    <div class="column"><a href="#colors">Colors</a></div>
-                    <div class="column"><a href="#theme">Theme</a></div>
-                    <div class="column"><a href="#buttons">Buttons</a></div>
-                    <div class="column"><a href="#navigation">Navigation</a></div>
+                    <div class="col"><a href="#colors">Colors</a></div>
+                    <div class="col"><a href="#theme">Theme</a></div>
+                    <div class="col"><a href="#buttons">Buttons</a></div>
+                    <div class="col"><a href="#navigation">Navigation</a></div>
                 </div>
                 <div class="row" style="text-align: center">
-                    <div class="column"><a href="#forms">Forms</a></div>
-                    <div class="column"><a href="#tables">Tables</a></div>
-                    <div class="column"><a href="#layout">Layout</a></div>
-                    <div class="column"><a href="#utility">Utility</a></div>
+                    <div class="col"><a href="#forms">Forms</a></div>
+                    <div class="col"><a href="#tables">Tables</a></div>
+                    <div class="col"><a href="#layout">Layout</a></div>
+                    <div class="col"><a href="#utility">Utility</a></div>
                 </div>
                 <div class="row" style="text-align: center">
-                    <div class="column"><a href="#more">More...</a></div>
-                    <div class="column"><a href="#blockquote"></a></div>
-                    <div class="column"><a href="#cards"></a></div>
-                    <div class="column"><a href="."></a></div>
+                    <div class="col"><a href="#more">More...</a></div>
+                    <div class="col"><a href="#blockquote"></a></div>
+                    <div class="col"><a href="#cards"></a></div>
+                    <div class="col"><a href="."></a></div>
                 </div>
             </section>
 
@@ -202,8 +203,8 @@
                     A few colors were added for splash, but these can easly be <u>overridden</u></em>
                 </blockquote>
 
-                <div class="row is-well">
-                    <div class="border column">
+                <div class="row well">
+                    <div class="border col">
                         <div class="is-white content">.is-white</div>
                         <div class="is-light content">.is-light</div>
                         <div class="is-gray content">.is-gray</div>
@@ -223,11 +224,14 @@
                     can mix the shades above for variety.
                 </blockquote>
 
-                <button class="button is-disabled">Disabled</button>
-                <button class="button is-light">Light</button>
-                <button class="button is-gray">Gray</button>
-                <button class="button is-dark">Dark</button>
-                <button class="button is-link">Link</button>
+                <button class="btn disabled">Disabled</button>
+                <button class="btn">Default</button>
+                <button class="btn outline">None</button>
+                <button class="btn is-light">Light</button>
+                <button class="btn is-gray">Gray</button>
+                <button class="btn is-dark">Dark</button>
+                <button class="btn is-black">Black</button>
+                <button class="btn link">Link</button>
 
                 <div class="indent">
                     <h3>Extend</h3>
@@ -237,7 +241,7 @@
                     </p>
                         <code class="code is-block">.is-primary {color: #FFF; background-color: steelblue;}</code>
                     <p>
-                        <button class="button is-primary">Primary</button>
+                        <button class="btn is-primary">Primary</button>
                     </p>
 
                     <p>
@@ -246,7 +250,7 @@
                     <code class="code is-block">.is-rounded {border-radius: 5px;}</code>
 
                     <p>
-                        <button class="button is-primary is-rounded clear">Rounded</button>
+                        <button class="btn is-primary is-rounded clear">Rounded</button>
                     </p>
                 </div>
 
@@ -264,17 +268,17 @@
                 <nav class="nav">
                     <h2 class="nav-brand">Brand</h2>
                     <section class="nav-section">
-                        <a class="is-link content" href="#">One</a>
-                        <a class="is-link content" href="#">Two</a>
+                        <a class="btn link content" href="#">One</a>
+                        <a class="btn link content" href="#">Two</a>
                     </section>
 
                     <section class="nav-section is-right">
-                        <a class="is-button" href="#">Login</a>
+                        <a class="btn is-light" href="#">Login</a>
                     </section>
                 </nav>
 
                 <details>
-                    <summary class="is-muted">Code</summary>
+                    <summary class="muted">Code</summary>
                     <pre>
                         <script >
                             var nav = `
@@ -312,11 +316,11 @@
 
                 <form class="form">
                     <div class="row">
-                        <div class="column">
+                        <div class="col">
                             <label class="label" for="email">Your Email</label>
                             <input class="field" type="email" placeholder="youremail@example.com" name="email">
                         </div>
-                        <div class="column">
+                        <div class="col">
                             <label class="label" for="reason">Contact Reason</label>
                             <select class="field" name="reason">
                                 <option value="Option 1">Questions</option>
@@ -326,7 +330,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="column">
+                        <div class="col">
                             <div class="group">
                                 <label class="label" for="">What are you doing</label>
                                 <input type="text" class="field">
@@ -334,13 +338,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="column">
+                        <div class="col">
                             <label class="label" for="message">Message</label>
                             <textarea class="textarea" placeholder="What would you like to say..." name="message"></textarea>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="column">
+                        <div class="col">
                             <label class="label">
                                 <input type="checkbox">
                                 Recieve Copy?
@@ -349,8 +353,8 @@
                     </div>
                     <br>
                     <div class="row">
-                        <div class="column is-block">
-                            <input class="button is-right" type="submit" value="Submit">
+                        <div class="col block">
+                            <input class="btn right" type="submit" value="Submit">
                         </div>
                     </div>
                 </form>
@@ -363,12 +367,12 @@
 
                 <blockquote class="quote">
                     Simple, designed with tabular data in mind. supports
-                    <code>.is-condensed</code>,
-                    <code>.is-striped</code>, and
-                    <code>.is-bordered</code>
+                    <code>.condensed</code>,
+                    <code>.striped</code>, and
+                    <code>.bordered</code>
                 </blockquote>
 
-                <div class="is-well">
+                <div class="well">
                     <table class="table">
                         <thead>
                             <tr>
@@ -405,60 +409,53 @@
 
                 <blockquote class="quote">
                     <strong class="is-uppercase">Grayscale CSS</strong>
-                    Layout system is interchangeable precent-based and <code>flexbox</code>-based,
+                    Layout system is <code>flexbox</code>-based,
                     for a max width of <strong>1140px</strong>.
-                    Using <code>.column</code> creates a dynamic layout or bases your columns
-                    by apending a <code>-%</code> to the end of the .column class like <code>.column-%</code>,
-                    where % can be<strong> 20, 25, 33, 50, 100</strong>.
+                    Using <code>.row</code> and <code>.col</code> creates a dynamic layout that can scale
+                    by a <code>-#</code> magintude like <code>.col-2</code> for <strong>2x</strong> the size of <code>col-1</code>
+                    This magitude # can be anywhere from 1-5 <strong> .col-1, .col-2, .col-3, .col-4, .col-5</strong>.
+                    <p>
+                        NOTE: .col and .col-1 are the same
+                    </p>
                 </blockquote>
 
                 <div>
                     <div class="row">
-                        <div class="doc-column column">.column</div>
+                        <div class="doc-column col">.col</div>
                     </div>
                     <div class="row">
-                        <div class="doc-column column">.column</div>
-                        <div class="doc-column column">.column</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
                     </div>
                     <div class="row">
-                        <div class="doc-column column">.column</div>
-                        <div class="doc-column column">.column</div>
-                        <div class="doc-column column">.column</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
                     </div>
                     <div class="row">
-                        <div class="doc-column column">.column</div>
-                        <div class="doc-column column">.column</div>
-                        <div class="doc-column column">.column</div>
-                        <div class="doc-column column">.column</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
                     </div>
                     <div class="row">
-                        <div class="doc-column column-100">.column-100</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
+                        <div class="doc-column col">.col</div>
                     </div>
                     <div class="row">
-                        <div class="doc-column column-20">.column-20</div>
-                        <div class="doc-column column-20">.column-20</div>
-                        <div class="doc-column column-20">.column-20</div>
-                        <div class="doc-column column-20">.column-20</div>
-                        <div class="doc-column column-20">.column-20</div>
+                        <div class="doc-column col-1">.col</div>
+                        <div class="doc-column col-2">.col-2</div>
+                        <div class="doc-column col-1">.col</div>
                     </div>
                     <div class="row">
-                        <div class="doc-column column-33">.column-33</div>
-                        <div class="doc-column column-33">.column-33</div>
-                        <div class="doc-column column-33">.column-33</div>
-                    </div>
-                    <div class="row">
-                        <div class="doc-column column-25">.column-25</div>
-                        <div class="doc-column column-25">.column-25</div>
-                        <div class="doc-column column-25">.column-25</div>
-                        <div class="doc-column column-25">.column-25</div>
-                    </div>
-                    <div class="row">
-                        <div class="doc-column column-50">.column-50</div>
-                        <div class="doc-column column-50">.column-50</div>
-                    </div>
-                    <div class="row">
-                        <div class="doc-column column-33">.column-33</div>
-                        <div class="doc-column column">.column / .column-67</div>
+                        <div class="doc-column col-1">.col-1</div>
+                        <div class="doc-column col-2">.col-2</div>
+                        <div class="doc-column col-3">.col-3</div>
+                        <div class="doc-column col-4">.col-4</div>
+                        <div class="doc-column col-5">.col-5</div>
                     </div>
                 </div>
             </section>
@@ -474,7 +471,7 @@
                 </blockquote>
 
                 <div class="row">
-                    <div class="column">
+                    <div class="col">
                         <table class="table">
                             <thead>
                                 <tr class="is-light">
@@ -484,53 +481,53 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><code>.is-well</code></td>
-                                    <td>Adds .5em padding to tag</td>
+                                    <td><code>well</code></td>
+                                    <td>Adds .5rem padding to tag</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-wall</code></td>
+                                    <td><code>.wall</code></td>
                                     <td>Adds .5em padding-left and padding-right to tag</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-wide</code></td>
+                                    <td><code>.wide</code></td>
                                     <td>sets tag width 100%</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-tall</code></td>
+                                    <td><code>.tall</code></td>
                                     <td>sets tag height 100%</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-fit</code></td>
+                                    <td><code>.fit</code></td>
                                     <td>sets tag width / height 100%</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-right</code></td>
+                                    <td><code>.right</code></td>
                                     <td>float tag right</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-left</code></td>
+                                    <td><code>.left</code></td>
                                     <td>float tag left</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-centered</code></td>
+                                    <td><code>.centered</code></td>
                                     <td>centers tag</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-inline</code></td>
+                                    <td><code>.inline</code></td>
                                     <td>applys display:inline</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-small</code></td>
+                                    <td><code>.small</code></td>
                                     <td>decreses font size</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-divider</code></td>
+                                    <td><code>.divider</code></td>
                                     <td>draws hr rule</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="column">
+                    <div class="col">
                         <table class="table">
                             <thead>
                                 <tr class="is-light">
@@ -540,43 +537,43 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><code>.is-indented</code></td>
+                                    <td><code>.indented</code></td>
                                     <td>adds a left margin</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-borderless</code></td>
+                                    <td><code>.borderless</code></td>
                                     <td>removes all borders</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-hidden</code></td>
+                                    <td><code>.hidden</code></td>
                                     <td>sets display to none</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-upper</code></td>
+                                    <td><code>.uppercase</code></td>
                                     <td>sets font to uppercase</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-lower</code></td>
+                                    <td><code>.lowercase</code></td>
                                     <td>sets font to lowercase</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-title</code></td>
+                                    <td><code>.title</code></td>
                                     <td>capitalizes font</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-muted</code></td>
+                                    <td><code>.muted</code></td>
                                     <td>lightens font color</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-block</code></td>
+                                    <td><code>.block</code></td>
                                     <td>applys display:block</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-clear</code></td>
+                                    <td><code>.clear</code></td>
                                     <td>applys clear:both</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.is-large</code></td>
+                                    <td><code>.large</code></td>
                                     <td>increase font size</td>
                                 </tr>
                             </tbody>
@@ -594,7 +591,7 @@
             <section>
                 <h3>Blockquote</h3>
                 <p>
-                    Stylize your <em>&lt;blockquote&gt;</em> tags with <code>.quote</code>
+                    Stylize your <em>&lt;blockquote&gt;</em> tags with <code>.blockquote</code>
                 </p>
                 <blockquote class="quote">
                     Hello Blockquote!
@@ -616,27 +613,27 @@
                 <blockquote class="quote">
                     Modals provide are useful for popup dialog boxes, confirmation message and
                     other content that you need to call up with locked focus. To activate add
-                    <code>.is-active</code> class to the <code>.modal</code> class
+                    <code>.active</code> class to the <code>.modal</code> class
                 </blockquote>
 
-                <button class="button" onclick="toggle()">Open Modal</button>
+                <button class="btn" onclick="toggle()">Open Modal</button>
 
                 <div class="modal">
                     <div class="modal-content">
                         <div class="card">
-                            <div class="card-header is-bordered">
-                                <h4 class="is-title">
+                            <div class="card-header bordered">
+                                <h4 class="title">
                                     This is a modal
-                                    <button class="is-link help is-right" onclick="toggle()">X</button>
+                                    <button class="btn link help right" onclick="toggle()">X</button>
                                 </h4>
                             </div>
-                            <div class="card-content is-bordered">
+                            <div class="card-content bordered">
                                 <p>
                                     All you have to do is click on the close button
                                 </p>
                             </div>
-                            <div class="card-footer is-block content">
-                                <button class="button is-right" onclick="toggle()">close</button>
+                            <div class="card-footer block content">
+                                <button class="btn is-light right" onclick="toggle()">Close</button>
                             </div>
                         </div>
                     </div>
@@ -645,14 +642,14 @@
 
             <p>
                 <hr>
-                <div class="is-centered is-muted">More Coming Soon</div>
+                <div class="centered is-muted">More Coming Soon</div>
             </p>
 
             <script>
 
                 function toggle() {
                     var modal = document.querySelector('.modal');
-                    modal.classList.toggle('is-active');
+                    modal.classList.toggle('active');
                 }
             </script>
         </div>

@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .group {
@@ -14,8 +14,8 @@
     display: flex;
     align-items: baseline;
     font-weight: bold;
-    margin-right: 1em;
-    margin-bottom: .5em;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
 }
 
 .field, .textarea {
@@ -23,10 +23,10 @@
     height: 40px;
     max-height: 40px;
     line-height: 40px;
-    margin-bottom: 1em;
-    margin-right: 1em;
-    padding-left: .5em;
-    padding-right: .5em;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
     background-color: var(--white);
     border: 1px solid var(--gray);
     box-shadow: none;
@@ -34,7 +34,7 @@
 }
 
 .form .button {
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 .field:hover {
@@ -45,5 +45,5 @@
 }
 
 .textarea {
-    min-height: 6em;
+    min-height: 6rem;
 }

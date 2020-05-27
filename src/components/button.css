@@ -1,11 +1,10 @@
 /* Buttons */
 
-.button,
-a.button,
-a.is-button,
-.button[type="submit"],
-.button[type="reset"],
-.button[type="button"] {
+.btn,
+a.btn,
+.btn[type="submit"],
+.btn[type="reset"],
+.btn[type="button"] {
     position: relative;
     overflow: hidden;
     zoom: 1;
@@ -23,13 +22,21 @@ a.is-button,
     height: 40px;
     max-height: 40px;
     padding: .5em 1em;
-    background-color: var(--light);
-    color: var(--black);
     text-decoration: none;
-    border: 1px solid var(--gray);
+    border: 1px solid #BABABA;
 }
 
-.button.is-link, button.is-link {
+a.btn {
+    color: var(--dark);
+}
+
+.btn.outline {
+    background-color: transparent;
+    border: 1px solid var(--border);
+}
+
+
+.btn.link {
     color: var(--dark);
     border-color: transparent;
     background-color: transparent;
@@ -38,45 +45,45 @@ a.is-button,
     cursor: pointer;
 }
 
-.button.is-link:hover {
+.btn.link:hover {
     background-image: none;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-a.is-button:hover,
-.button:hover,
-.button[type="submit"]:hover,
-.button[type="reset"]:hover,
-.button[type="button"]:hover {
+a.btn:hover,
+.btn:hover,
+.btn[type="submit"]:hover,
+.btn[type="reset"]:hover,
+.btn[type="button"]:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
     background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
 
-a.is-button:active,
-.button:active,
-.button[type="submit"]:active,
-.button[type="reset"]:active,
-.button[type="button"]:active {
+a.btn:active,
+.btn:active,
+.btn[type="submit"]:active,
+.btn[type="reset"]:active,
+.btn[type="button"]:active {
     box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
-    border-color: #000;
+    border-color: var(--black);
     color: inherit;
 }
 
-a.is-button:focus,
-.button:focus,
-.button[type="submit"]:focus,
-.button[type="reset"]:focus,
-.button[type="button"]:focus,
-a.is-button:visited {
+a.btn:focus,
+.btn:focus,
+.btn[type="submit"]:focus,
+.btn[type="reset"]:focus,
+.btn[type="button"]:focus,
+a.btn:visited {
     outline: 0;
     color: inherit;
 }
 
-.is-disabled,
-.is-disabled:hover,
-.is-disabled:active,
-.is-disabled:focus {
+.btn.disabled,
+.btn.disabled:hover,
+.btn.disabled:active,
+.btn.disabled:focus {
     border: 1px solid var(--light);
     background-image: none;
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);

@@ -1,0 +1,62 @@
+/* Layout Container */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+    height: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: .25rem;
+}
+
+/* Layout System */
+
+.row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0;
+}
+
+.col, .stack, .col-1, .col-2, .col-3, .col-4,.col-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    box-sizing: border-box;
+    flex: 1;
+    max-width: 100%;
+}
+
+.col-1 {flex: 1;}
+.col-2 {flex: 2;}
+.col-3 {flex: 3;}
+.col-4 {flex: 4;}
+.col-5 {flex: 5;}
+
+.content {
+    padding: .5em 1em;
+}
+
+
+.expand {
+    flex: 1 1 auto;
+}
+
+/* mobile */
+@media(max-width: 576px) {
+    html {font-size: 14px;}
+    .hero, .layout {display: block}
+    .column {min-width: 276px;}
+    .modal-content {
+        min-width: 26rem;
+        width: 100%; padding: .25em
+    }
+}

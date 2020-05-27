@@ -1,64 +1,14 @@
 /* Grayscale.css v:0.8.5 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 
-:root {
-    --white: #FAFAFA;
-    --light: #EBEBEB;
-    --gray: #BABABA;
-    --dark: #474747;
-    --black: #1A1A1A;
-}
-
-/* CSS Reset */
-
-html {
-    box-sizing: border-box;
-    font-family: georgia, serif;
-    font-size: 16px;
-    line-height: 1.4em;
-    color: var(--dark);
-    -webkit-font-smoothing: antialiased;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-html,body {height:100%;}
-body, html, span, div {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-img,
-embed,
-iframe,
-object,
-audio,
-video {
-    height: auto;
-    max-width: 100%;
-    border: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    margin-right: .5em;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+@import url('components/vars.css');
+@import url('components/reset.css');
+@import url('components/blockquote.css');
+@import url('components/button.css');
+@import url('components/card.css');
+@import url('components/form.css');
+@import url('components/layout.css');
+@import url('components/modal.css');
+@import url('components/navigation.css');
+@import url('components/table.css');
+@import url('components/typeography.css');
+@import url('components/utility.css');

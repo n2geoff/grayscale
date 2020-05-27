@@ -1,0 +1,18 @@
+:root {
+    --white: #FFF;
+    --lighter: #F2F2F2;
+    --light: #EEE;
+    --gray: #BBB;
+    --dark: #5C5C5C;
+    --black: #1A1A1A;
+
+    --border: #BABABA;
+}
+
+/* Grayscale */
+
+.is-white {background-color: var(--white); color: var(--black);}
+.is-light {background-color: var(--light); color: var(--black);}
+.is-gray {background-color: var(--gray); color: var(--black);}
+.is-dark {background-color: var(--dark); color: var(--white);}
+.is-black {background-color: var(--black); color: var(--white);}
