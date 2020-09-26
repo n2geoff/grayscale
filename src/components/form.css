@@ -47,3 +47,6 @@
 .textarea {
     min-height: 6rem;
 }
+
+input:required,select:required {border-right: 4px solid var(--dark)}
+select.invalid {color: var(--dark); font-weight: bold; border: 2px solid var(--dark);}
