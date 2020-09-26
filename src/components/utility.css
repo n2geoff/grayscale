@@ -11,6 +11,7 @@
 .full {height: 100%; width: 100%; margin:0; padding:0; max-height: none; max-width:none;}
 .hero {padding: 8rem;}
 .well {padding: 1rem;}
+.content {padding: .5em 1em;}
 .borderless {border: none}
 .spaceless {padding: 0px; margin:0px;}
 .clear {clear: both;}
