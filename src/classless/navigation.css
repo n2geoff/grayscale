@@ -1,0 +1,29 @@
+/* Navigation */
+
+nav {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav section {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
+}
+
+nav section:not(:first-child):last-child {
+    justify-content: flex-end;
+}
+
+nav.centered {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+}
+
+nav .brand {
+    font-size: 1.5em;
+    text-decoration: none;
+}

@@ -8,11 +8,21 @@ var myth = require('gulp-myth');
 
 // create task
 gulp.task('default', function () {
-    return gulp.src('src/*.css')
+    return gulp.src('src/decorative.css')
         .pipe(concat('grayscale.css'))
         .pipe(myth())
         .pipe(gulp.dest('./dist'))
         .pipe(minify())
         .pipe(rename('grayscale.min.css'))
+        .pipe(gulp.dest('./dist'))
+});
+
+gulp.task('classless', function () {
+    return gulp.src('src/classless.css')
+        .pipe(concat('grayless.css'))
+        .pipe(myth())
+        .pipe(gulp.dest('./dist'))
+        .pipe(minify())
+        .pipe(rename('grayless.min.css'))
         .pipe(gulp.dest('./dist'))
 });
